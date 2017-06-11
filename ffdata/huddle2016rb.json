@@ -1,0 +1,3098 @@
+{
+   "Chase Reynolds": {
+      "TEAM": "LAR",
+      "PLAYS": 1,
+      "FANTASYPTS": 0,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.03
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 4,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Marcus Murphy": {
+      "TEAM": "NO",
+      "PLAYS": 1,
+      "FANTASYPTS": 0,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.1
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 3,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Joique Bell": {
+      "TEAM": "CHI",
+      "PLAYS": 4,
+      "FANTASYPTS": 0,
+      "GP": 7,
+      "FPTS": {
+         "G": 0.06
+      },
+      "CARRIES": 3,
+      "RYD": 6,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": -2,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Michael Burton": {
+      "TEAM": "DET",
+      "PLAYS": 1,
+      "FANTASYPTS": 0,
+      "GP": 15,
+      "FPTS": {
+         "G": 0
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Joe Kerridge": {
+      "TEAM": "GB",
+      "PLAYS": 1,
+      "FANTASYPTS": 0,
+      "GP": 8,
+      "FPTS": {
+         "G": 0
+      },
+      "CARRIES": 1,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Will Tukuafu": {
+      "TEAM": "SEA",
+      "PLAYS": 3,
+      "FANTASYPTS": 0,
+      "GP": 7,
+      "FPTS": {
+         "G": 0.03
+      },
+      "CARRIES": 2,
+      "RYD": 2,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Rod Smith": {
+      "TEAM": "DAL",
+      "PLAYS": 1,
+      "FANTASYPTS": 0,
+      "GP": 7,
+      "FPTS": {
+         "G": 0.06
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 4,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Roosevelt Nix": {
+      "TEAM": "PIT",
+      "PLAYS": 2,
+      "FANTASYPTS": 0,
+      "GP": 10,
+      "FPTS": {
+         "G": 0.05
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 2,
+      "PYDS": 5,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Brandon Burks": {
+      "TEAM": "NYJ",
+      "PLAYS": 2,
+      "FANTASYPTS": 0,
+      "GP": 1,
+      "FPTS": {
+         "G": -0.4
+      },
+      "CARRIES": 2,
+      "RYD": -4,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "George Farmer": {
+      "TEAM": "SEA",
+      "PLAYS": 4,
+      "FANTASYPTS": 0,
+      "GP": 2,
+      "FPTS": {
+         "G": 0.25
+      },
+      "CARRIES": 1,
+      "RYD": 1,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 1,
+      "PYDS": 4,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Stepfan Taylor": {
+      "TEAM": "ARI",
+      "PLAYS": 4,
+      "FANTASYPTS": 1,
+      "GP": 15,
+      "FPTS": {
+         "G": 0.08
+      },
+      "CARRIES": 4,
+      "RYD": 12,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Stevan Ridley": {
+      "TEAM": "ATL",
+      "PLAYS": 3,
+      "FANTASYPTS": 1,
+      "GP": 1,
+      "FPTS": {
+         "G": 0.7
+      },
+      "CARRIES": 3,
+      "RYD": 7,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Joe Banyard": {
+      "TEAM": "JAC",
+      "PLAYS": 2,
+      "FANTASYPTS": 1,
+      "GP": 1,
+      "FPTS": {
+         "G": 0.7
+      },
+      "CARRIES": 2,
+      "RYD": 7,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Terrence Magee": {
+      "TEAM": "SEA",
+      "PLAYS": 3,
+      "FANTASYPTS": 1,
+      "GP": 2,
+      "FPTS": {
+         "G": 0.6
+      },
+      "CARRIES": 3,
+      "RYD": 12,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Anthony Sherman": {
+      "TEAM": "KC",
+      "PLAYS": 6,
+      "FANTASYPTS": 1,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.07
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 6,
+      "CMP": 4,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Bronson Hill": {
+      "TEAM": "JAC",
+      "PLAYS": 3,
+      "FANTASYPTS": 1,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.37
+      },
+      "CARRIES": 2,
+      "RYD": 11,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Lorenzo Taliaferro": {
+      "TEAM": "BAL",
+      "PLAYS": 4,
+      "FANTASYPTS": 1,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.33
+      },
+      "CARRIES": 1,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 3,
+      "PYDS": 10,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Paul Lasike": {
+      "TEAM": "CHI",
+      "PLAYS": 4,
+      "FANTASYPTS": 1,
+      "GP": 10,
+      "FPTS": {
+         "G": 0.11
+      },
+      "CARRIES": 3,
+      "RYD": 8,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 3,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Daryl Richardson": {
+      "TEAM": "PIT",
+      "PLAYS": 2,
+      "FANTASYPTS": 1,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.23
+      },
+      "CARRIES": 2,
+      "RYD": 7,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Raheem Mostert": {
+      "TEAM": "CHI",
+      "PLAYS": 1,
+      "FANTASYPTS": 1,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.2
+      },
+      "CARRIES": 1,
+      "RYD": 6,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Ryan Hewitt": {
+      "TEAM": "CIN",
+      "PLAYS": 3,
+      "FANTASYPTS": 1,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.08
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 2,
+      "PYDS": 13,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Cedric Peerman": {
+      "TEAM": "CIN",
+      "PLAYS": 7,
+      "FANTASYPTS": 2,
+      "GP": 6,
+      "FPTS": {
+         "G": 0.25
+      },
+      "CARRIES": 6,
+      "RYD": 15,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Zach Line": {
+      "TEAM": "MIN",
+      "PLAYS": 10,
+      "FANTASYPTS": 2,
+      "GP": 15,
+      "FPTS": {
+         "G": 0.1
+      },
+      "CARRIES": 7,
+      "RYD": 15,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Keith Smith": {
+      "TEAM": "DAL",
+      "PLAYS": 6,
+      "FANTASYPTS": 2,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.16
+      },
+      "CARRIES": 2,
+      "RYD": 5,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 3,
+      "PYDS": 20,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Bralon Addison": {
+      "TEAM": "CHI",
+      "PLAYS": 2,
+      "FANTASYPTS": 2,
+      "GP": 2,
+      "FPTS": {
+         "G": 0.75
+      },
+      "CARRIES": 1,
+      "RYD": 4,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Tyler Ervin": {
+      "TEAM": "HOU",
+      "PLAYS": 6,
+      "FANTASYPTS": 2,
+      "GP": 12,
+      "FPTS": {
+         "G": 0.17
+      },
+      "CARRIES": 1,
+      "RYD": 3,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 3,
+      "PYDS": 18,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Jay Prosch": {
+      "TEAM": "HOU",
+      "PLAYS": 5,
+      "FANTASYPTS": 2,
+      "GP": 15,
+      "FPTS": {
+         "G": 0.1
+      },
+      "CARRIES": 4,
+      "RYD": 9,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 6,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "J.D. McKissic": {
+      "TEAM": "SEA",
+      "PLAYS": 3,
+      "FANTASYPTS": 2,
+      "GP": 1,
+      "FPTS": {
+         "G": 1.8
+      },
+      "CARRIES": 1,
+      "RYD": 2,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 2,
+      "PYDS": 16,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Khiry Robinson": {
+      "TEAM": "NYJ",
+      "PLAYS": 8,
+      "FANTASYPTS": 2,
+      "GP": 1,
+      "FPTS": {
+         "G": 2.2
+      },
+      "CARRIES": 8,
+      "RYD": 22,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "James Develin": {
+      "TEAM": "NE",
+      "PLAYS": 6,
+      "FANTASYPTS": 2,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.11
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 6,
+      "CMP": 3,
+      "PYDS": 18,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jalston Fowler": {
+      "TEAM": "TEN",
+      "PLAYS": 3,
+      "FANTASYPTS": 2,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.11
+      },
+      "CARRIES": 1,
+      "RYD": 3,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 1,
+      "PYDS": 14,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Brandon Bolden": {
+      "TEAM": "NE",
+      "PLAYS": 5,
+      "FANTASYPTS": 2,
+      "GP": 14,
+      "FPTS": {
+         "G": 0.14
+      },
+      "CARRIES": 1,
+      "RYD": 4,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 2,
+      "PYDS": 15,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Antonio Andrews": {
+      "TEAM": "TEN",
+      "PLAYS": 2,
+      "FANTASYPTS": 2,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.09
+      },
+      "CARRIES": 2,
+      "RYD": 15,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Isaiah Pead": {
+      "TEAM": "MIA",
+      "PLAYS": 9,
+      "FANTASYPTS": 3,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.93
+      },
+      "CARRIES": 8,
+      "RYD": 22,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 6,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "D.J. Foster": {
+      "TEAM": "NE",
+      "PLAYS": 9,
+      "FANTASYPTS": 3,
+      "GP": 3,
+      "FPTS": {
+         "G": 0.87
+      },
+      "CARRIES": 7,
+      "RYD": 24,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 1,
+      "PYDS": 2,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Danny Vitale": {
+      "TEAM": "CLE",
+      "PLAYS": 5,
+      "FANTASYPTS": 3,
+      "GP": 9,
+      "FPTS": {
+         "G": 0.3
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 4,
+      "PYDS": 27,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Don Jackson": {
+      "TEAM": "GB",
+      "PLAYS": 11,
+      "FANTASYPTS": 3,
+      "GP": 3,
+      "FPTS": {
+         "G": 1.07
+      },
+      "CARRIES": 10,
+      "RYD": 32,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Taiwan Jones": {
+      "TEAM": "OAK",
+      "PLAYS": 5,
+      "FANTASYPTS": 4,
+      "GP": 13,
+      "FPTS": {
+         "G": 0.27
+      },
+      "CARRIES": 1,
+      "RYD": -8,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 4,
+      "PYDS": 43,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Dexter McCluster": {
+      "TEAM": "LAC",
+      "PLAYS": 14,
+      "FANTASYPTS": 4,
+      "GP": 6,
+      "FPTS": {
+         "G": 0.63
+      },
+      "CARRIES": 3,
+      "RYD": 2,
+      "RTD": 0,
+      "PASS": 11,
+      "CMP": 7,
+      "PYDS": 36,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Daniel Lasco": {
+      "TEAM": "NO",
+      "PLAYS": 15,
+      "FANTASYPTS": 4,
+      "GP": 7,
+      "FPTS": {
+         "G": 0.61
+      },
+      "CARRIES": 11,
+      "RYD": 32,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 2,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Mike James": {
+      "TEAM": "TB",
+      "PLAYS": 8,
+      "FANTASYPTS": 4,
+      "GP": 4,
+      "FPTS": {
+         "G": 1.02
+      },
+      "CARRIES": 4,
+      "RYD": 19,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 4,
+      "PYDS": 22,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Javorius Allen": {
+      "TEAM": "BAL",
+      "PLAYS": 13,
+      "FANTASYPTS": 5,
+      "GP": 8,
+      "FPTS": {
+         "G": 0.61
+      },
+      "CARRIES": 9,
+      "RYD": 34,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 3,
+      "PYDS": 15,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Troymaine Pope": {
+      "TEAM": "NYJ",
+      "PLAYS": 14,
+      "FANTASYPTS": 5,
+      "GP": 4,
+      "FPTS": {
+         "G": 1.25
+      },
+      "CARRIES": 12,
+      "RYD": 44,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 2,
+      "PYDS": 6,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Knile Davis": {
+      "TEAM": "KC",
+      "PLAYS": 25,
+      "FANTASYPTS": 5,
+      "GP": 11,
+      "FPTS": {
+         "G": 0.48
+      },
+      "CARRIES": 18,
+      "RYD": 28,
+      "RTD": 0,
+      "PASS": 7,
+      "CMP": 5,
+      "PYDS": 25,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Malcolm Johnson": {
+      "TEAM": "CLE",
+      "PLAYS": 8,
+      "FANTASYPTS": 5,
+      "GP": 7,
+      "FPTS": {
+         "G": 0.66
+      },
+      "CARRIES": 1,
+      "RYD": 2,
+      "RTD": 0,
+      "PASS": 7,
+      "CMP": 5,
+      "PYDS": 44,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Brandon Wilds": {
+      "TEAM": "NYJ",
+      "PLAYS": 12,
+      "FANTASYPTS": 5,
+      "GP": 4,
+      "FPTS": {
+         "G": 1.18
+      },
+      "CARRIES": 10,
+      "RYD": 27,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 2,
+      "PYDS": 20,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jordan Todman": {
+      "TEAM": "IND",
+      "PLAYS": 10,
+      "FANTASYPTS": 6,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.37
+      },
+      "CARRIES": 9,
+      "RYD": 59,
+      "RTD": 0,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Marcel Reece": {
+      "TEAM": "SEA",
+      "PLAYS": 7,
+      "FANTASYPTS": 7,
+      "GP": 4,
+      "FPTS": {
+         "G": 1.82
+      },
+      "CARRIES": 2,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 5,
+      "PYDS": 73,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jerome Felton": {
+      "TEAM": "BUF",
+      "PLAYS": 17,
+      "FANTASYPTS": 7,
+      "GP": 15,
+      "FPTS": {
+         "G": 0.47
+      },
+      "CARRIES": 8,
+      "RYD": 13,
+      "RTD": 0,
+      "PASS": 9,
+      "CMP": 6,
+      "PYDS": 57,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Byron Marshall": {
+      "TEAM": "PHI",
+      "PLAYS": 24,
+      "FANTASYPTS": 7,
+      "GP": 3,
+      "FPTS": {
+         "G": 2.47
+      },
+      "CARRIES": 19,
+      "RYD": 64,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 3,
+      "PYDS": 10,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Adrian Peterson": {
+      "TEAM": "MIN",
+      "PLAYS": 43,
+      "FANTASYPTS": 8,
+      "GP": 3,
+      "FPTS": {
+         "G": 2.67
+      },
+      "CARRIES": 37,
+      "RYD": 72,
+      "RTD": 0,
+      "PASS": 6,
+      "CMP": 3,
+      "PYDS": 8,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Malcolm Brown": {
+      "TEAM": "LAR",
+      "PLAYS": 21,
+      "FANTASYPTS": 8,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.53
+      },
+      "CARRIES": 18,
+      "RYD": 39,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 3,
+      "PYDS": 46,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Andre Williams": {
+      "TEAM": "LAC",
+      "PLAYS": 20,
+      "FANTASYPTS": 9,
+      "GP": 1,
+      "FPTS": {
+         "G": 8.7
+      },
+      "CARRIES": 18,
+      "RYD": 87,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Fitzgerald Toussaint": {
+      "TEAM": "PIT",
+      "PLAYS": 17,
+      "FANTASYPTS": 9,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.57
+      },
+      "CARRIES": 14,
+      "RYD": 58,
+      "RTD": 0,
+      "PASS": 3,
+      "CMP": 3,
+      "PYDS": 33,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "George Atkinson III": {
+      "TEAM": "CLE",
+      "PLAYS": 7,
+      "FANTASYPTS": 9,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.59
+      },
+      "CARRIES": 7,
+      "RYD": 34,
+      "RTD": 1,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Juwan Thompson": {
+      "TEAM": "DEN",
+      "PLAYS": 9,
+      "FANTASYPTS": 9,
+      "GP": 8,
+      "FPTS": {
+         "G": 1.07
+      },
+      "CARRIES": 8,
+      "RYD": 26,
+      "RTD": 1,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Terrell Watson": {
+      "TEAM": "PHI",
+      "PLAYS": 10,
+      "FANTASYPTS": 9,
+      "GP": 1,
+      "FPTS": {
+         "G": 9.3
+      },
+      "CARRIES": 9,
+      "RYD": 28,
+      "RTD": 1,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 5,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Derek Watt": {
+      "TEAM": "LAC",
+      "PLAYS": 6,
+      "FANTASYPTS": 9,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.54
+      },
+      "CARRIES": 2,
+      "RYD": 4,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 4,
+      "PYDS": 83,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Darren McFadden": {
+      "TEAM": "DAL",
+      "PLAYS": 29,
+      "FANTASYPTS": 10,
+      "GP": 4,
+      "FPTS": {
+         "G": 2.6
+      },
+      "CARRIES": 24,
+      "RYD": 87,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 3,
+      "PYDS": 17,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jamaal Charles": {
+      "TEAM": "KC",
+      "PLAYS": 15,
+      "FANTASYPTS": 11,
+      "GP": 3,
+      "FPTS": {
+         "G": 3.8
+      },
+      "CARRIES": 12,
+      "RYD": 40,
+      "RTD": 1,
+      "PASS": 3,
+      "CMP": 2,
+      "PYDS": 14,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Patrick DiMarco": {
+      "TEAM": "ATL",
+      "PLAYS": 10,
+      "FANTASYPTS": 11,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.7
+      },
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 10,
+      "CMP": 7,
+      "PYDS": 52,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Antone Smith": {
+      "TEAM": "TB",
+      "PLAYS": 19,
+      "FANTASYPTS": 12,
+      "GP": 4,
+      "FPTS": {
+         "G": 3.1
+      },
+      "CARRIES": 10,
+      "RYD": 47,
+      "RTD": 0,
+      "PASS": 9,
+      "CMP": 6,
+      "PYDS": 77,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Arian Foster": {
+      "TEAM": "MIA",
+      "PLAYS": 32,
+      "FANTASYPTS": 13,
+      "GP": 4,
+      "FPTS": {
+         "G": 3.33
+      },
+      "CARRIES": 22,
+      "RYD": 55,
+      "RTD": 0,
+      "PASS": 10,
+      "CMP": 6,
+      "PYDS": 78,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "C.J. Spiller": {
+      "TEAM": "SEA",
+      "PLAYS": 19,
+      "FANTASYPTS": 13,
+      "GP": 6,
+      "FPTS": {
+         "G": 2.13
+      },
+      "CARRIES": 6,
+      "RYD": 18,
+      "RTD": 0,
+      "PASS": 13,
+      "CMP": 6,
+      "PYDS": 50,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Akeem Hunt": {
+      "TEAM": "HOU",
+      "PLAYS": 24,
+      "FANTASYPTS": 14,
+      "GP": 8,
+      "FPTS": {
+         "G": 1.73
+      },
+      "CARRIES": 20,
+      "RYD": 109,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 3,
+      "PYDS": 29,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Mike Davis": {
+      "TEAM": "SF",
+      "PLAYS": 24,
+      "FANTASYPTS": 14,
+      "GP": 8,
+      "FPTS": {
+         "G": 1.69
+      },
+      "CARRIES": 19,
+      "RYD": 50,
+      "RTD": 1,
+      "PASS": 5,
+      "CMP": 3,
+      "PYDS": 25,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Mack Brown": {
+      "TEAM": "WAS",
+      "PLAYS": 9,
+      "FANTASYPTS": 14,
+      "GP": 9,
+      "FPTS": {
+         "G": 1.56
+      },
+      "CARRIES": 8,
+      "RYD": 82,
+      "RTD": 1,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": -2,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Andy Janovich": {
+      "TEAM": "DEN",
+      "PLAYS": 11,
+      "FANTASYPTS": 14,
+      "GP": 11,
+      "FPTS": {
+         "G": 1.25
+      },
+      "CARRIES": 4,
+      "RYD": 33,
+      "RTD": 1,
+      "PASS": 7,
+      "CMP": 5,
+      "PYDS": 44,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Reggie Bush": {
+      "TEAM": "BUF",
+      "PLAYS": 22,
+      "FANTASYPTS": 15,
+      "GP": 13,
+      "FPTS": {
+         "G": 1.13
+      },
+      "CARRIES": 12,
+      "RYD": -3,
+      "RTD": 1,
+      "PASS": 10,
+      "CMP": 7,
+      "PYDS": 90,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jonathan Williams": {
+      "TEAM": "BUF",
+      "PLAYS": 30,
+      "FANTASYPTS": 15,
+      "GP": 10,
+      "FPTS": {
+         "G": 1.54
+      },
+      "CARRIES": 27,
+      "RYD": 94,
+      "RTD": 1,
+      "PASS": 2,
+      "CMP": 1,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Terron Ward": {
+      "TEAM": "ATL",
+      "PLAYS": 33,
+      "FANTASYPTS": 16,
+      "GP": 5,
+      "FPTS": {
+         "G": 3.24
+      },
+      "CARRIES": 31,
+      "RYD": 151,
+      "RTD": 0,
+      "PASS": 2,
+      "CMP": 1,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Josh Ferguson": {
+      "TEAM": "IND",
+      "PLAYS": 41,
+      "FANTASYPTS": 16,
+      "GP": 16,
+      "FPTS": {
+         "G": 0.97
+      },
+      "CARRIES": 15,
+      "RYD": 20,
+      "RTD": 0,
+      "PASS": 26,
+      "CMP": 20,
+      "PYDS": 136,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Chris Johnson": {
+      "TEAM": "ARI",
+      "PLAYS": 26,
+      "FANTASYPTS": 16,
+      "GP": 4,
+      "FPTS": {
+         "G": 3.88
+      },
+      "CARRIES": 25,
+      "RYD": 95,
+      "RTD": 1,
+      "PASS": 1,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Denard Robinson": {
+      "TEAM": "JAC",
+      "PLAYS": 46,
+      "FANTASYPTS": 17,
+      "GP": 13,
+      "FPTS": {
+         "G": 1.28
+      },
+      "CARRIES": 41,
+      "RYD": 144,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 3,
+      "PYDS": 22,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Andre Ellington": {
+      "TEAM": "ARI",
+      "PLAYS": 53,
+      "FANTASYPTS": 18,
+      "GP": 16,
+      "FPTS": {
+         "G": 1.13
+      },
+      "CARRIES": 34,
+      "RYD": 96,
+      "RTD": 0,
+      "PASS": 19,
+      "CMP": 12,
+      "PYDS": 85,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Ka'Deem Carey": {
+      "TEAM": "CHI",
+      "PLAYS": 39,
+      "FANTASYPTS": 18,
+      "GP": 12,
+      "FPTS": {
+         "G": 1.51
+      },
+      "CARRIES": 32,
+      "RYD": 126,
+      "RTD": 0,
+      "PASS": 7,
+      "CMP": 5,
+      "PYDS": 55,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Benny Cunningham": {
+      "TEAM": "LAR",
+      "PLAYS": 42,
+      "FANTASYPTS": 19,
+      "GP": 11,
+      "FPTS": {
+         "G": 1.75
+      },
+      "CARRIES": 21,
+      "RYD": 101,
+      "RTD": 0,
+      "PASS": 21,
+      "CMP": 16,
+      "PYDS": 91,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jonathan Grimes": {
+      "TEAM": "HOU",
+      "PLAYS": 41,
+      "FANTASYPTS": 20,
+      "GP": 10,
+      "FPTS": {
+         "G": 1.99
+      },
+      "CARRIES": 23,
+      "RYD": 105,
+      "RTD": 0,
+      "PASS": 18,
+      "CMP": 13,
+      "PYDS": 94,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Lance Dunbar": {
+      "TEAM": "DAL",
+      "PLAYS": 33,
+      "FANTASYPTS": 21,
+      "GP": 13,
+      "FPTS": {
+         "G": 1.64
+      },
+      "CARRIES": 9,
+      "RYD": 31,
+      "RTD": 1,
+      "PASS": 24,
+      "CMP": 16,
+      "PYDS": 122,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Danny Woodhead": {
+      "TEAM": "LAC",
+      "PLAYS": 27,
+      "FANTASYPTS": 21,
+      "GP": 2,
+      "FPTS": {
+         "G": 10.55
+      },
+      "CARRIES": 19,
+      "RYD": 116,
+      "RTD": 0,
+      "PASS": 8,
+      "CMP": 6,
+      "PYDS": 35,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Ameer Abdullah": {
+      "TEAM": "DET",
+      "PLAYS": 23,
+      "FANTASYPTS": 22,
+      "GP": 3,
+      "FPTS": {
+         "G": 7.27
+      },
+      "CARRIES": 18,
+      "RYD": 101,
+      "RTD": 0,
+      "PASS": 5,
+      "CMP": 5,
+      "PYDS": 57,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Bobby Rainey": {
+      "TEAM": "NYG",
+      "PLAYS": 42,
+      "FANTASYPTS": 22,
+      "GP": 15,
+      "FPTS": {
+         "G": 1.44
+      },
+      "CARRIES": 17,
+      "RYD": 63,
+      "RTD": 0,
+      "PASS": 25,
+      "CMP": 20,
+      "PYDS": 153,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Ronnie Hillman": {
+      "TEAM": "MIN",
+      "PLAYS": 56,
+      "FANTASYPTS": 22,
+      "GP": 8,
+      "FPTS": {
+         "G": 2.8
+      },
+      "CARRIES": 41,
+      "RYD": 131,
+      "RTD": 0,
+      "PASS": 15,
+      "CMP": 7,
+      "PYDS": 93,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Orleans Darkwa": {
+      "TEAM": "NYG",
+      "PLAYS": 34,
+      "FANTASYPTS": 24,
+      "GP": 10,
+      "FPTS": {
+         "G": 2.43
+      },
+      "CARRIES": 30,
+      "RYD": 111,
+      "RTD": 2,
+      "PASS": 4,
+      "CMP": 2,
+      "PYDS": 12,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Mike Tolbert": {
+      "TEAM": "CAR",
+      "PLAYS": 50,
+      "FANTASYPTS": 25,
+      "GP": 16,
+      "FPTS": {
+         "G": 1.54
+      },
+      "CARRIES": 35,
+      "RYD": 114,
+      "RTD": 0,
+      "PASS": 15,
+      "CMP": 10,
+      "PYDS": 72,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Kapri Bibbs": {
+      "TEAM": "DEN",
+      "PLAYS": 33,
+      "FANTASYPTS": 26,
+      "GP": 12,
+      "FPTS": {
+         "G": 2.2
+      },
+      "CARRIES": 29,
+      "RYD": 129,
+      "RTD": 0,
+      "PASS": 4,
+      "CMP": 2,
+      "PYDS": 75,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Kenneth Farrow": {
+      "TEAM": "LAC",
+      "PLAYS": 76,
+      "FANTASYPTS": 26,
+      "GP": 13,
+      "FPTS": {
+         "G": 2.02
+      },
+      "CARRIES": 60,
+      "RYD": 192,
+      "RTD": 0,
+      "PASS": 16,
+      "CMP": 13,
+      "PYDS": 70,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Alex Collins": {
+      "TEAM": "SEA",
+      "PLAYS": 42,
+      "FANTASYPTS": 27,
+      "GP": 11,
+      "FPTS": {
+         "G": 2.45
+      },
+      "CARRIES": 31,
+      "RYD": 125,
+      "RTD": 1,
+      "PASS": 11,
+      "CMP": 11,
+      "PYDS": 84,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Kerwynn Williams": {
+      "TEAM": "ARI",
+      "PLAYS": 20,
+      "FANTASYPTS": 28,
+      "GP": 10,
+      "FPTS": {
+         "G": 2.83
+      },
+      "CARRIES": 18,
+      "RYD": 157,
+      "RTD": 2,
+      "PASS": 2,
+      "CMP": 1,
+      "PYDS": 6,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Cameron Artis-Payne": {
+      "TEAM": "CAR",
+      "PLAYS": 37,
+      "FANTASYPTS": 28,
+      "GP": 4,
+      "FPTS": {
+         "G": 6.88
+      },
+      "CARRIES": 36,
+      "RYD": 144,
+      "RTD": 2,
+      "PASS": 1,
+      "CMP": 1,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Kenjon Barner": {
+      "TEAM": "PHI",
+      "PLAYS": 38,
+      "FANTASYPTS": 29,
+      "GP": 13,
+      "FPTS": {
+         "G": 2.24
+      },
+      "CARRIES": 27,
+      "RYD": 129,
+      "RTD": 2,
+      "PASS": 11,
+      "CMP": 5,
+      "PYDS": 42,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Peyton Barber": {
+      "TEAM": "TB",
+      "PLAYS": 61,
+      "FANTASYPTS": 31,
+      "GP": 15,
+      "FPTS": {
+         "G": 2.07
+      },
+      "CARRIES": 55,
+      "RYD": 223,
+      "RTD": 1,
+      "PASS": 6,
+      "CMP": 5,
+      "PYDS": 28,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Shane Vereen": {
+      "TEAM": "NYG",
+      "PLAYS": 52,
+      "FANTASYPTS": 31,
+      "GP": 5,
+      "FPTS": {
+         "G": 6.24
+      },
+      "CARRIES": 33,
+      "RYD": 158,
+      "RTD": 1,
+      "PASS": 19,
+      "CMP": 11,
+      "PYDS": 94,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "DuJuan Harris": {
+      "TEAM": "SF",
+      "PLAYS": 47,
+      "FANTASYPTS": 31,
+      "GP": 10,
+      "FPTS": {
+         "G": 3.13
+      },
+      "CARRIES": 38,
+      "RYD": 138,
+      "RTD": 0,
+      "PASS": 9,
+      "CMP": 8,
+      "PYDS": 115,
+      "PTD": 1,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Corey Grant": {
+      "TEAM": "JAC",
+      "PLAYS": 39,
+      "FANTASYPTS": 32,
+      "GP": 11,
+      "FPTS": {
+         "G": 2.9
+      },
+      "CARRIES": 32,
+      "RYD": 164,
+      "RTD": 1,
+      "PASS": 7,
+      "CMP": 4,
+      "PYDS": 35,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Kenyan Drake": {
+      "TEAM": "MIA",
+      "PLAYS": 43,
+      "FANTASYPTS": 34,
+      "GP": 16,
+      "FPTS": {
+         "G": 2.16
+      },
+      "CARRIES": 33,
+      "RYD": 179,
+      "RTD": 2,
+      "PASS": 10,
+      "CMP": 9,
+      "PYDS": 46,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Kyle Juszczyk": {
+      "TEAM": "BAL",
+      "PLAYS": 54,
+      "FANTASYPTS": 35,
+      "GP": 16,
+      "FPTS": {
+         "G": 2.17
+      },
+      "CARRIES": 5,
+      "RYD": 22,
+      "RTD": 1,
+      "PASS": 49,
+      "CMP": 37,
+      "PYDS": 266,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Alfred Morris": {
+      "TEAM": "DAL",
+      "PLAYS": 75,
+      "FANTASYPTS": 37,
+      "GP": 14,
+      "FPTS": {
+         "G": 2.67
+      },
+      "CARRIES": 69,
+      "RYD": 243,
+      "RTD": 2,
+      "PASS": 6,
+      "CMP": 3,
+      "PYDS": 11,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Aaron Ripkowski": {
+      "TEAM": "GB",
+      "PLAYS": 44,
+      "FANTASYPTS": 38,
+      "GP": 16,
+      "FPTS": {
+         "G": 2.35
+      },
+      "CARRIES": 34,
+      "RYD": 150,
+      "RTD": 2,
+      "PASS": 10,
+      "CMP": 9,
+      "PYDS": 46,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Dion Lewis": {
+      "TEAM": "NE",
+      "PLAYS": 88,
+      "FANTASYPTS": 38,
+      "GP": 7,
+      "FPTS": {
+         "G": 5.39
+      },
+      "CARRIES": 64,
+      "RYD": 283,
+      "RTD": 0,
+      "PASS": 24,
+      "CMP": 17,
+      "PYDS": 94,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Eddie Lacy": {
+      "TEAM": "GB",
+      "PLAYS": 78,
+      "FANTASYPTS": 39,
+      "GP": 5,
+      "FPTS": {
+         "G": 7.76
+      },
+      "CARRIES": 71,
+      "RYD": 360,
+      "RTD": 0,
+      "PASS": 7,
+      "CMP": 4,
+      "PYDS": 28,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Dwayne Washington": {
+      "TEAM": "DET",
+      "PLAYS": 105,
+      "FANTASYPTS": 39,
+      "GP": 12,
+      "FPTS": {
+         "G": 3.23
+      },
+      "CARRIES": 90,
+      "RYD": 265,
+      "RTD": 1,
+      "PASS": 15,
+      "CMP": 10,
+      "PYDS": 62,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "James Starks": {
+      "TEAM": "GB",
+      "PLAYS": 88,
+      "FANTASYPTS": 40,
+      "GP": 9,
+      "FPTS": {
+         "G": 4.43
+      },
+      "CARRIES": 63,
+      "RYD": 145,
+      "RTD": 0,
+      "PASS": 25,
+      "CMP": 19,
+      "PYDS": 134,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "John Kuhn": {
+      "TEAM": "NO",
+      "PLAYS": 38,
+      "FANTASYPTS": 41,
+      "GP": 16,
+      "FPTS": {
+         "G": 2.54
+      },
+      "CARRIES": 18,
+      "RYD": 37,
+      "RTD": 4,
+      "PASS": 20,
+      "CMP": 16,
+      "PYDS": 70,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Wendell Smallwood": {
+      "TEAM": "PHI",
+      "PLAYS": 90,
+      "FANTASYPTS": 43,
+      "GP": 13,
+      "FPTS": {
+         "G": 3.28
+      },
+      "CARRIES": 77,
+      "RYD": 312,
+      "RTD": 1,
+      "PASS": 13,
+      "CMP": 6,
+      "PYDS": 55,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "C.J. Prosise": {
+      "TEAM": "SEA",
+      "PLAYS": 49,
+      "FANTASYPTS": 44,
+      "GP": 6,
+      "FPTS": {
+         "G": 7.33
+      },
+      "CARRIES": 30,
+      "RYD": 172,
+      "RTD": 1,
+      "PASS": 19,
+      "CMP": 17,
+      "PYDS": 208,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Justin Forsett": {
+      "TEAM": "BAL",
+      "PLAYS": 114,
+      "FANTASYPTS": 44,
+      "GP": 9,
+      "FPTS": {
+         "G": 4.84
+      },
+      "CARRIES": 87,
+      "RYD": 291,
+      "RTD": 1,
+      "PASS": 27,
+      "CMP": 20,
+      "PYDS": 85,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Jamize Olawale": {
+      "TEAM": "OAK",
+      "PLAYS": 31,
+      "FANTASYPTS": 45,
+      "GP": 16,
+      "FPTS": {
+         "G": 2.84
+      },
+      "CARRIES": 17,
+      "RYD": 47,
+      "RTD": 2,
+      "PASS": 14,
+      "CMP": 12,
+      "PYDS": 227,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Charles Sims": {
+      "TEAM": "TB",
+      "PLAYS": 83,
+      "FANTASYPTS": 46,
+      "GP": 7,
+      "FPTS": {
+         "G": 6.56
+      },
+      "CARRIES": 51,
+      "RYD": 149,
+      "RTD": 1,
+      "PASS": 32,
+      "CMP": 24,
+      "PYDS": 190,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Fozzy Whittaker": {
+      "TEAM": "CAR",
+      "PLAYS": 90,
+      "FANTASYPTS": 49,
+      "GP": 16,
+      "FPTS": {
+         "G": 3.07
+      },
+      "CARRIES": 57,
+      "RYD": 265,
+      "RTD": 0,
+      "PASS": 33,
+      "CMP": 25,
+      "PYDS": 226,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Alfred Blue": {
+      "TEAM": "HOU",
+      "PLAYS": 116,
+      "FANTASYPTS": 52,
+      "GP": 14,
+      "FPTS": {
+         "G": 3.71
+      },
+      "CARRIES": 100,
+      "RYD": 420,
+      "RTD": 1,
+      "PASS": 16,
+      "CMP": 12,
+      "PYDS": 40,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Travaris Cadet": {
+      "TEAM": "NO",
+      "PLAYS": 58,
+      "FANTASYPTS": 54,
+      "GP": 15,
+      "FPTS": {
+         "G": 3.6
+      },
+      "CARRIES": 4,
+      "RYD": 19,
+      "RTD": 0,
+      "PASS": 54,
+      "CMP": 40,
+      "PYDS": 281,
+      "PTD": 4,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jeremy Langford": {
+      "TEAM": "CHI",
+      "PLAYS": 89,
+      "FANTASYPTS": 58,
+      "GP": 12,
+      "FPTS": {
+         "G": 4.85
+      },
+      "CARRIES": 62,
+      "RYD": 200,
+      "RTD": 4,
+      "PASS": 27,
+      "CMP": 19,
+      "PYDS": 142,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Rex Burkhead": {
+      "TEAM": "CIN",
+      "PLAYS": 94,
+      "FANTASYPTS": 61,
+      "GP": 16,
+      "FPTS": {
+         "G": 3.81
+      },
+      "CARRIES": 74,
+      "RYD": 344,
+      "RTD": 2,
+      "PASS": 20,
+      "CMP": 17,
+      "PYDS": 145,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Paul Perkins": {
+      "TEAM": "NYG",
+      "PLAYS": 136,
+      "FANTASYPTS": 62,
+      "GP": 14,
+      "FPTS": {
+         "G": 4.41
+      },
+      "CARRIES": 112,
+      "RYD": 456,
+      "RTD": 0,
+      "PASS": 24,
+      "CMP": 15,
+      "PYDS": 162,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Thomas Rawls": {
+      "TEAM": "SEA",
+      "PLAYS": 126,
+      "FANTASYPTS": 62,
+      "GP": 9,
+      "FPTS": {
+         "G": 6.94
+      },
+      "CARRIES": 109,
+      "RYD": 349,
+      "RTD": 3,
+      "PASS": 17,
+      "CMP": 13,
+      "PYDS": 96,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Charcandrick West": {
+      "TEAM": "KC",
+      "PLAYS": 122,
+      "FANTASYPTS": 66,
+      "GP": 15,
+      "FPTS": {
+         "G": 4.41
+      },
+      "CARRIES": 88,
+      "RYD": 293,
+      "RTD": 1,
+      "PASS": 34,
+      "CMP": 28,
+      "PYDS": 188,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "DeAndre Washington": {
+      "TEAM": "OAK",
+      "PLAYS": 110,
+      "FANTASYPTS": 70,
+      "GP": 14,
+      "FPTS": {
+         "G": 5.01
+      },
+      "CARRIES": 87,
+      "RYD": 467,
+      "RTD": 2,
+      "PASS": 23,
+      "CMP": 17,
+      "PYDS": 115,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Matt Jones": {
+      "TEAM": "WAS",
+      "PLAYS": 107,
+      "FANTASYPTS": 71,
+      "GP": 7,
+      "FPTS": {
+         "G": 10.19
+      },
+      "CARRIES": 99,
+      "RYD": 460,
+      "RTD": 3,
+      "PASS": 8,
+      "CMP": 8,
+      "PYDS": 73,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Damien Williams": {
+      "TEAM": "MIA",
+      "PLAYS": 67,
+      "FANTASYPTS": 72,
+      "GP": 15,
+      "FPTS": {
+         "G": 4.83
+      },
+      "CARRIES": 35,
+      "RYD": 115,
+      "RTD": 3,
+      "PASS": 32,
+      "CMP": 23,
+      "PYDS": 249,
+      "PTD": 3,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Kenneth Dixon": {
+      "TEAM": "BAL",
+      "PLAYS": 129,
+      "FANTASYPTS": 72,
+      "GP": 12,
+      "FPTS": {
+         "G": 6.03
+      },
+      "CARRIES": 88,
+      "RYD": 382,
+      "RTD": 2,
+      "PASS": 41,
+      "CMP": 30,
+      "PYDS": 162,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Doug Martin": {
+      "TEAM": "TB",
+      "PLAYS": 160,
+      "FANTASYPTS": 74,
+      "GP": 8,
+      "FPTS": {
+         "G": 9.19
+      },
+      "CARRIES": 144,
+      "RYD": 421,
+      "RTD": 3,
+      "PASS": 16,
+      "CMP": 14,
+      "PYDS": 134,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Zach Zenner": {
+      "TEAM": "DET",
+      "PLAYS": 111,
+      "FANTASYPTS": 77,
+      "GP": 14,
+      "FPTS": {
+         "G": 5.5
+      },
+      "CARRIES": 88,
+      "RYD": 334,
+      "RTD": 4,
+      "PASS": 23,
+      "CMP": 18,
+      "PYDS": 196,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Jacquizz Rodgers": {
+      "TEAM": "TB",
+      "PLAYS": 145,
+      "FANTASYPTS": 78,
+      "GP": 10,
+      "FPTS": {
+         "G": 7.78
+      },
+      "CARRIES": 129,
+      "RYD": 560,
+      "RTD": 2,
+      "PASS": 16,
+      "CMP": 13,
+      "PYDS": 98,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Chris Ivory": {
+      "TEAM": "JAC",
+      "PLAYS": 145,
+      "FANTASYPTS": 80,
+      "GP": 11,
+      "FPTS": {
+         "G": 7.32
+      },
+      "CARRIES": 117,
+      "RYD": 439,
+      "RTD": 3,
+      "PASS": 28,
+      "CMP": 20,
+      "PYDS": 186,
+      "PTD": 0,
+      "FUM": 3,
+      "INT": 0
+   },
+   "Shaun Draughn": {
+      "TEAM": "SF",
+      "PLAYS": 113,
+      "FANTASYPTS": 82,
+      "GP": 16,
+      "FPTS": {
+         "G": 5.12
+      },
+      "CARRIES": 74,
+      "RYD": 196,
+      "RTD": 4,
+      "PASS": 39,
+      "CMP": 29,
+      "PYDS": 263,
+      "PTD": 2,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Robert Turbin": {
+      "TEAM": "IND",
+      "PLAYS": 82,
+      "FANTASYPTS": 82,
+      "GP": 15,
+      "FPTS": {
+         "G": 5.49
+      },
+      "CARRIES": 47,
+      "RYD": 164,
+      "RTD": 7,
+      "PASS": 35,
+      "CMP": 26,
+      "PYDS": 179,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "DeAngelo Williams": {
+      "TEAM": "PIT",
+      "PLAYS": 125,
+      "FANTASYPTS": 82,
+      "GP": 8,
+      "FPTS": {
+         "G": 10.26
+      },
+      "CARRIES": 98,
+      "RYD": 343,
+      "RTD": 4,
+      "PASS": 27,
+      "CMP": 18,
+      "PYDS": 118,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Giovani Bernard": {
+      "TEAM": "CIN",
+      "PLAYS": 142,
+      "FANTASYPTS": 85,
+      "GP": 10,
+      "FPTS": {
+         "G": 8.53
+      },
+      "CARRIES": 91,
+      "RYD": 337,
+      "RTD": 2,
+      "PASS": 51,
+      "CMP": 39,
+      "PYDS": 336,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "C.J. Anderson": {
+      "TEAM": "DEN",
+      "PLAYS": 134,
+      "FANTASYPTS": 86,
+      "GP": 7,
+      "FPTS": {
+         "G": 12.36
+      },
+      "CARRIES": 110,
+      "RYD": 437,
+      "RTD": 4,
+      "PASS": 24,
+      "CMP": 16,
+      "PYDS": 128,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Jalen Richard": {
+      "TEAM": "OAK",
+      "PLAYS": 122,
+      "FANTASYPTS": 86,
+      "GP": 16,
+      "FPTS": {
+         "G": 5.41
+      },
+      "CARRIES": 83,
+      "RYD": 491,
+      "RTD": 1,
+      "PASS": 39,
+      "CMP": 29,
+      "PYDS": 194,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "T.J. Yeldon": {
+      "TEAM": "JAC",
+      "PLAYS": 198,
+      "FANTASYPTS": 90,
+      "GP": 15,
+      "FPTS": {
+         "G": 5.98
+      },
+      "CARRIES": 130,
+      "RYD": 465,
+      "RTD": 1,
+      "PASS": 68,
+      "CMP": 50,
+      "PYDS": 312,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Derrick Henry": {
+      "TEAM": "TEN",
+      "PLAYS": 125,
+      "FANTASYPTS": 93,
+      "GP": 15,
+      "FPTS": {
+         "G": 6.18
+      },
+      "CARRIES": 110,
+      "RYD": 490,
+      "RTD": 5,
+      "PASS": 15,
+      "CMP": 13,
+      "PYDS": 137,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Duke Johnson Jr.": {
+      "TEAM": "CLE",
+      "PLAYS": 148,
+      "FANTASYPTS": 93,
+      "GP": 16,
+      "FPTS": {
+         "G": 5.83
+      },
+      "CARRIES": 73,
+      "RYD": 358,
+      "RTD": 1,
+      "PASS": 74,
+      "CMP": 53,
+      "PYDS": 514,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Ty Montgomery": {
+      "TEAM": "GB",
+      "PLAYS": 133,
+      "FANTASYPTS": 98,
+      "GP": 15,
+      "FPTS": {
+         "G": 6.57
+      },
+      "CARRIES": 77,
+      "RYD": 457,
+      "RTD": 3,
+      "PASS": 56,
+      "CMP": 44,
+      "PYDS": 348,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Chris Thompson": {
+      "TEAM": "WAS",
+      "PLAYS": 130,
+      "FANTASYPTS": 100,
+      "GP": 16,
+      "FPTS": {
+         "G": 6.28
+      },
+      "CARRIES": 68,
+      "RYD": 356,
+      "RTD": 3,
+      "PASS": 62,
+      "CMP": 49,
+      "PYDS": 349,
+      "PTD": 2,
+      "FUM": 1,
+      "INT": 0
+   },
+   "James White": {
+      "TEAM": "NE",
+      "PLAYS": 125,
+      "FANTASYPTS": 102,
+      "GP": 16,
+      "FPTS": {
+         "G": 6.36
+      },
+      "CARRIES": 39,
+      "RYD": 166,
+      "RTD": 0,
+      "PASS": 86,
+      "CMP": 60,
+      "PYDS": 551,
+      "PTD": 5,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Matt Asiata": {
+      "TEAM": "MIN",
+      "PLAYS": 159,
+      "FANTASYPTS": 102,
+      "GP": 16,
+      "FPTS": {
+         "G": 6.41
+      },
+      "CARRIES": 121,
+      "RYD": 402,
+      "RTD": 6,
+      "PASS": 38,
+      "CMP": 32,
+      "PYDS": 263,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Jerick McKinnon": {
+      "TEAM": "MIN",
+      "PLAYS": 213,
+      "FANTASYPTS": 103,
+      "GP": 15,
+      "FPTS": {
+         "G": 6.89
+      },
+      "CARRIES": 159,
+      "RYD": 539,
+      "RTD": 2,
+      "PASS": 53,
+      "CMP": 43,
+      "PYDS": 255,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Rashad Jennings": {
+      "TEAM": "NYG",
+      "PLAYS": 223,
+      "FANTASYPTS": 103,
+      "GP": 13,
+      "FPTS": {
+         "G": 7.95
+      },
+      "CARRIES": 181,
+      "RYD": 593,
+      "RTD": 3,
+      "PASS": 42,
+      "CMP": 35,
+      "PYDS": 201,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Tim Hightower": {
+      "TEAM": "NO",
+      "PLAYS": 159,
+      "FANTASYPTS": 105,
+      "GP": 16,
+      "FPTS": {
+         "G": 6.55
+      },
+      "CARRIES": 133,
+      "RYD": 548,
+      "RTD": 4,
+      "PASS": 26,
+      "CMP": 22,
+      "PYDS": 200,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Theo Riddick": {
+      "TEAM": "DET",
+      "PLAYS": 159,
+      "FANTASYPTS": 109,
+      "GP": 10,
+      "FPTS": {
+         "G": 10.88
+      },
+      "CARRIES": 92,
+      "RYD": 357,
+      "RTD": 1,
+      "PASS": 67,
+      "CMP": 53,
+      "PYDS": 371,
+      "PTD": 5,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Darren Sproles": {
+      "TEAM": "PHI",
+      "PLAYS": 165,
+      "FANTASYPTS": 110,
+      "GP": 15,
+      "FPTS": {
+         "G": 7.37
+      },
+      "CARRIES": 94,
+      "RYD": 438,
+      "RTD": 2,
+      "PASS": 71,
+      "CMP": 52,
+      "PYDS": 427,
+      "PTD": 2,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Mike Gillislee": {
+      "TEAM": "BUF",
+      "PLAYS": 112,
+      "FANTASYPTS": 117,
+      "GP": 15,
+      "FPTS": {
+         "G": 7.78
+      },
+      "CARRIES": 101,
+      "RYD": 577,
+      "RTD": 8,
+      "PASS": 11,
+      "CMP": 9,
+      "PYDS": 50,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Christine Michael": {
+      "TEAM": "SEA",
+      "PLAYS": 177,
+      "FANTASYPTS": 117,
+      "GP": 15,
+      "FPTS": {
+         "G": 7.8
+      },
+      "CARRIES": 148,
+      "RYD": 583,
+      "RTD": 7,
+      "PASS": 29,
+      "CMP": 22,
+      "PYDS": 107,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Devontae Booker": {
+      "TEAM": "DEN",
+      "PLAYS": 219,
+      "FANTASYPTS": 118,
+      "GP": 16,
+      "FPTS": {
+         "G": 7.36
+      },
+      "CARRIES": 174,
+      "RYD": 612,
+      "RTD": 4,
+      "PASS": 45,
+      "CMP": 31,
+      "PYDS": 265,
+      "PTD": 1,
+      "FUM": 3,
+      "INT": 0
+   },
+   "Robert Kelley": {
+      "TEAM": "WAS",
+      "PLAYS": 186,
+      "FANTASYPTS": 121,
+      "GP": 14,
+      "FPTS": {
+         "G": 8.61
+      },
+      "CARRIES": 168,
+      "RYD": 704,
+      "RTD": 6,
+      "PASS": 18,
+      "CMP": 12,
+      "PYDS": 82,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Ryan Mathews": {
+      "TEAM": "PHI",
+      "PLAYS": 169,
+      "FANTASYPTS": 132,
+      "GP": 13,
+      "FPTS": {
+         "G": 10.12
+      },
+      "CARRIES": 155,
+      "RYD": 661,
+      "RTD": 8,
+      "PASS": 14,
+      "CMP": 13,
+      "PYDS": 115,
+      "PTD": 1,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Terrance West": {
+      "TEAM": "BAL",
+      "PLAYS": 238,
+      "FANTASYPTS": 137,
+      "GP": 16,
+      "FPTS": {
+         "G": 8.56
+      },
+      "CARRIES": 193,
+      "RYD": 774,
+      "RTD": 5,
+      "PASS": 45,
+      "CMP": 34,
+      "PYDS": 236,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Bilal Powell": {
+      "TEAM": "NYJ",
+      "PLAYS": 205,
+      "FANTASYPTS": 141,
+      "GP": 16,
+      "FPTS": {
+         "G": 8.81
+      },
+      "CARRIES": 131,
+      "RYD": 722,
+      "RTD": 3,
+      "PASS": 74,
+      "CMP": 58,
+      "PYDS": 388,
+      "PTD": 2,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Jonathan Stewart": {
+      "TEAM": "CAR",
+      "PLAYS": 239,
+      "FANTASYPTS": 142,
+      "GP": 13,
+      "FPTS": {
+         "G": 10.95
+      },
+      "CARRIES": 218,
+      "RYD": 824,
+      "RTD": 9,
+      "PASS": 21,
+      "CMP": 8,
+      "PYDS": 60,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Jeremy Hill": {
+      "TEAM": "CIN",
+      "PLAYS": 249,
+      "FANTASYPTS": 155,
+      "GP": 15,
+      "FPTS": {
+         "G": 10.35
+      },
+      "CARRIES": 222,
+      "RYD": 839,
+      "RTD": 9,
+      "PASS": 27,
+      "CMP": 21,
+      "PYDS": 174,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Matt Forte": {
+      "TEAM": "NYJ",
+      "PLAYS": 261,
+      "FANTASYPTS": 156,
+      "GP": 14,
+      "FPTS": {
+         "G": 11.11
+      },
+      "CARRIES": 218,
+      "RYD": 813,
+      "RTD": 7,
+      "PASS": 43,
+      "CMP": 30,
+      "PYDS": 263,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Todd Gurley": {
+      "TEAM": "LAR",
+      "PLAYS": 336,
+      "FANTASYPTS": 157,
+      "GP": 16,
+      "FPTS": {
+         "G": 9.82
+      },
+      "CARRIES": 278,
+      "RYD": 885,
+      "RTD": 6,
+      "PASS": 58,
+      "CMP": 43,
+      "PYDS": 327,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Tevin Coleman": {
+      "TEAM": "ATL",
+      "PLAYS": 158,
+      "FANTASYPTS": 160,
+      "GP": 13,
+      "FPTS": {
+         "G": 12.32
+      },
+      "CARRIES": 118,
+      "RYD": 520,
+      "RTD": 8,
+      "PASS": 40,
+      "CMP": 31,
+      "PYDS": 421,
+      "PTD": 3,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Lamar Miller": {
+      "TEAM": "HOU",
+      "PLAYS": 307,
+      "FANTASYPTS": 162,
+      "GP": 14,
+      "FPTS": {
+         "G": 11.58
+      },
+      "CARRIES": 268,
+      "RYD": 1073,
+      "RTD": 5,
+      "PASS": 39,
+      "CMP": 31,
+      "PYDS": 188,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Spencer Ware": {
+      "TEAM": "KC",
+      "PLAYS": 256,
+      "FANTASYPTS": 167,
+      "GP": 14,
+      "FPTS": {
+         "G": 11.91
+      },
+      "CARRIES": 214,
+      "RYD": 921,
+      "RTD": 3,
+      "PASS": 42,
+      "CMP": 33,
+      "PYDS": 447,
+      "PTD": 2,
+      "FUM": 3,
+      "INT": 0
+   },
+   "Carlos Hyde": {
+      "TEAM": "SF",
+      "PLAYS": 250,
+      "FANTASYPTS": 169,
+      "GP": 13,
+      "FPTS": {
+         "G": 13.01
+      },
+      "CARRIES": 217,
+      "RYD": 988,
+      "RTD": 6,
+      "PASS": 33,
+      "CMP": 27,
+      "PYDS": 163,
+      "PTD": 3,
+      "FUM": 3,
+      "INT": 0
+   },
+   "Isaiah Crowell": {
+      "TEAM": "CLE",
+      "PLAYS": 251,
+      "FANTASYPTS": 169,
+      "GP": 16,
+      "FPTS": {
+         "G": 10.57
+      },
+      "CARRIES": 198,
+      "RYD": 952,
+      "RTD": 7,
+      "PASS": 53,
+      "CMP": 40,
+      "PYDS": 319,
+      "PTD": 0,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Latavius Murray": {
+      "TEAM": "OAK",
+      "PLAYS": 238,
+      "FANTASYPTS": 177,
+      "GP": 14,
+      "FPTS": {
+         "G": 12.66
+      },
+      "CARRIES": 195,
+      "RYD": 788,
+      "RTD": 12,
+      "PASS": 43,
+      "CMP": 33,
+      "PYDS": 264,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Frank Gore": {
+      "TEAM": "IND",
+      "PLAYS": 310,
+      "FANTASYPTS": 178,
+      "GP": 16,
+      "FPTS": {
+         "G": 11.14
+      },
+      "CARRIES": 263,
+      "RYD": 1025,
+      "RTD": 4,
+      "PASS": 47,
+      "CMP": 38,
+      "PYDS": 277,
+      "PTD": 4,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Jay Ajayi": {
+      "TEAM": "MIA",
+      "PLAYS": 296,
+      "FANTASYPTS": 190,
+      "GP": 15,
+      "FPTS": {
+         "G": 12.69
+      },
+      "CARRIES": 261,
+      "RYD": 1272,
+      "RTD": 8,
+      "PASS": 35,
+      "CMP": 27,
+      "PYDS": 151,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Mark Ingram": {
+      "TEAM": "NO",
+      "PLAYS": 263,
+      "FANTASYPTS": 196,
+      "GP": 16,
+      "FPTS": {
+         "G": 12.26
+      },
+      "CARRIES": 205,
+      "RYD": 1043,
+      "RTD": 6,
+      "PASS": 58,
+      "CMP": 46,
+      "PYDS": 319,
+      "PTD": 4,
+      "FUM": 2,
+      "INT": 0
+   },
+   "Jordan Howard": {
+      "TEAM": "CHI",
+      "PLAYS": 302,
+      "FANTASYPTS": 203,
+      "GP": 15,
+      "FPTS": {
+         "G": 13.54
+      },
+      "CARRIES": 252,
+      "RYD": 1313,
+      "RTD": 6,
+      "PASS": 50,
+      "CMP": 29,
+      "PYDS": 298,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Melvin Gordon": {
+      "TEAM": "LAC",
+      "PLAYS": 311,
+      "FANTASYPTS": 214,
+      "GP": 13,
+      "FPTS": {
+         "G": 16.43
+      },
+      "CARRIES": 254,
+      "RYD": 997,
+      "RTD": 10,
+      "PASS": 57,
+      "CMP": 41,
+      "PYDS": 419,
+      "PTD": 2,
+      "FUM": 2,
+      "INT": 0
+   },
+   "LeGarrette Blount": {
+      "TEAM": "NE",
+      "PLAYS": 307,
+      "FANTASYPTS": 228,
+      "GP": 16,
+      "FPTS": {
+         "G": 14.24
+      },
+      "CARRIES": 299,
+      "RYD": 1161,
+      "RTD": 18,
+      "PASS": 8,
+      "CMP": 7,
+      "PYDS": 38,
+      "PTD": 0,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Devonta Freeman": {
+      "TEAM": "ATL",
+      "PLAYS": 292,
+      "FANTASYPTS": 232,
+      "GP": 16,
+      "FPTS": {
+         "G": 14.51
+      },
+      "CARRIES": 227,
+      "RYD": 1079,
+      "RTD": 11,
+      "PASS": 65,
+      "CMP": 54,
+      "PYDS": 462,
+      "PTD": 2,
+      "FUM": 1,
+      "INT": 0
+   },
+   "DeMarco Murray": {
+      "TEAM": "TEN",
+      "PLAYS": 362,
+      "FANTASYPTS": 238,
+      "GP": 16,
+      "FPTS": {
+         "G": 14.9
+      },
+      "CARRIES": 293,
+      "RYD": 1287,
+      "RTD": 9,
+      "PASS": 67,
+      "CMP": 53,
+      "PYDS": 377,
+      "PTD": 3,
+      "FUM": 1,
+      "INT": 0
+   },
+   "Le'Veon Bell": {
+      "TEAM": "PIT",
+      "PLAYS": 356,
+      "FANTASYPTS": 242,
+      "GP": 12,
+      "FPTS": {
+         "G": 20.2
+      },
+      "CARRIES": 261,
+      "RYD": 1268,
+      "RTD": 7,
+      "PASS": 94,
+      "CMP": 75,
+      "PYDS": 616,
+      "PTD": 2,
+      "FUM": 1,
+      "INT": 0
+   },
+   "LeSean McCoy": {
+      "TEAM": "BUF",
+      "PLAYS": 291,
+      "FANTASYPTS": 246,
+      "GP": 15,
+      "FPTS": {
+         "G": 16.42
+      },
+      "CARRIES": 234,
+      "RYD": 1267,
+      "RTD": 13,
+      "PASS": 57,
+      "CMP": 50,
+      "PYDS": 356,
+      "PTD": 1,
+      "FUM": 0,
+      "INT": 0
+   },
+   "Ezekiel Elliott": {
+      "TEAM": "DAL",
+      "PLAYS": 361,
+      "FANTASYPTS": 295,
+      "GP": 15,
+      "FPTS": {
+         "G": 19.69
+      },
+      "CARRIES": 322,
+      "RYD": 1631,
+      "RTD": 15,
+      "PASS": 39,
+      "CMP": 32,
+      "PYDS": 363,
+      "PTD": 1,
+      "FUM": 1,
+      "INT": 0
+   },
+   "David Johnson": {
+      "TEAM": "ARI",
+      "PLAYS": 413,
+      "FANTASYPTS": 332,
+      "GP": 16,
+      "FPTS": {
+         "G": 20.74
+      },
+      "CARRIES": 293,
+      "RYD": 1239,
+      "RTD": 16,
+      "PASS": 120,
+      "CMP": 80,
+      "PYDS": 879,
+      "PTD": 4,
+      "FUM": 3,
+      "INT": 0
+   }
+}
