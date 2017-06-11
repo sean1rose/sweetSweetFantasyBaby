@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const title = 'sweetsweetfantasybaby';
+import './style.css';
+import App from './components/App';
 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('root')
-);
-
-console.log('THIS IS A TEST FOO');
+ReactDOM.render(<App/>, document.getElementById('root'));
