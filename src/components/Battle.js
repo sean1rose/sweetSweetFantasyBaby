@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
-// import history from './History';
+import getQb2016 from '../util/getQb2016';
+
+console.log('getqb - ', getQb2016);
 
 // RECAP: https://www.youtube.com/watch?v=z_OpiP_b6HY @ 20:30 
 class Battle extends Component {
@@ -17,19 +19,18 @@ class Battle extends Component {
   }
 
   handleSubmit(id, playername) {
-    // this.setState(() => {
-    //   console.log('clicked SUBMIT, history object - ', history);
-    //   var newState = {};
-    //   newState[id + 'Name'] = playername;
-    //   return newState;
-    // });
+    // have player name -> want a clean search tho...
+    var searchedPlayer = getQb2016.get(playername);
+    console.log('searched player - ', searchedPlayer);
+    var newState = {};
+    newState[id + 'Name'] = playername;
+
     this.setState((prevState, props) => {
       if (prevState.playerOneName || prevState.playerTwoName){
-        // currently changing route to schedule. TODO: display chart comparison of both players...
+        // don't want to reroute to schedule -> WANT TO DISPLAY APPROPRIATE CHARTS
         return this.props.history.push('/schedule');
-      } else {
-        var newState = {};
-        newState[id + 'Name'] = playername;
+      } 
+      else {
         return newState;
       }
     });
