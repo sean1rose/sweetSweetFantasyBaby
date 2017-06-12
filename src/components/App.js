@@ -7,10 +7,11 @@ import Home from './Home';
 import Roster from './Roster';
 import Schedule from './Schedule';
 import Battle from './Battle';
+import Results from './Results';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
       <div>
         <Nav />
         <Switch>
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/roster' component={Roster} />
           <Route path='/schedule' component={Schedule} />
           <Route exact path='/battle' component={Battle} />
+          <Route path='/battle/results' component={Results} />
           <Route render={() => {
               return <p>Not Found</p>
             }} />
