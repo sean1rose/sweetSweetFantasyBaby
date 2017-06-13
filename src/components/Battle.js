@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
-import getQb2016 from '../util/getQb2016';
+import getRb2016 from '../util/getRb2016';
+import StackedBars from './charts/StackedBars';
 
-console.log('getqb - ', getQb2016);
+console.log('getrb - ', getRb2016);
 
 // RECAP: https://www.youtube.com/watch?v=z_OpiP_b6HY @ 20:30 
 class Battle extends Component {
@@ -12,7 +13,10 @@ class Battle extends Component {
 
     this.state = {
       playerOneName: '',
-      playerTwoName: ''
+      playerTwoName: '',
+      playerOneData: {},
+      playerTwoData: {},
+      displayChart: false
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,17 +24,23 @@ class Battle extends Component {
 
   handleSubmit(id, playername) {
     // have player name -> want a clean search tho...
-    var searchedPlayer = getQb2016.get(playername);
+    var searchedPlayer = getRb2016.get(playername);
     console.log('searched player - ', searchedPlayer);
     var newState = {};
     newState[id + 'Name'] = playername;
 
+    newState[id + 'Data'] = [searchedPlayer[0]];
+    // console.log('newstate - ', newState, id + 'Data' , newState[id + 'Data'], searchedPlayer[0]);
+
     this.setState((prevState, props) => {
       if (prevState.playerOneName || prevState.playerTwoName){
         // don't want to reroute to schedule -> WANT TO DISPLAY APPROPRIATE CHARTS
-        return this.props.history.push('/schedule');
+        newState['displayChart'] = true;
+        return newState;
+        // return this.props.history.push('/schedule');
       } 
       else {
+        console.log('this.state - ', this.state);
         return newState;
       }
     });
@@ -40,6 +50,9 @@ class Battle extends Component {
     var match = this.props.match;
     var playerOneName = this.state.playerOneName;
     var playerTwoName = this.state.playerTwoName;
+    var playerOneData = this.state.playerOneData;
+    var playerTwoData = this.state.playerTwoData;
+    var displayChart = this.state.displayChart;
     return (
       <div>
         <div className='row'>
@@ -56,15 +69,10 @@ class Battle extends Component {
             onSubmit={this.handleSubmit} />}
 
         </div>
-        {/*{playerOneName && playerTwoName &&
-        <Link
-          className='button'
-          to={{
-            pathname: match.url + '/results',
-            search: `?playerOneName=` + playerOneName + '&playerTwoName=' + playerTwoName
-          }}>
-          Battle
-        </Link>}*/}
+
+        {displayChart && 
+        <StackedBars playerOne={playerOneData} playerTwo={playerTwoData} />}
+
       </div>
     );
   }
