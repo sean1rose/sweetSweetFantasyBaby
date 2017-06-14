@@ -34,9 +34,12 @@
   },
   "dependencies": {
     "fuse.js": "^3.0.4",
+    "highcharts": "^5.0.12",
+    "highcharts-more": "^0.1.2",
     "history": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-highcharts": "^12.0.0",
     "react-router-dom": "^4.1.1",
     "victory": "^0.21.0"
   }
