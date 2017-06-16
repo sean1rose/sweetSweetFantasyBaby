@@ -3,8 +3,10 @@ import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
 import getRb2016 from '../util/getRb2016';
 import StackedBars from './charts/StackedBars';
-import ReactHighcharts from 'react-highcharts';
-import HighchartsMore from 'highcharts-more';
+// import ReactHighcharts from 'react-highcharts';
+// import HighchartsMore from 'highcharts-more';
+
+import Spiderweb from './charts/Spiderweb';
 
 // HighchartsMore(ReactHighcharts.Highcharts);
 
@@ -31,71 +33,6 @@ class Battle extends Component {
     this.calcHigh = this.calcHigh.bind(this);
     this.calcSecond = this.calcSecond.bind(this);
   }
-
-  /*
-  componentDidUpdate() {
-    // ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd']
-    // ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
-    // ftptsHigh ends up being 1, we just need to determine who high is
-    var ftptsHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'FANTASYPTS');
-    // second is proportion of high's value
-    var ftptsSecond = this.calcSecond(ftptsHigh, this.state.playerOneData, this.state.playerTwoData, 'FANTASYPTS');
-    var ftptsgmHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'FPTSPERGAME');
-    var ftptsgmSecond = this.calcSecond(ftptsgmHigh, this.state.playerOneData, this.state.playerTwoData, 'FPTSPERGAME');
-    var touchesHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'TOUCHES');
-    var touchesSecond = this.calcSecond(touchesHigh, this.state.playerOneData, this.state.playerTwoData, 'TOUCHES');
-    var touchesgmHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'TOUCHESPERGAME');
-    var touchesgmSecond = this.calcSecond(touchesgmHigh, this.state.playerOneData, this.state.playerTwoData, 'TOUCHESPERGAME');
-    var ftptstouchHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'FANTASYPTSPERTOUCH');
-    var ftptstouchSecond = this.calcSecond(ftptstouchHigh, this.state.playerOneData, this.state.playerTwoData, 'FANTASYPTSPERTOUCH');
-    var rydHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'RYD');
-    var rydSecond = this.calcSecond(rydHigh, this.state.playerOneData, this.state.playerTwoData, 'RYD');
-    var cydHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'PYDS');
-    var cydSecond = this.calcSecond(cydHigh, this.state.playerOneData, this.state.playerTwoData, 'PYDS');
-    var totalydHigh = this.calcHigh(this.state.playerOneData, this.state.playerTwoData, 'TOTALTD');
-    var totalydSecond = this.calcSecond(totalydHigh, this.state.playerOneData, this.state.playerTwoData, 'TOTALTD');
-
-    this.setState(() => {
-      var newState = {};
-      newState.config = {
-        chart: {
-          polar: true
-        },
-        xAxis: {
-          categories: ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd']
-        },
-        series: [{
-          name: this.state.playerOneData.PLAYER,
-          data: [this.state.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.state.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.state.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.state.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.state.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.state.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.state.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.state.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],
-          pointPlacement: 'on'
-        }, {
-          name: this.state.playerTwoData.PLAYER,
-          data: [this.state.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.state.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.state.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.state.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.state.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.state.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.state.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.state.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],
-          pointPlacement: 'on'
-        }]
-      }
-      return newState;
-    });
-    // var config = {
-    //   chart: {
-    //     polar: true
-    //   },
-    //   xAxis: {
-    //     categories: ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd']
-    //   },
-    //   series: [{
-    //     name: this.state.playerOneData.PLAYER,
-    //     data: [this.state.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.state.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.state.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.state.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.state.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.state.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.state.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.state.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],
-    //     pointPlacement: 'on'
-    //   }, {
-    //     name: this.state.playerTwoData.PLAYER,
-    //     data: [this.state.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.state.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.state.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.state.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.state.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.state.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.state.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.state.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],
-    //     pointPlacement: 'on'
-    //   }]
-    // }
-    
-  }
-  */
 
   handleSubmit(id, playername) {
     // have player name -> want a clean search tho...
@@ -136,10 +73,6 @@ class Battle extends Component {
     var playerOneData = this.state.playerOneData;
     var playerTwoData = this.state.playerTwoData;
 
-
-
-    
-
     var displayChart = this.state.displayChart;
     return (
       <div>
@@ -158,9 +91,10 @@ class Battle extends Component {
 
         </div>
 
-        {/*{displayChart && 
-          <ReactHighcharts config={this.state.config} />
-        }*/}
+        {displayChart && 
+          <Spiderweb playerOneData={this.state.playerOneData} playerTwoData={this.state.playerTwoData} />
+        }
+
 
       </div>
     );
