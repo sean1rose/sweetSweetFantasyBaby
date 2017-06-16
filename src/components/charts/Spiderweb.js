@@ -20,20 +20,43 @@ class Spiderweb extends Component {
     var ftptsHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTS');
     // second is proportion of high's value
     var ftptsSecond = this.calcSecond(ftptsHigh, this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTS');
+    var ftptsPlayerOne = this.props.playerOneData.FANTASYPTS;
+    var ftptsPlayerTwo = this.props.playerTwoData.FANTASYPTS;
+    
     var ftptsgmHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FPTSPERGAME');
     var ftptsgmSecond = this.calcSecond(ftptsgmHigh, this.props.playerOneData, this.props.playerTwoData, 'FPTSPERGAME');
+    var ftptsgmPlayerOne = this.props.playerOneData.FPTSPERGAME;
+    var ftptsgmPlayerTwo = this.props.playerTwoData.FPTSPERGAME;
+
     var touchesHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOUCHES');
     var touchesSecond = this.calcSecond(touchesHigh, this.props.playerOneData, this.props.playerTwoData, 'TOUCHES');
+    var touchesPlayerOne = this.props.playerOneData.TOUCHES;
+    var touchesPlayerTwo = this.props.playerTwoData.TOUCHES;
+
     var touchesgmHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
     var touchesgmSecond = this.calcSecond(touchesgmHigh, this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
+    var touchesgmPlayerOne = this.props.playerOneData.TOUCHESPERGAME;
+    var touchesgmPlayerTwo = this.props.playerTwoData.TOUCHESPERGAME;
+
     var ftptstouchHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTSPERTOUCH');
     var ftptstouchSecond = this.calcSecond(ftptstouchHigh, this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTSPERTOUCH');
+    var ftptstouchPlayerOne = this.props.playerOneData.FANTASYPTSPERTOUCH;
+    var ftptstouchPlayerTwo = this.props.playerTwoData.FANTASYPTSPERTOUCH;
+
     var rydHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'RYD');
     var rydSecond = this.calcSecond(rydHigh, this.props.playerOneData, this.props.playerTwoData, 'RYD');
+    var rydPlayerOne = this.props.playerOneData.RYD;
+    var rydPlayerTwo = this.props.playerTwoData.RYD;
+
     var cydHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'PYDS');
     var cydSecond = this.calcSecond(cydHigh, this.props.playerOneData, this.props.playerTwoData, 'PYDS');
+    var cydPlayerOne = this.props.playerOneData.PYDS;
+    var cydPlayerTwo = this.props.playerTwoData.PYDS;
+
     var totalydHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOTALTD');
     var totalydSecond = this.calcSecond(totalydHigh, this.props.playerOneData, this.props.playerTwoData, 'TOTALTD');
+    var totalydPlayerOne = this.props.playerOneData.TOTALTD;
+    var totalydPlayerTwo = this.props.playerTwoData.TOTALTD;
 
     console.log('1 - ', [this.props.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.props.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond]);
 
@@ -44,10 +67,17 @@ class Spiderweb extends Component {
           type: 'line'
         },
         title: {
-          text: this.props.playerOneData.PLAYER + ' vs ' + this.props.playerTwoData.PLAYER
+          text: this.props.playerOneData.PLAYER + ' vs ' + this.props.playerTwoData.PLAYER,
+          margin: 30
+        },
+        legend: {
+          margin: 30
+        },
+        pane: {
+          size: '100%'
         },
         xAxis: {
-          categories: ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd'],
+          categories: ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD'],
           tickPlacement: 'on',
           lineWidth: 0
         },
@@ -55,6 +85,61 @@ class Spiderweb extends Component {
           gridLineInterpolation: 'polygon',
           lineWidth: 0,
           min: 0
+        },
+        tooltip: {
+          shared: true,
+          formatter: (z) => {
+            console.log('this - ', this);
+            // console.log(this.state.config.xAxis, this.state.config.xAxis.categories, this.state.config.series);
+            var s;
+            this.state.config.xAxis.categories.forEach((element, index) => {
+              s = '<b>' + element + '</b>';
+              console.log('s - ', s);
+              /* 
+              [{
+                name: "Matt Forte",
+                data: [1,1,1,1,1,1,1,1]
+              }, 
+              {
+                name: "Carlos Hyde",
+                data: [0,0,0,0,0,0,0,0]
+              }]
+              */
+              this.state.config.series.forEach((item, idx) => {
+                // at idx=0, z.chart.series[idx].name -> Matt Forte
+                // at idx=1, z.chart.series[idx].name -> Carlos Hyde
+                // @ idx=0, item.name -> Matt Forte
+                // @ idx=1, item.name -> Carlos Hyde
+                console.log('z - ', z.chart.series[idx].name);
+                console.log('PLAYER - ', this.props.playerOneData.PLAYER);
+                if (this.props.playerOneData.PLAYER == z.chart.series[idx].name){
+                  // loop thru all eight categories -> ["FANTASYPTS", "FPTSPERGAME", "TOUCHES", "TOUCHESPERGAME", "FANTASYPTSPERTOUCH", "RYD", "PYDS", "TOTALTD"]
+                  for (var i = 0; i < this.state.config.xAxis.categories.length; i++){
+                    if (this.state.config.xAxis.categories[i] == element){
+                      // we have a match on the element -> print the prop
+                      console.log('PLAYER 1 MATCH! - ', this.props.playerOneData[this.state.config.xAxis.categories[i]]);
+                      s += '<br/>' + this.props.playerOneData.PLAYER + ': ' + this.props.playerOneData[this.state.config.xAxis.categories[i]];
+                    }
+                  }
+                  // if player one
+                  // console.log('PLAYER 1 MATCH! - ', this.state.config.xAxis.categories[idx]);
+                } else if (this.props.playerTwoData.PLAYER == z.chart.series[idx].name){
+                  for (var i = 0; i < this.state.config.xAxis.categories.length; i++){
+                    if (this.state.config.xAxis.categories[i] == element){
+                      // we have a match on the element -> print the prop
+                      console.log('PLAYER 2 MATCH! - ', this.props.playerTwoData[this.state.config.xAxis.categories[i]]);
+                      s += '<br/>' + this.props.playerTwoData.PLAYER + ': ' + this.props.playerTwoData[this.state.config.xAxis.categories[i]];
+                    }
+                  }
+                }
+
+              });
+              return s;
+            })
+
+
+            // return s;
+          }
         },
         series: [{
           name: this.props.playerOneData.PLAYER,
@@ -68,6 +153,7 @@ class Spiderweb extends Component {
       }
     }
   }
+  // https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting
 
   calcHigh(p1Data, p2Data, attribute) {
     return p1Data[attribute] > p2Data[attribute] ? p1Data.PLAYER : p2Data.PLAYER;
