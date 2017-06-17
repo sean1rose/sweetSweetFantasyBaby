@@ -13,8 +13,7 @@ class Spiderweb extends Component {
     this.calcSecond = this.calcSecond.bind(this);
     var self = this;
 
-    // ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd']
-    // ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
+    // ['FANTASYPTS', 'FPTSPERGAME', 'TDPERTOUCH', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']    
     // ftptsHigh ends up being 1, we just need to determine who high is
     var ftptsHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTS');
     // second is proportion of high's value
@@ -27,10 +26,10 @@ class Spiderweb extends Component {
     var ftptsgmPlayerOne = this.props.playerOneData.FPTSPERGAME;
     var ftptsgmPlayerTwo = this.props.playerTwoData.FPTSPERGAME;
 
-    var touchesHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOUCHES');
-    var touchesSecond = this.calcSecond(touchesHigh, this.props.playerOneData, this.props.playerTwoData, 'TOUCHES');
-    var touchesPlayerOne = this.props.playerOneData.TOUCHES;
-    var touchesPlayerTwo = this.props.playerTwoData.TOUCHES;
+    var tdpertouchHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TDPERTOUCH');
+    var tdpertouchSecond = this.calcSecond(tdpertouchHigh, this.props.playerOneData, this.props.playerTwoData, 'TDPERTOUCH');
+    var tdpertouchPlayerOne = this.props.playerOneData.TDPERTOUCH;
+    var tdpertouchPlayerTwo = this.props.playerTwoData.TDPERTOUCH;
 
     var touchesgmHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
     var touchesgmSecond = this.calcSecond(touchesgmHigh, this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
@@ -57,9 +56,9 @@ class Spiderweb extends Component {
     var totalydPlayerOne = this.props.playerOneData.TOTALTD;
     var totalydPlayerTwo = this.props.playerTwoData.TOTALTD;
 
-    console.log('1 - ', [this.props.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.props.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond]);
 
     this.state = {
+      finalStatMapping: ['Fantasy Pts', 'Fantasy Pts Per Game', 'TD PER TOUCH RATE', 'Touches Per Game', 'Fantasy Pts Per Touch', 'Rush Yards', 'Catch Yards', 'Total Touchdowns'],
       config: {
         chart: {
           polar: true,
@@ -76,7 +75,7 @@ class Spiderweb extends Component {
           size: '100%'
         },
         xAxis: {
-          categories: ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD'],
+          categories: ['FANTASYPTS', 'FPTSPERGAME', 'TDPERTOUCH', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD'],
           tickPlacement: 'on',
           lineWidth: 0
         },
@@ -89,15 +88,24 @@ class Spiderweb extends Component {
           shared: true,
           formatter: function(z){
             var s;
-            // ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
+            // ['FANTASYPTS', 'FPTSPERGAME', 'TDPERTOUCH', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
             self.state.config.xAxis.categories.forEach((element, index) => {
                 // loop thru the 8 categories, when it/element matches this.x..
               if (element == this.x){
-                s = '<b>' + element + '</b>';
+                // console.log('self - ', self);
+                // s = '<b>' + element + '</b>';
+                s = '<b>' + self.state.finalStatMapping[index] + '</b>';
                 var playerOneName = self.props.playerOneData.PLAYER;
                 var playerTwoName = self.props.playerTwoData.PLAYER;
-                var playerOneStat = self.props.playerOneData[element];
-                var playerTwoStat = self.props.playerTwoData[element];
+
+                if (element == 'TDPERTOUCH'){
+                  var playerOneStat = self.props.playerOneData[element] + '%';
+                  var playerTwoStat = self.props.playerTwoData[element] + '%';
+                } else {
+                  var playerOneStat = Math.round(self.props.playerOneData[element] * 100) / 100;
+                  var playerTwoStat = Math.round(self.props.playerTwoData[element] * 100) / 100;
+                }
+
                 s += '<br/>' + playerOneName + ': ' + playerOneStat;
                 s += '<br/>' + playerTwoName + ': ' + playerTwoStat;
               }
@@ -107,11 +115,11 @@ class Spiderweb extends Component {
         },
         series: [{
           name: this.props.playerOneData.PLAYER,
-          data: [this.props.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerOneData.PLAYER === touchesHigh ? 1 : touchesSecond, this.props.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],
+          data: [this.props.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerOneData.PLAYER === tdpertouchHigh ? 1 : tdpertouchSecond, this.props.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerOneData.PLAYER === totalydHigh ? 1 : totalydSecond],          
           pointPlacement: 'on'
         }, {
           name: this.props.playerTwoData.PLAYER,
-          data: [this.props.playerTwoData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerTwoData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerTwoData.PLAYER === touchesHigh ? 1 : touchesSecond, this.props.playerTwoData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerTwoData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerTwoData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerTwoData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerTwoData.PLAYER === totalydHigh ? 1 : totalydSecond],
+          data: [this.props.playerTwoData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerTwoData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerTwoData.PLAYER === tdpertouchHigh ? 1 : tdpertouchSecond, this.props.playerTwoData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerTwoData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerTwoData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerTwoData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerTwoData.PLAYER === totalydHigh ? 1 : totalydSecond],
           pointPlacement: 'on'
         }]
       }

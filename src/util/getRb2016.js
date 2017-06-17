@@ -22,6 +22,10 @@ const getRb2016 = {
     player.FPTSPERGAME = player.FPTS.G;
     player.TOUCHES = player.CMP + player.CARRIES;
     player.TOUCHESPERGAME = player.TOUCHES / player.GP;
+    var convertToPercent = (fraction) => {
+      return Math.round(fraction * 100 * 100) / 100;
+    };
+    player.TDPERTOUCH = convertToPercent(player.TOTALTD / player.TOUCHES);
     delete player.FPTS;
     return player;
   },

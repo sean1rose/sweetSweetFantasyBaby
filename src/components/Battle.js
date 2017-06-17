@@ -10,7 +10,6 @@ import Spiderweb from './charts/Spiderweb';
 
 // HighchartsMore(ReactHighcharts.Highcharts);
 
-
 console.log('getrbOnes - ', getRb2016.getRbOnes());
 console.log('getrbTwos - ', getRb2016.getRbTwos());
 console.log('getrbThrees - ', getRb2016.getRbThrees());
