@@ -5,14 +5,13 @@ import HighchartsExporting from 'highcharts-exporting';
 HighchartsMore(ReactHighcharts.Highcharts);
 HighchartsExporting(ReactHighcharts.Highcharts);
 
-
-
 class Spiderweb extends Component {
   constructor(props){
     console.log('props - ', props);
     super(props);
     this.calcHigh = this.calcHigh.bind(this);
     this.calcSecond = this.calcSecond.bind(this);
+    var self = this;
 
     // ['FtPts', 'FtPtsGm', 'Touches', 'TouchesGm', 'FtPtsTouch', 'RushYds', 'CatchYds', 'TotalTd']
     // ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
@@ -88,57 +87,22 @@ class Spiderweb extends Component {
         },
         tooltip: {
           shared: true,
-          formatter: (z) => {
-            console.log('this - ', this);
-            // console.log(this.state.config.xAxis, this.state.config.xAxis.categories, this.state.config.series);
+          formatter: function(z){
             var s;
-            this.state.config.xAxis.categories.forEach((element, index) => {
-              s = '<b>' + element + '</b>';
-              console.log('s - ', s);
-              /* 
-              [{
-                name: "Matt Forte",
-                data: [1,1,1,1,1,1,1,1]
-              }, 
-              {
-                name: "Carlos Hyde",
-                data: [0,0,0,0,0,0,0,0]
-              }]
-              */
-              this.state.config.series.forEach((item, idx) => {
-                // at idx=0, z.chart.series[idx].name -> Matt Forte
-                // at idx=1, z.chart.series[idx].name -> Carlos Hyde
-                // @ idx=0, item.name -> Matt Forte
-                // @ idx=1, item.name -> Carlos Hyde
-                console.log('z - ', z.chart.series[idx].name);
-                console.log('PLAYER - ', this.props.playerOneData.PLAYER);
-                if (this.props.playerOneData.PLAYER == z.chart.series[idx].name){
-                  // loop thru all eight categories -> ["FANTASYPTS", "FPTSPERGAME", "TOUCHES", "TOUCHESPERGAME", "FANTASYPTSPERTOUCH", "RYD", "PYDS", "TOTALTD"]
-                  for (var i = 0; i < this.state.config.xAxis.categories.length; i++){
-                    if (this.state.config.xAxis.categories[i] == element){
-                      // we have a match on the element -> print the prop
-                      console.log('PLAYER 1 MATCH! - ', this.props.playerOneData[this.state.config.xAxis.categories[i]]);
-                      s += '<br/>' + this.props.playerOneData.PLAYER + ': ' + this.props.playerOneData[this.state.config.xAxis.categories[i]];
-                    }
-                  }
-                  // if player one
-                  // console.log('PLAYER 1 MATCH! - ', this.state.config.xAxis.categories[idx]);
-                } else if (this.props.playerTwoData.PLAYER == z.chart.series[idx].name){
-                  for (var i = 0; i < this.state.config.xAxis.categories.length; i++){
-                    if (this.state.config.xAxis.categories[i] == element){
-                      // we have a match on the element -> print the prop
-                      console.log('PLAYER 2 MATCH! - ', this.props.playerTwoData[this.state.config.xAxis.categories[i]]);
-                      s += '<br/>' + this.props.playerTwoData.PLAYER + ': ' + this.props.playerTwoData[this.state.config.xAxis.categories[i]];
-                    }
-                  }
-                }
-
-              });
-              return s;
-            })
-
-
-            // return s;
+            // ['FANTASYPTS', 'FPTSPERGAME', 'TOUCHES', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']
+            self.state.config.xAxis.categories.forEach((element, index) => {
+                // loop thru the 8 categories, when it/element matches this.x..
+              if (element == this.x){
+                s = '<b>' + element + '</b>';
+                var playerOneName = self.props.playerOneData.PLAYER;
+                var playerTwoName = self.props.playerTwoData.PLAYER;
+                var playerOneStat = self.props.playerOneData[element];
+                var playerTwoStat = self.props.playerTwoData[element];
+                s += '<br/>' + playerOneName + ': ' + playerOneStat;
+                s += '<br/>' + playerTwoName + ': ' + playerTwoStat;
+              }
+            });
+            return s;
           }
         },
         series: [{
