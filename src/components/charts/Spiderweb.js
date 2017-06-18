@@ -9,7 +9,7 @@ class Spiderweb extends Component {
   constructor(props){
     // console.log('props - ', props);
     super(props);
-    this.calcHighFromFive = this.calcHighFromFive.bind(this);
+    this.calcHighFromList = this.calcHighFromList.bind(this);
     this.calcProportion = this.calcProportion.bind(this);
     var self = this;
     // ['FANTASYPTS', 'FPTSPERGAME', 'TDPERTOUCH', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']    
@@ -20,60 +20,60 @@ class Spiderweb extends Component {
     var rbThreeAvg = this.props.rbThreeAvg;
 
     // 1
-    var ftptsFirstObj = this.calcHighFromFive('FANTASYPTS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var ftptsSecondObj = this.calcHighFromFive('FANTASYPTS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var ftptsThirdObj = this.calcHighFromFive('FANTASYPTS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var ftptsFirstObj = this.calcHighFromList('FANTASYPTS', [playerOne, playerTwo, rbOneAvg])[0];
+    var ftptsSecondObj = this.calcHighFromList('FANTASYPTS', [playerOne, playerTwo, rbOneAvg])[1];
+    var ftptsThirdObj = this.calcHighFromList('FANTASYPTS', [playerOne, playerTwo, rbOneAvg])[2];
     // second and third proportion of high's value
     var ftptsSecondProportion = this.calcProportion(ftptsFirstObj, ftptsSecondObj, 'FANTASYPTS');
     var ftptsThirdProportion = this.calcProportion(ftptsFirstObj, ftptsThirdObj, 'FANTASYPTS');
 
 
     // 2
-    var ftptsgmFirstObj = this.calcHighFromFive('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var ftptsgmSecondObj = this.calcHighFromFive('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var ftptsgmThirdObj = this.calcHighFromFive('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var ftptsgmFirstObj = this.calcHighFromList('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg])[0];
+    var ftptsgmSecondObj = this.calcHighFromList('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg])[1];
+    var ftptsgmThirdObj = this.calcHighFromList('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg])[2];
     var ftptsgmSecondProportion = this.calcProportion(ftptsgmFirstObj, ftptsgmSecondObj, 'FPTSPERGAME');
     var ftptsgmThirdProportion = this.calcProportion(ftptsgmFirstObj, ftptsgmThirdObj, 'FPTSPERGAME');
 
     // 3
-    var tdpertouchFirstObj = this.calcHighFromFive('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var tdpertouchSecondObj = this.calcHighFromFive('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var tdpertouchThirdObj = this.calcHighFromFive('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var tdpertouchFirstObj = this.calcHighFromList('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg])[0];
+    var tdpertouchSecondObj = this.calcHighFromList('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg])[1];
+    var tdpertouchThirdObj = this.calcHighFromList('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg])[2];
     var tdpertouchSecondProportion = this.calcProportion(tdpertouchFirstObj, tdpertouchSecondObj, 'TDPERTOUCH');
     var tdpertouchThirdProportion = this.calcProportion(tdpertouchFirstObj, tdpertouchThirdObj, 'TDPERTOUCH');
 
     // 4
-    var touchesgmFirstObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var touchesgmSecondObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var touchesgmThirdObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var touchesgmFirstObj = this.calcHighFromList('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg])[0];
+    var touchesgmSecondObj = this.calcHighFromList('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg])[1];
+    var touchesgmThirdObj = this.calcHighFromList('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg])[2];
     var touchesgmSecondProportion = this.calcProportion(touchesgmFirstObj, touchesgmSecondObj, 'TOUCHESPERGAME');
     var touchesgmThirdProportion = this.calcProportion(touchesgmFirstObj, touchesgmThirdObj, 'TOUCHESPERGAME');
 
     // 5
-    var ftptstouchFirstObj = this.calcHighFromFive('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var ftptstouchSecondObj = this.calcHighFromFive('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var ftptstouchThirdObj = this.calcHighFromFive('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var ftptstouchFirstObj = this.calcHighFromList('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg])[0];
+    var ftptstouchSecondObj = this.calcHighFromList('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg])[1];
+    var ftptstouchThirdObj = this.calcHighFromList('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg])[2];
     var ftptstouchSecondProportion = this.calcProportion(ftptstouchFirstObj, ftptstouchSecondObj, 'FANTASYPTSPERTOUCH');
     var ftptstouchThirdProportion = this.calcProportion(ftptstouchFirstObj, ftptstouchThirdObj, 'FANTASYPTSPERTOUCH');
 
     // 6
-    var rydFirstObj = this.calcHighFromFive('RYD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var rydSecondObj = this.calcHighFromFive('RYD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var rydThirdObj = this.calcHighFromFive('RYD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
-    var rydSecondProportion = this.calcProportion(rydFirstObj, rydSecondObj, 'FANTASYPTSPERTOUCH');
-    var rydThirdProportion = this.calcProportion(rydFirstObj, rydThirdObj, 'FANTASYPTSPERTOUCH');
+    var rydFirstObj = this.calcHighFromList('RYD', [playerOne, playerTwo, rbOneAvg])[0];
+    var rydSecondObj = this.calcHighFromList('RYD', [playerOne, playerTwo, rbOneAvg])[1];
+    var rydThirdObj = this.calcHighFromList('RYD', [playerOne, playerTwo, rbOneAvg])[2];
+    var rydSecondProportion = this.calcProportion(rydFirstObj, rydSecondObj, 'RYD');
+    var rydThirdProportion = this.calcProportion(rydFirstObj, rydThirdObj, 'RYD');
 
     // 7
-    var cydFirstObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var cydSecondObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var cydThirdObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var cydFirstObj = this.calcHighFromList('PYDS', [playerOne, playerTwo, rbOneAvg])[0];
+    var cydSecondObj = this.calcHighFromList('PYDS', [playerOne, playerTwo, rbOneAvg])[1];
+    var cydThirdObj = this.calcHighFromList('PYDS', [playerOne, playerTwo, rbOneAvg])[2];
     var cydSecondProportion = this.calcProportion(cydFirstObj, cydSecondObj, 'PYDS');
     var cydThirdProportion = this.calcProportion(cydFirstObj, cydThirdObj, 'PYDS');
 
     // 8
-    var totaltdFirstObj = this.calcHighFromFive('TOTALTD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
-    var totaltdSecondObj = this.calcHighFromFive('TOTALTD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
-    var totaltdThirdObj = this.calcHighFromFive('TOTALTD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
+    var totaltdFirstObj = this.calcHighFromList('TOTALTD', [playerOne, playerTwo, rbOneAvg])[0];
+    var totaltdSecondObj = this.calcHighFromList('TOTALTD', [playerOne, playerTwo, rbOneAvg])[1];
+    var totaltdThirdObj = this.calcHighFromList('TOTALTD', [playerOne, playerTwo, rbOneAvg])[2];
     var totaltdSecondProportion = this.calcProportion(totaltdFirstObj, totaltdSecondObj, 'TOTALTD');
     var totaltdThirdProportion = this.calcProportion(totaltdFirstObj, totaltdSecondObj, 'TOTALTD');
 
@@ -187,7 +187,7 @@ class Spiderweb extends Component {
   }
   // https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting
 
-  calcHighFromFive(attribute, list) {
+  calcHighFromList(attribute, list) {
     // this organizes 1st to 5th
     return list.sort((a,b) => { return b[attribute] - a[attribute] });
   }
