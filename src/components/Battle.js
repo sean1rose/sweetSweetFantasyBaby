@@ -13,6 +13,7 @@ import Spiderweb from './charts/Spiderweb';
 console.log('getrbOnes - ', getRb2016.getRbOnes());
 console.log('getrbTwos - ', getRb2016.getRbTwos());
 console.log('getrbThrees - ', getRb2016.getRbThrees());
+console.log('getRB1AVG - ', getRb2016.getRbOneAvg());
 
 // RECAP: https://www.youtube.com/watch?v=z_OpiP_b6HY @ 20:30 
 class Battle extends Component {

@@ -19,7 +19,8 @@ const getRb2016 = {
     player.FANTASYPTSPERTOUCH = player.FANTASYPTS / (player.CMP + player.CARRIES);
     player.TOTALTD = player.PTD + player.RTD;
     player.TOTALYD = player.PYDS + player.RYD;
-    player.FPTSPERGAME = player.FPTS.G;
+    if (player.FPTS)
+      player.FPTSPERGAME = player.FPTS.G;
     player.TOUCHES = player.CMP + player.CARRIES;
     player.TOUCHESPERGAME = player.TOUCHES / player.GP;
     var convertToPercent = (fraction) => {
@@ -56,6 +57,52 @@ const getRb2016 = {
       result.push(current);
     }
     return result;
+  },
+  getRbOneAvg: () => {
+    var rbOneAvg = getRb2016.blankslate();    
+    // loop thru each rb
+    for (var i = runningbacks.length - 1; i >= runningbacks.length - 12; i--){
+      var current = getRb2016.calcAdditionalStats(runningbacks[i]);
+        // loop thru each of current's stat categories
+      for (var key in current){
+        // w/ each category -> add each category to rbOneAb stat total
+        rbOneAvg[key] += current[key];
+      }
+    }
+    // after looping thru all 12 rb1s -> divide each category by 12
+    for (var key in rbOneAvg){
+      var currentCategory = rbOneAvg[key];
+      rbOneAvg[key] = (rbOneAvg[key] / 12);
+    }
+    rbOneAvg.PLAYER = "RB1 Average";
+    rbOneAvg.TEAM = "";
+    return rbOneAvg;
+  },
+  blankslate: () => {
+    // used to calculate avgs
+    return {
+      "PLAYER": "RB1 AVERAGE",
+      "PLAYS": 0,
+      "FANTASYPTS": 0,
+      "GP": 0,
+      "FPTSPERGAME": 0,
+      "CARRIES": 0,
+      "RYD": 0,
+      "RTD": 0,
+      "PASS": 0,
+      "CMP": 0,
+      "PYDS": 0,
+      "PTD": 0,
+      "FUM": 0,
+      "INT": 0,
+      "FANTASYPTSPERTOUCH": 0,
+      "TOTALTD": 0,
+      "TOTALYD": 0,
+      "FPTSPERGAME": 0,
+      "TOUCHES": 0,
+      "TOUCHESPERGAME": 0,
+      "TDPERTOUCH": 0
+    }
   }
 };
 
