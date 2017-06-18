@@ -4,7 +4,6 @@ import Fuse from 'fuse.js';
 
 const getRb2016 = {
   all: () => { 
-    console.log('get all in util - ', runningbacks);
     return runningbacks
   },
   get: (id) => {
@@ -23,11 +22,7 @@ const getRb2016 = {
       player.FPTSPERGAME = player.FPTS.G;
     player.TOUCHES = player.CMP + player.CARRIES;
     player.TOUCHESPERGAME = player.TOUCHES / player.GP;
-    var convertToPercent = (fraction) => {
-      return Math.round(fraction * 100 * 100) / 100;
-    };
-    player.TDPERTOUCH = convertToPercent(player.TOTALTD / player.TOUCHES);
-    console.log('convert to percent - ', player.PLAYER, player.TDPERTOUCH)
+    player.TDPERTOUCH = getRb2016.convertToPercent(player.TOTALTD / player.TOUCHES);
     delete player.FPTS;
     return player;
   },
@@ -101,14 +96,10 @@ const getRb2016 = {
       var currentCategory = rbAvg[key];
       rbAvg[key] = (rbAvg[key] / 12);
     }
-    // var str = 'RB' + number + ' Average';
     rbAvg.PLAYER = 'RB' + number + ' Average';;
     rbAvg.TEAM = "";
-    var convertToPercent = (fraction) => {
-      return Math.round(fraction * 100 * 100) / 100;
-    };
-    rbAvg.TDPERTOUCH = convertToPercent(rbAvg.TOTALTD / rbAvg.TOUCHES);
-    console.log('avg - ', rbAvg);
+    rbAvg.TDPERTOUCH = getRb2016.convertToPercent(rbAvg.TOTALTD / rbAvg.TOUCHES);
+    // console.log('avg - ', rbAvg);
     return rbAvg;
     
   },
@@ -146,6 +137,9 @@ const getRb2016 = {
       "TOUCHESPERGAME": 0,
       "TDPERTOUCH": 0
     }
+  },
+  convertToPercent: (fraction) => {
+    return Math.round(fraction * 10000) / 100;
   }
 };
 

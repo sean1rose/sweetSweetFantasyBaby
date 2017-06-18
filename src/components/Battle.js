@@ -3,12 +3,7 @@ import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
 import getRb2016 from '../util/getRb2016';
 import StackedBars from './charts/StackedBars';
-// import ReactHighcharts from 'react-highcharts';
-// import HighchartsMore from 'highcharts-more';
-
 import Spiderweb from './charts/Spiderweb';
-
-// HighchartsMore(ReactHighcharts.Highcharts);
 
 console.log('getrbOnes - ', getRb2016.getRbOnes());
 console.log('getrbTwos - ', getRb2016.getRbTwos());
@@ -47,7 +42,7 @@ class Battle extends Component {
     newState[id + 'Name'] = playername;
 
     newState[id + 'Data'] = [searchedPlayer[0]][0];
-    console.log('newstate - ', newState, id + 'Data' , newState[id + 'Data'], searchedPlayer[0]);
+    // console.log('newstate - ', newState, id + 'Data' , newState[id + 'Data'], searchedPlayer[0]);
 
     this.setState((prevState, props) => {
       if (prevState.playerOneName || prevState.playerTwoName){
@@ -57,7 +52,6 @@ class Battle extends Component {
         // return this.props.history.push('/schedule');
       } 
       else {
-        console.log('this.state - ', this.state);
         return newState;
       }
     });

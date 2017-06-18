@@ -7,26 +7,12 @@ HighchartsExporting(ReactHighcharts.Highcharts);
 
 class Spiderweb extends Component {
   constructor(props){
-    console.log('props - ', props);
+    // console.log('props - ', props);
     super(props);
-    // this.calcHigh = this.calcHigh.bind(this);
-    // this.calcSecond = this.calcSecond.bind(this);
     this.calcHighFromFive = this.calcHighFromFive.bind(this);
     this.calcProportion = this.calcProportion.bind(this);
     var self = this;
-
     // ['FANTASYPTS', 'FPTSPERGAME', 'TDPERTOUCH', 'TOUCHESPERGAME', 'FANTASYPTSPERTOUCH', 'RYD', 'PYDS', 'TOTALTD']    
-    
-    /*
-    // ftptsHigh ends up being 1, we just need to determine who high is
-    var ftptsHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTS');
-    // second is proportion of high's value
-    var ftptsSecond = this.calcSecond(ftptsHigh, this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTS');
-    // var ftptsThird = this.calcThird()
-    var ftptsPlayerOne = this.props.playerOneData.FANTASYPTS;
-    var ftptsPlayerTwo = this.props.playerTwoData.FANTASYPTS;
-    */
-
     var playerOne = this.props.playerOneData;
     var playerTwo = this.props.playerTwoData;
     var rbOneAvg = this.props.rbOneAvg;
@@ -40,12 +26,7 @@ class Spiderweb extends Component {
     // second and third proportion of high's value
     var ftptsSecondProportion = this.calcProportion(ftptsFirstObj, ftptsSecondObj, 'FANTASYPTS');
     var ftptsThirdProportion = this.calcProportion(ftptsFirstObj, ftptsThirdObj, 'FANTASYPTS');
-    
 
-    // var ftptsgmHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FPTSPERGAME');
-    // var ftptsgmSecond = this.calcSecond(ftptsgmHigh, this.props.playerOneData, this.props.playerTwoData, 'FPTSPERGAME');
-    // var ftptsgmPlayerOne = this.props.playerOneData.FPTSPERGAME;
-    // var ftptsgmPlayerTwo = this.props.playerTwoData.FPTSPERGAME;
 
     // 2
     var ftptsgmFirstObj = this.calcHighFromFive('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
@@ -53,12 +34,6 @@ class Spiderweb extends Component {
     var ftptsgmThirdObj = this.calcHighFromFive('FPTSPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
     var ftptsgmSecondProportion = this.calcProportion(ftptsgmFirstObj, ftptsgmSecondObj, 'FPTSPERGAME');
     var ftptsgmThirdProportion = this.calcProportion(ftptsgmFirstObj, ftptsgmThirdObj, 'FPTSPERGAME');
-    
-
-    // var tdpertouchHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TDPERTOUCH');
-    // var tdpertouchSecond = this.calcSecond(tdpertouchHigh, this.props.playerOneData, this.props.playerTwoData, 'TDPERTOUCH');
-    // var tdpertouchPlayerOne = this.props.playerOneData.TDPERTOUCH;
-    // var tdpertouchPlayerTwo = this.props.playerTwoData.TDPERTOUCH;
 
     // 3
     var tdpertouchFirstObj = this.calcHighFromFive('TDPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
@@ -67,24 +42,12 @@ class Spiderweb extends Component {
     var tdpertouchSecondProportion = this.calcProportion(tdpertouchFirstObj, tdpertouchSecondObj, 'TDPERTOUCH');
     var tdpertouchThirdProportion = this.calcProportion(tdpertouchFirstObj, tdpertouchThirdObj, 'TDPERTOUCH');
 
-
-    // var touchesgmHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
-    // var touchesgmSecond = this.calcSecond(touchesgmHigh, this.props.playerOneData, this.props.playerTwoData, 'TOUCHESPERGAME');
-    // var touchesgmPlayerOne = this.props.playerOneData.TOUCHESPERGAME;
-    // var touchesgmPlayerTwo = this.props.playerTwoData.TOUCHESPERGAME;
-
     // 4
     var touchesgmFirstObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
     var touchesgmSecondObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
     var touchesgmThirdObj = this.calcHighFromFive('TOUCHESPERGAME', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
     var touchesgmSecondProportion = this.calcProportion(touchesgmFirstObj, touchesgmSecondObj, 'TOUCHESPERGAME');
     var touchesgmThirdProportion = this.calcProportion(touchesgmFirstObj, touchesgmThirdObj, 'TOUCHESPERGAME');
-
-
-    // var ftptstouchHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTSPERTOUCH');
-    // var ftptstouchSecond = this.calcSecond(ftptstouchHigh, this.props.playerOneData, this.props.playerTwoData, 'FANTASYPTSPERTOUCH');
-    // var ftptstouchPlayerOne = this.props.playerOneData.FANTASYPTSPERTOUCH;
-    // var ftptstouchPlayerTwo = this.props.playerTwoData.FANTASYPTSPERTOUCH;
 
     // 5
     var ftptstouchFirstObj = this.calcHighFromFive('FANTASYPTSPERTOUCH', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
@@ -93,12 +56,6 @@ class Spiderweb extends Component {
     var ftptstouchSecondProportion = this.calcProportion(ftptstouchFirstObj, ftptstouchSecondObj, 'FANTASYPTSPERTOUCH');
     var ftptstouchThirdProportion = this.calcProportion(ftptstouchFirstObj, ftptstouchThirdObj, 'FANTASYPTSPERTOUCH');
 
-
-    // var rydHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'RYD');
-    // var rydSecond = this.calcSecond(rydHigh, this.props.playerOneData, this.props.playerTwoData, 'RYD');
-    // var rydPlayerOne = this.props.playerOneData.RYD;
-    // var rydPlayerTwo = this.props.playerTwoData.RYD;
-
     // 6
     var rydFirstObj = this.calcHighFromFive('RYD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
     var rydSecondObj = this.calcHighFromFive('RYD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
@@ -106,24 +63,12 @@ class Spiderweb extends Component {
     var rydSecondProportion = this.calcProportion(rydFirstObj, rydSecondObj, 'FANTASYPTSPERTOUCH');
     var rydThirdProportion = this.calcProportion(rydFirstObj, rydThirdObj, 'FANTASYPTSPERTOUCH');
 
-
-    // var cydHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'PYDS');
-    // var cydSecond = this.calcSecond(cydHigh, this.props.playerOneData, this.props.playerTwoData, 'PYDS');
-    // var cydPlayerOne = this.props.playerOneData.PYDS;
-    // var cydPlayerTwo = this.props.playerTwoData.PYDS;
-
     // 7
     var cydFirstObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
     var cydSecondObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[1];
     var cydThirdObj = this.calcHighFromFive('PYDS', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[2];
     var cydSecondProportion = this.calcProportion(cydFirstObj, cydSecondObj, 'PYDS');
     var cydThirdProportion = this.calcProportion(cydFirstObj, cydThirdObj, 'PYDS');
-
-    
-    // var totaltdHigh = this.calcHigh(this.props.playerOneData, this.props.playerTwoData, 'TOTALTD');
-    // var totaltdSecond = this.calcSecond(totaltdHigh, this.props.playerOneData, this.props.playerTwoData, 'TOTALTD');
-    // var totaltdPlayerOne = this.props.playerOneData.TOTALTD;
-    // var totaltdPlayerTwo = this.props.playerTwoData.TOTALTD;
 
     // 8
     var totaltdFirstObj = this.calcHighFromFive('TOTALTD', [playerOne, playerTwo, rbOneAvg, rbTwoAvg, rbThreeAvg])[0];
@@ -176,7 +121,6 @@ class Spiderweb extends Component {
                 var playerThreeName = self.props.rbOneAvg.PLAYER;
 
                 if (element == 'TDPERTOUCH'){
-                  console.log('TD PER TOUCH! - ', self.props.playerOneData[element], self.props.playerTwoData[element], self.props.rbOneAvg[element])
                   var playerOneStat = self.props.playerOneData[element] + '%';
                   var playerTwoStat = self.props.playerTwoData[element] + '%';
                   var playerThreeStat = self.props.rbOneAvg[element] + '%';
@@ -210,16 +154,8 @@ class Spiderweb extends Component {
           // for data ^ for each category, need to figure out if player one is 1st, 2nd or third
             // if 1st -> 1
             // if 2nd or 3d -> give the value (proportion);
-
-          // name: this.props.playerOneData.PLAYER,
-          // name: ftptsFirstObj.PLAYER,
-          // data: [this.props.playerOneData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerOneData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerOneData.PLAYER === tdpertouchHigh ? 1 : tdpertouchSecond, this.props.playerOneData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerOneData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerOneData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerOneData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerOneData.PLAYER === totaltdHigh ? 1 : totaltdSecond],
-          // data: [1,1,1,1,1,1,1,1],
           pointPlacement: 'on'
         }, {
-          // name: this.props.playerTwoData.PLAYER,
-          // data: [this.props.playerTwoData.PLAYER === ftptsHigh ? 1 : ftptsSecond, this.props.playerTwoData.PLAYER === ftptsgmHigh ? 1 : ftptsgmSecond, this.props.playerTwoData.PLAYER === tdpertouchHigh ? 1 : tdpertouchSecond, this.props.playerTwoData.PLAYER === touchesgmHigh ? 1 : touchesgmSecond, this.props.playerTwoData.PLAYER === ftptstouchHigh ? 1 : ftptstouchSecond, this.props.playerTwoData.PLAYER === rydHigh ? 1 : rydSecond, this.props.playerTwoData.PLAYER === cydHigh ? 1 : cydSecond, this.props.playerTwoData.PLAYER === totaltdHigh ? 1 : totaltdSecond],
-          // name: ftptsSecondObj.PLAYER,
           name: playerTwo.PLAYER,
           data: [
             playerTwo.PLAYER === ftptsFirstObj.PLAYER ? 1 : playerTwo.PLAYER === ftptsSecondObj.PLAYER ? ftptsSecondProportion : ftptsThirdProportion,
@@ -233,10 +169,7 @@ class Spiderweb extends Component {
           ],
           pointPlacement: 'on'
         }, {
-          // name: this.props.rbOneAvg.PLAYER,
-          // name: ftptsThirdObj.PLAYER,
           name: rbOneAvg.PLAYER,
-          // data: [ftptsThirdProportion, ftptsgmThirdProportion, tdpertouchThirdProportion, touchesgmThirdProportion, ftptstouchThirdProportion, rydThirdProportion, cydThirdProportion, totaltdThirdProportion],
           data: [
             rbOneAvg.PLAYER === ftptsFirstObj.PLAYER ? 1 : rbOneAvg.PLAYER === ftptsSecondObj.PLAYER ? ftptsSecondProportion : ftptsThirdProportion,
             rbOneAvg.PLAYER === ftptsgmFirstObj.PLAYER ? 1 : rbOneAvg.PLAYER === ftptsgmSecondObj.PLAYER ? ftptsgmSecondProportion : ftptsThirdProportion,
@@ -254,14 +187,6 @@ class Spiderweb extends Component {
   }
   // https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting
 
-  // calcHigh(p1Data, p2Data, attribute) {
-  //   return p1Data[attribute] > p2Data[attribute] ? p1Data.PLAYER : p2Data.PLAYER;
-  // }
-
-  // calcSecond(high, p1Data, p2Data, attribute) {
-  //   return high === p1Data.PLAYER ? (p2Data[attribute] / p1Data[attribute]) : (p1Data[attribute] / p2Data[attribute]);
-  // }
-
   calcHighFromFive(attribute, list) {
     // this organizes 1st to 5th
     return list.sort((a,b) => { return b[attribute] - a[attribute] });
@@ -269,7 +194,6 @@ class Spiderweb extends Component {
 
   calcProportion(high, p2Data, attribute) {
     return (p2Data[attribute] / high[attribute])
-    // return high === p1Data.PLAYER ? (p2Data[attribute] / p1Data[attribute]) : (p1Data[attribute] / p2Data[attribute]);
   }
 
 
