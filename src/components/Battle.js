@@ -14,17 +14,22 @@ console.log('getrbOnes - ', getRb2016.getRbOnes());
 console.log('getrbTwos - ', getRb2016.getRbTwos());
 console.log('getrbThrees - ', getRb2016.getRbThrees());
 console.log('getRB1AVG - ', getRb2016.getRbOneAvg());
+console.log('getRBTwoAVG - ', getRb2016.getRbTwoAvg());
+console.log('getRBThreeAVG - ', getRb2016.getRbThreeAvg());
 
 // RECAP: https://www.youtube.com/watch?v=z_OpiP_b6HY @ 20:30 
 class Battle extends Component {
   constructor(props) {
     super(props);
-
+    
     this.state = {
       playerOneName: '',
       playerTwoName: '',
       playerOneData: {},
       playerTwoData: {},
+      rbOneAvg: getRb2016.getRbOneAvg(),
+      rbTwoAvg: getRb2016.getRbTwoAvg(),
+      rbThreeAvg: getRb2016.getRbThreeAvg(),
       displayChart: false,
       config: {}
     }
@@ -92,7 +97,7 @@ class Battle extends Component {
         </div>
 
         {displayChart && 
-          <Spiderweb playerOneData={this.state.playerOneData} playerTwoData={this.state.playerTwoData} />
+          <Spiderweb playerOneData={this.state.playerOneData} playerTwoData={this.state.playerTwoData} rbOneAvg={this.state.rbOneAvg} rbTwoAvg={this.state.rbTwoAvg} rbThreeAvg={this.state.rbThreeAvg} />
         }
 
 

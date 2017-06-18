@@ -27,6 +27,7 @@ const getRb2016 = {
       return Math.round(fraction * 100 * 100) / 100;
     };
     player.TDPERTOUCH = convertToPercent(player.TOTALTD / player.TOUCHES);
+    console.log('convert to percent - ', player.PLAYER, player.TDPERTOUCH)
     delete player.FPTS;
     return player;
   },
@@ -58,25 +59,67 @@ const getRb2016 = {
     }
     return result;
   },
-  getRbOneAvg: () => {
-    var rbOneAvg = getRb2016.blankslate();    
+  calcAvg: (listOfRb, number) => {
+    var rbAvg = getRb2016.blankslate();    
     // loop thru each rb
-    for (var i = runningbacks.length - 1; i >= runningbacks.length - 12; i--){
-      var current = getRb2016.calcAdditionalStats(runningbacks[i]);
+    var start = 1;
+    var iteratorLength = 12;
+    switch(number){
+      case 2:
+        start += 12;
+        iteratorLength += 12;
+        // ^ starts @ 12
+        break;
+      case 3:
+        start += 24;
+        iteratorLength += 24;
+        break;
+      case 4:
+        start += 36;
+        iteratorLength += 36;
+        break;
+      case 5:
+        start += 48;
+        iteratorLength += 48;
+        break;
+      case 1:
+        break;
+    }
+    // 1s -> for (var i = listOfRb.length - 1; i >= listOfRb.length - 12; i--){
+    // 2s -> for (var i = runningbacks.length - 13; i >= runningbacks.length - 24; i--){
+    // 3s -> for (var i = runningbacks.length - 25; i >= runningbacks.length - 36; i--){
+    for (var i = listOfRb.length - start; i >= listOfRb.length - iteratorLength; i--){
+      var current = getRb2016.calcAdditionalStats(listOfRb[i]);
         // loop thru each of current's stat categories
       for (var key in current){
         // w/ each category -> add each category to rbOneAb stat total
-        rbOneAvg[key] += current[key];
+        rbAvg[key] += current[key];
       }
     }
     // after looping thru all 12 rb1s -> divide each category by 12
-    for (var key in rbOneAvg){
-      var currentCategory = rbOneAvg[key];
-      rbOneAvg[key] = (rbOneAvg[key] / 12);
+    for (var key in rbAvg){
+      var currentCategory = rbAvg[key];
+      rbAvg[key] = (rbAvg[key] / 12);
     }
-    rbOneAvg.PLAYER = "RB1 Average";
-    rbOneAvg.TEAM = "";
-    return rbOneAvg;
+    // var str = 'RB' + number + ' Average';
+    rbAvg.PLAYER = 'RB' + number + ' Average';;
+    rbAvg.TEAM = "";
+    var convertToPercent = (fraction) => {
+      return Math.round(fraction * 100 * 100) / 100;
+    };
+    rbAvg.TDPERTOUCH = convertToPercent(rbAvg.TOTALTD / rbAvg.TOUCHES);
+    console.log('avg - ', rbAvg);
+    return rbAvg;
+    
+  },
+  getRbOneAvg: () => {
+    return getRb2016.calcAvg(runningbacks, 1);
+  },
+  getRbTwoAvg: () => {
+    return getRb2016.calcAvg(runningbacks, 2);
+  },
+  getRbThreeAvg: () => {
+    return getRb2016.calcAvg(runningbacks, 3);
   },
   blankslate: () => {
     // used to calculate avgs
