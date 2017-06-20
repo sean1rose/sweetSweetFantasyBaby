@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 9,
+   "Name": "Ellison, Rhett",
+   "Team": "MIN",
+   "Pos.": "TE",
+   "Completions": 10,
+   "Targets": 15,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 2.51
+ },
+ {
+   "Rank": 6,
+   "Name": "Asiata, Matt",
+   "Team": "MIN",
+   "Pos.": "RB",
+   "Completions": 34,
+   "Targets": 40,
+   "Comp %": 85,
+   "TDs": 0,
+   "Target %": 6.7
+ },
+ {
+   "Rank": 15,
+   "Name": "Fruechte, Isaac",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 4,
+   "Name": "Patterson, Cordarrelle",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 53,
+   "Targets": 72,
+   "Comp %": 73.61,
+   "TDs": 2,
+   "Target %": 12.06
+ },
+ {
+   "Rank": 8,
+   "Name": "Wright, Jarius",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 12,
+   "Targets": 15,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 2.51
+ },
+ {
+   "Rank": 12,
+   "Name": "Line, Zach",
+   "Team": "MIN",
+   "Pos.": "FB",
+   "Completions": 0,
+   "Targets": 3,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.5
+ },
+ {
+   "Rank": 7,
+   "Name": "Johnson, Charles",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 20,
+   "Targets": 38,
+   "Comp %": 52.63,
+   "TDs": 0,
+   "Target %": 6.37
+ },
+ {
+   "Rank": 13,
+   "Name": "Bradford, Sam",
+   "Team": "MIN",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 2,
+   "Name": "Diggs, Stefon",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 86,
+   "Targets": 114,
+   "Comp %": 75.44,
+   "TDs": 3,
+   "Target %": 19.1
+ },
+ {
+   "Rank": 1,
+   "Name": "Rudolph, Kyle",
+   "Team": "MIN",
+   "Pos.": "TE",
+   "Completions": 84,
+   "Targets": 139,
+   "Comp %": 60.43,
+   "TDs": 8,
+   "Target %": 23.28
+ },
+ {
+   "Rank": 10,
+   "Name": "Peterson, Adrian",
+   "Team": "MIN",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 6,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 1.01
+ },
+ {
+   "Rank": 14,
+   "Name": "Morgan, David",
+   "Team": "MIN",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 5,
+   "Name": "McKinnon, Jerick",
+   "Team": "MIN",
+   "Pos.": "RB",
+   "Completions": 45,
+   "Targets": 55,
+   "Comp %": 81.82,
+   "TDs": 2,
+   "Target %": 9.21
+ },
+ {
+   "Rank": 3,
+   "Name": "Thielen, Adam",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 70,
+   "Targets": 94,
+   "Comp %": 74.47,
+   "TDs": 5,
+   "Target %": 15.75
+ },
+ {
+   "Rank": 11,
+   "Name": "Treadwell, Laquon",
+   "Team": "MIN",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.5
+ }
+]

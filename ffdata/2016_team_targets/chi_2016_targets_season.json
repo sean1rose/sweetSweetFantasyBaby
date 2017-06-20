@@ -1,0 +1,200 @@
+[
+ {
+   "Rank": 7,
+   "Name": "Bellamy, Josh",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 20,
+   "Targets": 39,
+   "Comp %": 51.28,
+   "TDs": 1,
+   "Target %": 6.88
+ },
+ {
+   "Rank": 5,
+   "Name": "Royal, Eddie",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 35,
+   "Targets": 45,
+   "Comp %": 77.78,
+   "TDs": 2,
+   "Target %": 7.94
+ },
+ {
+   "Rank": 4,
+   "Name": "Howard, Jordan",
+   "Team": "CHI",
+   "Pos.": "RB",
+   "Completions": 33,
+   "Targets": 55,
+   "Comp %": 60,
+   "TDs": 1,
+   "Target %": 9.7
+ },
+ {
+   "Rank": 14,
+   "Name": "Braunecker, Ben",
+   "Team": "CHI",
+   "Pos.": "TE",
+   "Completions": 4,
+   "Targets": 5,
+   "Comp %": 80,
+   "TDs": 0,
+   "Target %": 0.88
+ },
+ {
+   "Rank": 16,
+   "Name": "Pruitt, MyCole",
+   "Team": "CHI",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 1,
+   "Name": "Meredith, Cameron",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 69,
+   "Targets": 104,
+   "Comp %": 66.35,
+   "TDs": 4,
+   "Target %": 18.34
+ },
+ {
+   "Rank": 13,
+   "Name": "Carey, KaDeem",
+   "Team": "CHI",
+   "Pos.": "RB",
+   "Completions": 5,
+   "Targets": 7,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 1.23
+ },
+ {
+   "Rank": 18,
+   "Name": "Lasike, Paul",
+   "Team": "CHI",
+   "Pos.": "FB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 6,
+   "Name": "Thompson, Deonte",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 23,
+   "Targets": 40,
+   "Comp %": 57.5,
+   "TDs": 2,
+   "Target %": 7.05
+ },
+ {
+   "Rank": 17,
+   "Name": "Barkley, Matt",
+   "Team": "CHI",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 2,
+   "Name": "Jeffery, Alshon",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 53,
+   "Targets": 92,
+   "Comp %": 57.61,
+   "TDs": 2,
+   "Target %": 16.23
+ },
+ {
+   "Rank": 3,
+   "Name": "Miller, Zach",
+   "Team": "CHI",
+   "Pos.": "TE",
+   "Completions": 48,
+   "Targets": 64,
+   "Comp %": 75,
+   "TDs": 4,
+   "Target %": 11.29
+ },
+ {
+   "Rank": 15,
+   "Name": "Braverman, Daniel",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 9,
+   "Name": "Langford, Jeremy",
+   "Team": "CHI",
+   "Pos.": "RB",
+   "Completions": 20,
+   "Targets": 28,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 4.94
+ },
+ {
+   "Rank": 11,
+   "Name": "Wilson, Marquess",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 9,
+   "Targets": 16,
+   "Comp %": 56.25,
+   "TDs": 1,
+   "Target %": 2.82
+ },
+ {
+   "Rank": 12,
+   "Name": "Paulsen, Logan",
+   "Team": "CHI",
+   "Pos.": "TE",
+   "Completions": 4,
+   "Targets": 10,
+   "Comp %": 40,
+   "TDs": 0,
+   "Target %": 1.76
+ },
+ {
+   "Rank": 8,
+   "Name": "White, Kevin",
+   "Team": "CHI",
+   "Pos.": "WR",
+   "Completions": 20,
+   "Targets": 37,
+   "Comp %": 54.05,
+   "TDs": 0,
+   "Target %": 6.53
+ },
+ {
+   "Rank": 10,
+   "Name": "Brown, Daniel",
+   "Team": "CHI",
+   "Pos.": "TE",
+   "Completions": 16,
+   "Targets": 20,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 3.53
+ }
+]

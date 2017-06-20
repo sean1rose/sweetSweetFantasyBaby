@@ -1,0 +1,145 @@
+[
+ {
+   "Rank": 9,
+   "Name": "Escobar, Gavin",
+   "Team": "DAL",
+   "Pos.": "TE",
+   "Completions": 4,
+   "Targets": 6,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 1.21
+ },
+ {
+   "Rank": 8,
+   "Name": "Swaim, Geoff",
+   "Team": "DAL",
+   "Pos.": "TE",
+   "Completions": 6,
+   "Targets": 9,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 1.81
+ },
+ {
+   "Rank": 1,
+   "Name": "Beasley, Cole",
+   "Team": "DAL",
+   "Pos.": "WR",
+   "Completions": 76,
+   "Targets": 104,
+   "Comp %": 73.08,
+   "TDs": 5,
+   "Target %": 20.97
+ },
+ {
+   "Rank": 4,
+   "Name": "Williams, Terrance",
+   "Team": "DAL",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 65,
+   "Comp %": 67.69,
+   "TDs": 4,
+   "Target %": 13.1
+ },
+ {
+   "Rank": 12,
+   "Name": "Whitehead, Lucky",
+   "Team": "DAL",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 4,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.81
+ },
+ {
+   "Rank": 3,
+   "Name": "Witten, Jason",
+   "Team": "DAL",
+   "Pos.": "TE",
+   "Completions": 70,
+   "Targets": 98,
+   "Comp %": 71.43,
+   "TDs": 3,
+   "Target %": 19.76
+ },
+ {
+   "Rank": 11,
+   "Name": "Morris, Alfred",
+   "Team": "DAL",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 1.01
+ },
+ {
+   "Rank": 13,
+   "Name": "Smith, Keith",
+   "Team": "DAL",
+   "Pos.": "FB",
+   "Completions": 3,
+   "Targets": 3,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.6
+ },
+ {
+   "Rank": 10,
+   "Name": "McFadden, Darren",
+   "Team": "DAL",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 1.01
+ },
+ {
+   "Rank": 6,
+   "Name": "Butler, Brice",
+   "Team": "DAL",
+   "Pos.": "WR",
+   "Completions": 17,
+   "Targets": 32,
+   "Comp %": 53.13,
+   "TDs": 4,
+   "Target %": 6.45
+ },
+ {
+   "Rank": 5,
+   "Name": "Elliott, Ezekiel",
+   "Team": "DAL",
+   "Pos.": "RB",
+   "Completions": 32,
+   "Targets": 40,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 8.06
+ },
+ {
+   "Rank": 7,
+   "Name": "Dunbar, Lance",
+   "Team": "DAL",
+   "Pos.": "RB",
+   "Completions": 17,
+   "Targets": 25,
+   "Comp %": 68,
+   "TDs": 1,
+   "Target %": 5.04
+ },
+ {
+   "Rank": 2,
+   "Name": "Bryant, Dez",
+   "Team": "DAL",
+   "Pos.": "WR",
+   "Completions": 52,
+   "Targets": 100,
+   "Comp %": 52,
+   "TDs": 9,
+   "Target %": 20.16
+ }
+]

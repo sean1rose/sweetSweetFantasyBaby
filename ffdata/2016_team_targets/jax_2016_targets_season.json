@@ -1,0 +1,211 @@
+[
+ {
+   "Rank": 1,
+   "Name": "Robinson, Allen",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 73,
+   "Targets": 159,
+   "Comp %": 45.91,
+   "TDs": 6,
+   "Target %": 24.61
+ },
+ {
+   "Rank": 14,
+   "Name": "Robinson, Denard",
+   "Team": "JAX",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 0.77
+ },
+ {
+   "Rank": 13,
+   "Name": "Grant, Corey",
+   "Team": "JAX",
+   "Pos.": "RB",
+   "Completions": 4,
+   "Targets": 7,
+   "Comp %": 57.14,
+   "TDs": 1,
+   "Target %": 1.08
+ },
+ {
+   "Rank": 18,
+   "Name": "Washington, Tony",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.15
+ },
+ {
+   "Rank": 7,
+   "Name": "Lewis, Marcedes",
+   "Team": "JAX",
+   "Pos.": "TE",
+   "Completions": 20,
+   "Targets": 30,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 4.64
+ },
+ {
+   "Rank": 11,
+   "Name": "Benn, Arrelious",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 5,
+   "Targets": 10,
+   "Comp %": 50,
+   "TDs": 1,
+   "Target %": 1.55
+ },
+ {
+   "Rank": 5,
+   "Name": "Thomas, Julius",
+   "Team": "JAX",
+   "Pos.": "TE",
+   "Completions": 32,
+   "Targets": 54,
+   "Comp %": 59.26,
+   "TDs": 4,
+   "Target %": 8.36
+ },
+ {
+   "Rank": 10,
+   "Name": "Sterling, Neal",
+   "Team": "JAX",
+   "Pos.": "TE",
+   "Completions": 12,
+   "Targets": 17,
+   "Comp %": 70.59,
+   "TDs": 0,
+   "Target %": 2.63
+ },
+ {
+   "Rank": 8,
+   "Name": "Ivory, Chris",
+   "Team": "JAX",
+   "Pos.": "RB",
+   "Completions": 20,
+   "Targets": 28,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 4.33
+ },
+ {
+   "Rank": 2,
+   "Name": "Lee, Marqise",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 66,
+   "Targets": 111,
+   "Comp %": 59.46,
+   "TDs": 3,
+   "Target %": 17.18
+ },
+ {
+   "Rank": 15,
+   "Name": "Ellis, Alex",
+   "Team": "JAX",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 4,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 0.62
+ },
+ {
+   "Rank": 19,
+   "Name": "Hill, Bronson",
+   "Team": "JAX",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.15
+ },
+ {
+   "Rank": 16,
+   "Name": "Wynn, Shane",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.46
+ },
+ {
+   "Rank": 4,
+   "Name": "Yeldon, T.J.",
+   "Team": "JAX",
+   "Pos.": "RB",
+   "Completions": 52,
+   "Targets": 71,
+   "Comp %": 73.24,
+   "TDs": 1,
+   "Target %": 10.99
+ },
+ {
+   "Rank": 12,
+   "Name": "Greene, Rashad",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 5,
+   "Targets": 7,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 1.08
+ },
+ {
+   "Rank": 17,
+   "Name": "Bortles, Blake",
+   "Team": "JAX",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.15
+ },
+ {
+   "Rank": 6,
+   "Name": "Walters, Bryan",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 24,
+   "Targets": 35,
+   "Comp %": 68.57,
+   "TDs": 2,
+   "Target %": 5.42
+ },
+ {
+   "Rank": 9,
+   "Name": "Koyack, Ben",
+   "Team": "JAX",
+   "Pos.": "TE",
+   "Completions": 19,
+   "Targets": 24,
+   "Comp %": 79.17,
+   "TDs": 1,
+   "Target %": 3.72
+ },
+ {
+   "Rank": 3,
+   "Name": "Hurns, Allen",
+   "Team": "JAX",
+   "Pos.": "WR",
+   "Completions": 35,
+   "Targets": 78,
+   "Comp %": 44.87,
+   "TDs": 3,
+   "Target %": 12.07
+ }
+]

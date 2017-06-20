@@ -1,0 +1,178 @@
+[
+ {
+   "Rank": 16,
+   "Name": "Johnson, Chris",
+   "Team": "ARI",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 2,
+   "Name": "Johnson, David",
+   "Team": "ARI",
+   "Pos.": "RB",
+   "Completions": 84,
+   "Targets": 123,
+   "Comp %": 68.29,
+   "TDs": 4,
+   "Target %": 20.88
+ },
+ {
+   "Rank": 8,
+   "Name": "Ellington, Andre",
+   "Team": "ARI",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 20,
+   "Comp %": 65,
+   "TDs": 0,
+   "Target %": 3.4
+ },
+ {
+   "Rank": 3,
+   "Name": "Nelson, J.J.",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 35,
+   "Targets": 75,
+   "Comp %": 46.67,
+   "TDs": 6,
+   "Target %": 12.73
+ },
+ {
+   "Rank": 10,
+   "Name": "Brown, John",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 8,
+   "Comp %": 25,
+   "TDs": 0,
+   "Target %": 1.36
+ },
+ {
+   "Rank": 1,
+   "Name": "Fitzgerald, Larry",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 111,
+   "Targets": 161,
+   "Comp %": 68.94,
+   "TDs": 7,
+   "Target %": 27.33
+ },
+ {
+   "Rank": 5,
+   "Name": "Gresham, Jermaine",
+   "Team": "ARI",
+   "Pos.": "TE",
+   "Completions": 37,
+   "Targets": 62,
+   "Comp %": 59.68,
+   "TDs": 2,
+   "Target %": 10.53
+ },
+ {
+   "Rank": 4,
+   "Name": "Brown, John",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 39,
+   "Targets": 68,
+   "Comp %": 57.35,
+   "TDs": 2,
+   "Target %": 11.54
+ },
+ {
+   "Rank": 15,
+   "Name": "Niklas, Troy",
+   "Team": "ARI",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.34
+ },
+ {
+   "Rank": 13,
+   "Name": "Valles, Hakeem",
+   "Team": "ARI",
+   "Pos.": "TE",
+   "Completions": 0,
+   "Targets": 3,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.51
+ },
+ {
+   "Rank": 9,
+   "Name": "Golden, Brittan",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 13,
+   "Comp %": 61.54,
+   "TDs": 1,
+   "Target %": 2.21
+ },
+ {
+   "Rank": 6,
+   "Name": "Fells, Darren",
+   "Team": "ARI",
+   "Pos.": "TE",
+   "Completions": 15,
+   "Targets": 22,
+   "Comp %": 68.18,
+   "TDs": 1,
+   "Target %": 3.74
+ },
+ {
+   "Rank": 14,
+   "Name": "Williams, Kerwynn",
+   "Team": "ARI",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.34
+ },
+ {
+   "Rank": 7,
+   "Name": "Brown, Jaron",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 21,
+   "Comp %": 52.38,
+   "TDs": 1,
+   "Target %": 3.57
+ },
+ {
+   "Rank": 11,
+   "Name": "Ross, Jeremy",
+   "Team": "ARI",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 4,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.68
+ },
+ {
+   "Rank": 12,
+   "Name": "Momah, Ifeanyi",
+   "Team": "ARI",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.68
+ }
+]

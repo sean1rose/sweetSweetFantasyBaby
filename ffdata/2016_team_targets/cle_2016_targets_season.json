@@ -1,0 +1,145 @@
+[
+ {
+   "Rank": 11,
+   "Name": "Vitale, Danny",
+   "Team": "CLE",
+   "Pos.": "FB",
+   "Completions": 4,
+   "Targets": 5,
+   "Comp %": 80,
+   "TDs": 0,
+   "Target %": 0.88
+ },
+ {
+   "Rank": 8,
+   "Name": "Higgins, Rashard",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 7,
+   "Targets": 13,
+   "Comp %": 53.85,
+   "TDs": 0,
+   "Target %": 2.28
+ },
+ {
+   "Rank": 7,
+   "Name": "Louis, Ricardo",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 18,
+   "Targets": 34,
+   "Comp %": 52.94,
+   "TDs": 0,
+   "Target %": 5.98
+ },
+ {
+   "Rank": 4,
+   "Name": "Coleman, Corey",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 33,
+   "Targets": 75,
+   "Comp %": 44,
+   "TDs": 3,
+   "Target %": 13.18
+ },
+ {
+   "Rank": 3,
+   "Name": "Johnson, Duke",
+   "Team": "CLE",
+   "Pos.": "RB",
+   "Completions": 55,
+   "Targets": 77,
+   "Comp %": 71.43,
+   "TDs": 1,
+   "Target %": 13.53
+ },
+ {
+   "Rank": 1,
+   "Name": "Pryor, Terrelle",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 80,
+   "Targets": 144,
+   "Comp %": 55.56,
+   "TDs": 4,
+   "Target %": 25.31
+ },
+ {
+   "Rank": 13,
+   "Name": "Hamlett, Connor",
+   "Team": "CLE",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 1,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 6,
+   "Name": "Crowell, Isaiah",
+   "Team": "CLE",
+   "Pos.": "RB",
+   "Completions": 42,
+   "Targets": 55,
+   "Comp %": 76.36,
+   "TDs": 0,
+   "Target %": 9.67
+ },
+ {
+   "Rank": 5,
+   "Name": "Hawkins, Andrew",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 33,
+   "Targets": 57,
+   "Comp %": 57.89,
+   "TDs": 3,
+   "Target %": 10.02
+ },
+ {
+   "Rank": 2,
+   "Name": "Barnidge, Gary",
+   "Team": "CLE",
+   "Pos.": "TE",
+   "Completions": 57,
+   "Targets": 85,
+   "Comp %": 67.06,
+   "TDs": 2,
+   "Target %": 14.94
+ },
+ {
+   "Rank": 10,
+   "Name": "Telfer, Randall",
+   "Team": "CLE",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 7,
+   "Comp %": 28.57,
+   "TDs": 0,
+   "Target %": 1.23
+ },
+ {
+   "Rank": 9,
+   "Name": "DeValve, Seth",
+   "Team": "CLE",
+   "Pos.": "TE",
+   "Completions": 10,
+   "Targets": 12,
+   "Comp %": 83.33,
+   "TDs": 2,
+   "Target %": 2.11
+ },
+ {
+   "Rank": 12,
+   "Name": "Payton, Jordan",
+   "Team": "CLE",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.53
+ }
+]

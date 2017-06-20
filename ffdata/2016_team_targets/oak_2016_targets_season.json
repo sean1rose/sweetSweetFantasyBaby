@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 8,
+   "Name": "Rivera, Mychal",
+   "Team": "OAK",
+   "Pos.": "TE",
+   "Completions": 18,
+   "Targets": 24,
+   "Comp %": 75,
+   "TDs": 1,
+   "Target %": 3.85
+ },
+ {
+   "Rank": 6,
+   "Name": "Richard, Jalen",
+   "Team": "OAK",
+   "Pos.": "RB",
+   "Completions": 29,
+   "Targets": 40,
+   "Comp %": 72.5,
+   "TDs": 2,
+   "Target %": 6.42
+ },
+ {
+   "Rank": 11,
+   "Name": "Smith, Lee",
+   "Team": "OAK",
+   "Pos.": "TE",
+   "Completions": 6,
+   "Targets": 6,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.96
+ },
+ {
+   "Rank": 12,
+   "Name": "Jones, Taiwan",
+   "Team": "OAK",
+   "Pos.": "RB",
+   "Completions": 4,
+   "Targets": 4,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.64
+ },
+ {
+   "Rank": 14,
+   "Name": "Penn, Donald",
+   "Team": "OAK",
+   "Pos.": "T",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.16
+ },
+ {
+   "Rank": 7,
+   "Name": "Holmes, Andre",
+   "Team": "OAK",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 26,
+   "Comp %": 53.85,
+   "TDs": 3,
+   "Target %": 4.17
+ },
+ {
+   "Rank": 10,
+   "Name": "Olawale, Jamize",
+   "Team": "OAK",
+   "Pos.": "FB",
+   "Completions": 12,
+   "Targets": 13,
+   "Comp %": 92.31,
+   "TDs": 1,
+   "Target %": 2.09
+ },
+ {
+   "Rank": 3,
+   "Name": "Roberts, Seth",
+   "Team": "OAK",
+   "Pos.": "WR",
+   "Completions": 39,
+   "Targets": 80,
+   "Comp %": 48.75,
+   "TDs": 4,
+   "Target %": 12.84
+ },
+ {
+   "Rank": 1,
+   "Name": "Crabtree, Michael",
+   "Team": "OAK",
+   "Pos.": "WR",
+   "Completions": 92,
+   "Targets": 156,
+   "Comp %": 58.97,
+   "TDs": 9,
+   "Target %": 25.04
+ },
+ {
+   "Rank": 2,
+   "Name": "Cooper, Amari",
+   "Team": "OAK",
+   "Pos.": "WR",
+   "Completions": 86,
+   "Targets": 146,
+   "Comp %": 58.9,
+   "TDs": 5,
+   "Target %": 23.43
+ },
+ {
+   "Rank": 13,
+   "Name": "Holton, Johnny",
+   "Team": "OAK",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.64
+ },
+ {
+   "Rank": 5,
+   "Name": "Murray, Latavius",
+   "Team": "OAK",
+   "Pos.": "RB",
+   "Completions": 34,
+   "Targets": 46,
+   "Comp %": 73.91,
+   "TDs": 1,
+   "Target %": 7.38
+ },
+ {
+   "Rank": 4,
+   "Name": "Walford, Clive",
+   "Team": "OAK",
+   "Pos.": "TE",
+   "Completions": 34,
+   "Targets": 54,
+   "Comp %": 62.96,
+   "TDs": 4,
+   "Target %": 8.67
+ },
+ {
+   "Rank": 9,
+   "Name": "Washington, DeAndre",
+   "Team": "OAK",
+   "Pos.": "RB",
+   "Completions": 17,
+   "Targets": 23,
+   "Comp %": 73.91,
+   "TDs": 0,
+   "Target %": 3.69
+ }
+]

@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 4,
+   "Name": "Agholor, Nelson",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 35,
+   "Targets": 73,
+   "Comp %": 47.95,
+   "TDs": 2,
+   "Target %": 12.19
+ },
+ {
+   "Rank": 10,
+   "Name": "Smallwood, Wendell",
+   "Team": "PHI",
+   "Pos.": "RB",
+   "Completions": 6,
+   "Targets": 12,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 2
+ },
+ {
+   "Rank": 14,
+   "Name": "Watson, Terrell",
+   "Team": "PHI",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 6,
+   "Name": "Burton, Trey",
+   "Team": "PHI",
+   "Pos.": "TE",
+   "Completions": 38,
+   "Targets": 60,
+   "Comp %": 63.33,
+   "TDs": 1,
+   "Target %": 10.02
+ },
+ {
+   "Rank": 12,
+   "Name": "Treggs, Bryce",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 10,
+   "Comp %": 30,
+   "TDs": 0,
+   "Target %": 1.67
+ },
+ {
+   "Rank": 2,
+   "Name": "Ertz, Zach",
+   "Team": "PHI",
+   "Pos.": "TE",
+   "Completions": 82,
+   "Targets": 109,
+   "Comp %": 75.23,
+   "TDs": 5,
+   "Target %": 18.2
+ },
+ {
+   "Rank": 8,
+   "Name": "Mathews, Ryan",
+   "Team": "PHI",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 14,
+   "Comp %": 92.86,
+   "TDs": 1,
+   "Target %": 2.34
+ },
+ {
+   "Rank": 5,
+   "Name": "Sproles, Darren",
+   "Team": "PHI",
+   "Pos.": "RB",
+   "Completions": 53,
+   "Targets": 72,
+   "Comp %": 73.61,
+   "TDs": 2,
+   "Target %": 12.02
+ },
+ {
+   "Rank": 11,
+   "Name": "Barner, Kenjon",
+   "Team": "PHI",
+   "Pos.": "RB",
+   "Completions": 6,
+   "Targets": 12,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 2
+ },
+ {
+   "Rank": 9,
+   "Name": "Turner, Paul",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 9,
+   "Targets": 14,
+   "Comp %": 64.29,
+   "TDs": 0,
+   "Target %": 2.34
+ },
+ {
+   "Rank": 7,
+   "Name": "Celek, Brent",
+   "Team": "PHI",
+   "Pos.": "TE",
+   "Completions": 16,
+   "Targets": 21,
+   "Comp %": 76.19,
+   "TDs": 0,
+   "Target %": 3.51
+ },
+ {
+   "Rank": 1,
+   "Name": "Matthews, Jordan",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 73,
+   "Targets": 119,
+   "Comp %": 61.34,
+   "TDs": 3,
+   "Target %": 19.87
+ },
+ {
+   "Rank": 13,
+   "Name": "Marshall, Byron",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 0.83
+ },
+ {
+   "Rank": 3,
+   "Name": "Green-Beckham, Dorial",
+   "Team": "PHI",
+   "Pos.": "WR",
+   "Completions": 38,
+   "Targets": 77,
+   "Comp %": 49.35,
+   "TDs": 2,
+   "Target %": 12.85
+ }
+]

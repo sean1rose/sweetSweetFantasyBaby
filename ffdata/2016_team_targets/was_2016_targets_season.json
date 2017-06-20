@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 12,
+   "Name": "Paul, Niles",
+   "Team": "WAS",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.49
+ },
+ {
+   "Rank": 15,
+   "Name": "Brown, Mack",
+   "Team": "WAS",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.16
+ },
+ {
+   "Rank": 9,
+   "Name": "Jones, Matt",
+   "Team": "WAS",
+   "Pos.": "RB",
+   "Completions": 9,
+   "Targets": 11,
+   "Comp %": 81.82,
+   "TDs": 0,
+   "Target %": 1.79
+ },
+ {
+   "Rank": 4,
+   "Name": "Reed, Jordan",
+   "Team": "WAS",
+   "Pos.": "TE",
+   "Completions": 68,
+   "Targets": 91,
+   "Comp %": 74.73,
+   "TDs": 7,
+   "Target %": 14.85
+ },
+ {
+   "Rank": 8,
+   "Name": "Kelley, Rob",
+   "Team": "WAS",
+   "Pos.": "RB",
+   "Completions": 12,
+   "Targets": 19,
+   "Comp %": 63.16,
+   "TDs": 1,
+   "Target %": 3.1
+ },
+ {
+   "Rank": 7,
+   "Name": "Grant, Ryan",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 22,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 3.59
+ },
+ {
+   "Rank": 5,
+   "Name": "Thompson, Chris",
+   "Team": "WAS",
+   "Pos.": "RB",
+   "Completions": 49,
+   "Targets": 62,
+   "Comp %": 79.03,
+   "TDs": 2,
+   "Target %": 10.11
+ },
+ {
+   "Rank": 13,
+   "Name": "Carrier, Derek",
+   "Team": "WAS",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.33
+ },
+ {
+   "Rank": 2,
+   "Name": "Jackson, DeSean",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 54,
+   "Targets": 107,
+   "Comp %": 50.47,
+   "TDs": 4,
+   "Target %": 17.46
+ },
+ {
+   "Rank": 6,
+   "Name": "Davis, Vernon",
+   "Team": "WAS",
+   "Pos.": "TE",
+   "Completions": 46,
+   "Targets": 61,
+   "Comp %": 75.41,
+   "TDs": 2,
+   "Target %": 9.95
+ },
+ {
+   "Rank": 11,
+   "Name": "Doctson, Josh",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 6,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.98
+ },
+ {
+   "Rank": 10,
+   "Name": "Harris, Maurice",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 11,
+   "Comp %": 72.73,
+   "TDs": 0,
+   "Target %": 1.79
+ },
+ {
+   "Rank": 3,
+   "Name": "Crowder, Jamison",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 66,
+   "Targets": 99,
+   "Comp %": 66.67,
+   "TDs": 7,
+   "Target %": 16.15
+ },
+ {
+   "Rank": 1,
+   "Name": "Garcon, Pierre",
+   "Team": "WAS",
+   "Pos.": "WR",
+   "Completions": 80,
+   "Targets": 117,
+   "Comp %": 68.38,
+   "TDs": 3,
+   "Target %": 19.09
+ },
+ {
+   "Rank": 14,
+   "Name": "Dunbar, Quinton",
+   "Team": "WAS",
+   "Pos.": "CB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.16
+ }
+]

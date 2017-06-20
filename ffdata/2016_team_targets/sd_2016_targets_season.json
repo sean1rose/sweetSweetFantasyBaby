@@ -1,0 +1,189 @@
+[
+ {
+   "Rank": 10,
+   "Name": "Allen, Keenan",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 6,
+   "Targets": 8,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 1.41
+ },
+ {
+   "Rank": 15,
+   "Name": "Butler, Jeremy",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 7,
+   "Name": "Farrow, Kenneth",
+   "Team": "SD",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 16,
+   "Comp %": 81.25,
+   "TDs": 0,
+   "Target %": 2.83
+ },
+ {
+   "Rank": 4,
+   "Name": "Benjamin, Travis",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 47,
+   "Targets": 77,
+   "Comp %": 61.04,
+   "TDs": 4,
+   "Target %": 13.6
+ },
+ {
+   "Rank": 1,
+   "Name": "Williams, Tyrell",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 71,
+   "Targets": 113,
+   "Comp %": 62.83,
+   "TDs": 7,
+   "Target %": 19.96
+ },
+ {
+   "Rank": 2,
+   "Name": "Inman, Dontrelle",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 61,
+   "Targets": 104,
+   "Comp %": 58.65,
+   "TDs": 4,
+   "Target %": 18.37
+ },
+ {
+   "Rank": 16,
+   "Name": "Williams, Andre",
+   "Team": "SD",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 2,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 8,
+   "Name": "McCluster, Dexter",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 11,
+   "Comp %": 72.73,
+   "TDs": 0,
+   "Target %": 1.94
+ },
+ {
+   "Rank": 11,
+   "Name": "Hillman, Ronnie",
+   "Team": "SD",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 8,
+   "Comp %": 37.5,
+   "TDs": 0,
+   "Target %": 1.41
+ },
+ {
+   "Rank": 13,
+   "Name": "Burse, Isaiah",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 3,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.53
+ },
+ {
+   "Rank": 9,
+   "Name": "Woodhead, Danny",
+   "Team": "SD",
+   "Pos.": "RB",
+   "Completions": 7,
+   "Targets": 9,
+   "Comp %": 77.78,
+   "TDs": 1,
+   "Target %": 1.59
+ },
+ {
+   "Rank": 14,
+   "Name": "McGrath, Sean",
+   "Team": "SD",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 12,
+   "Name": "Watt, Derek",
+   "Team": "SD",
+   "Pos.": "FB",
+   "Completions": 4,
+   "Targets": 4,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.71
+ },
+ {
+   "Rank": 3,
+   "Name": "Gates, Antonio",
+   "Team": "SD",
+   "Pos.": "TE",
+   "Completions": 53,
+   "Targets": 93,
+   "Comp %": 56.99,
+   "TDs": 7,
+   "Target %": 16.43
+ },
+ {
+   "Rank": 17,
+   "Name": "Davis, Geremy",
+   "Team": "SD",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 2,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 5,
+   "Name": "Gordon, Melvin",
+   "Team": "SD",
+   "Pos.": "RB",
+   "Completions": 42,
+   "Targets": 58,
+   "Comp %": 72.41,
+   "TDs": 2,
+   "Target %": 10.25
+ },
+ {
+   "Rank": 6,
+   "Name": "Henry, Hunter",
+   "Team": "SD",
+   "Pos.": "TE",
+   "Completions": 36,
+   "Targets": 54,
+   "Comp %": 66.67,
+   "TDs": 8,
+   "Target %": 9.54
+ }
+]

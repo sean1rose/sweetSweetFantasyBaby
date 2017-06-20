@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 12,
+   "Name": "Williams, Nick",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 5,
+   "Targets": 7,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 1.28
+ },
+ {
+   "Rank": 10,
+   "Name": "Toilolo, Levine",
+   "Team": "ATL",
+   "Pos.": "TE",
+   "Completions": 14,
+   "Targets": 20,
+   "Comp %": 70,
+   "TDs": 2,
+   "Target %": 3.64
+ },
+ {
+   "Rank": 11,
+   "Name": "DiMarco, Patrick",
+   "Team": "ATL",
+   "Pos.": "FB",
+   "Completions": 7,
+   "Targets": 10,
+   "Comp %": 70,
+   "TDs": 1,
+   "Target %": 1.82
+ },
+ {
+   "Rank": 2,
+   "Name": "Sanu, Mohamed",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 61,
+   "Targets": 86,
+   "Comp %": 70.93,
+   "TDs": 4,
+   "Target %": 15.66
+ },
+ {
+   "Rank": 14,
+   "Name": "Ward, Terron",
+   "Team": "ATL",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.36
+ },
+ {
+   "Rank": 6,
+   "Name": "Robinson, Aldrick",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 21,
+   "Targets": 34,
+   "Comp %": 61.76,
+   "TDs": 2,
+   "Target %": 6.19
+ },
+ {
+   "Rank": 7,
+   "Name": "Hardy, Justin",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 22,
+   "Targets": 32,
+   "Comp %": 68.75,
+   "TDs": 4,
+   "Target %": 5.83
+ },
+ {
+   "Rank": 5,
+   "Name": "Coleman, Tevin",
+   "Team": "ATL",
+   "Pos.": "RB",
+   "Completions": 33,
+   "Targets": 42,
+   "Comp %": 78.57,
+   "TDs": 3,
+   "Target %": 7.65
+ },
+ {
+   "Rank": 9,
+   "Name": "Hooper, Austin",
+   "Team": "ATL",
+   "Pos.": "TE",
+   "Completions": 20,
+   "Targets": 29,
+   "Comp %": 68.97,
+   "TDs": 3,
+   "Target %": 5.28
+ },
+ {
+   "Rank": 13,
+   "Name": "Perkins, Josh",
+   "Team": "ATL",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 1,
+   "Target %": 0.91
+ },
+ {
+   "Rank": 8,
+   "Name": "Tamme, Jacob",
+   "Team": "ATL",
+   "Pos.": "TE",
+   "Completions": 22,
+   "Targets": 30,
+   "Comp %": 73.33,
+   "TDs": 3,
+   "Target %": 5.46
+ },
+ {
+   "Rank": 4,
+   "Name": "Gabriel, Taylor",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 35,
+   "Targets": 51,
+   "Comp %": 68.63,
+   "TDs": 6,
+   "Target %": 9.29
+ },
+ {
+   "Rank": 1,
+   "Name": "Jones, Julio",
+   "Team": "ATL",
+   "Pos.": "WR",
+   "Completions": 85,
+   "Targets": 133,
+   "Comp %": 63.91,
+   "TDs": 6,
+   "Target %": 24.23
+ },
+ {
+   "Rank": 3,
+   "Name": "Freeman, Devonta",
+   "Team": "ATL",
+   "Pos.": "RB",
+   "Completions": 56,
+   "Targets": 67,
+   "Comp %": 83.58,
+   "TDs": 2,
+   "Target %": 12.2
+ },
+ {
+   "Rank": 15,
+   "Name": "Tialavea, D.J.",
+   "Team": "ATL",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.18
+ }
+]

@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 13,
+   "Name": "Todman, Jordan",
+   "Team": "IND",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 10,
+   "Name": "Swoope, Erik",
+   "Team": "IND",
+   "Pos.": "TE",
+   "Completions": 15,
+   "Targets": 23,
+   "Comp %": 65.22,
+   "TDs": 1,
+   "Target %": 3.85
+ },
+ {
+   "Rank": 14,
+   "Name": "McAfee, Pat",
+   "Team": "IND",
+   "Pos.": "P",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 5,
+   "Name": "Allen, Dwayne",
+   "Team": "IND",
+   "Pos.": "TE",
+   "Completions": 36,
+   "Targets": 55,
+   "Comp %": 65.45,
+   "TDs": 6,
+   "Target %": 9.2
+ },
+ {
+   "Rank": 4,
+   "Name": "Moncrief, Donte",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 31,
+   "Targets": 56,
+   "Comp %": 55.36,
+   "TDs": 8,
+   "Target %": 9.36
+ },
+ {
+   "Rank": 12,
+   "Name": "Bray, Quan",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 0.84
+ },
+ {
+   "Rank": 1,
+   "Name": "Hilton, T.Y.",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 95,
+   "Targets": 163,
+   "Comp %": 58.28,
+   "TDs": 7,
+   "Target %": 27.26
+ },
+ {
+   "Rank": 11,
+   "Name": "Street, Devin",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 6,
+   "Comp %": 16.67,
+   "TDs": 0,
+   "Target %": 1
+ },
+ {
+   "Rank": 8,
+   "Name": "Turbin, Robert",
+   "Team": "IND",
+   "Pos.": "RB",
+   "Completions": 26,
+   "Targets": 35,
+   "Comp %": 74.29,
+   "TDs": 1,
+   "Target %": 5.85
+ },
+ {
+   "Rank": 6,
+   "Name": "Gore, Frank",
+   "Team": "IND",
+   "Pos.": "RB",
+   "Completions": 40,
+   "Targets": 52,
+   "Comp %": 76.92,
+   "TDs": 4,
+   "Target %": 8.7
+ },
+ {
+   "Rank": 7,
+   "Name": "Rogers, Chester",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 21,
+   "Targets": 38,
+   "Comp %": 55.26,
+   "TDs": 0,
+   "Target %": 6.35
+ },
+ {
+   "Rank": 9,
+   "Name": "Ferguson, Josh",
+   "Team": "IND",
+   "Pos.": "RB",
+   "Completions": 20,
+   "Targets": 26,
+   "Comp %": 76.92,
+   "TDs": 0,
+   "Target %": 4.35
+ },
+ {
+   "Rank": 3,
+   "Name": "Dorsett, Phillip",
+   "Team": "IND",
+   "Pos.": "WR",
+   "Completions": 33,
+   "Targets": 60,
+   "Comp %": 55,
+   "TDs": 2,
+   "Target %": 10.03
+ },
+ {
+   "Rank": 2,
+   "Name": "Doyle, Jack",
+   "Team": "IND",
+   "Pos.": "TE",
+   "Completions": 62,
+   "Targets": 77,
+   "Comp %": 80.52,
+   "TDs": 5,
+   "Target %": 12.88
+ }
+]

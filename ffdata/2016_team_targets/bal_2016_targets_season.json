@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 1,
+   "Name": "Pitta, Dennis",
+   "Team": "BAL",
+   "Pos.": "TE",
+   "Completions": 88,
+   "Targets": 122,
+   "Comp %": 72.13,
+   "TDs": 2,
+   "Target %": 18.15
+ },
+ {
+   "Rank": 12,
+   "Name": "Boyle, Nick",
+   "Team": "BAL",
+   "Pos.": "TE",
+   "Completions": 6,
+   "Targets": 6,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.89
+ },
+ {
+   "Rank": 5,
+   "Name": "Aiken, Kamar",
+   "Team": "BAL",
+   "Pos.": "WR",
+   "Completions": 31,
+   "Targets": 54,
+   "Comp %": 57.41,
+   "TDs": 1,
+   "Target %": 8.04
+ },
+ {
+   "Rank": 8,
+   "Name": "Dixon, Kenneth",
+   "Team": "BAL",
+   "Pos.": "RB",
+   "Completions": 30,
+   "Targets": 40,
+   "Comp %": 75,
+   "TDs": 1,
+   "Target %": 5.95
+ },
+ {
+   "Rank": 6,
+   "Name": "Juszczyk, Kyle",
+   "Team": "BAL",
+   "Pos.": "FB",
+   "Completions": 40,
+   "Targets": 53,
+   "Comp %": 75.47,
+   "TDs": 0,
+   "Target %": 7.89
+ },
+ {
+   "Rank": 11,
+   "Name": "Gillmore, Crockett",
+   "Team": "BAL",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 14,
+   "Comp %": 57.14,
+   "TDs": 1,
+   "Target %": 2.08
+ },
+ {
+   "Rank": 15,
+   "Name": "Lewis, Alex",
+   "Team": "BAL",
+   "Pos.": "OG",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.15
+ },
+ {
+   "Rank": 2,
+   "Name": "Wallace, Mike",
+   "Team": "BAL",
+   "Pos.": "WR",
+   "Completions": 73,
+   "Targets": 118,
+   "Comp %": 61.86,
+   "TDs": 4,
+   "Target %": 17.56
+ },
+ {
+   "Rank": 9,
+   "Name": "Waller, Darren",
+   "Team": "BAL",
+   "Pos.": "TE",
+   "Completions": 10,
+   "Targets": 17,
+   "Comp %": 58.82,
+   "TDs": 2,
+   "Target %": 2.53
+ },
+ {
+   "Rank": 3,
+   "Name": "Smith, Steve",
+   "Team": "BAL",
+   "Pos.": "WR",
+   "Completions": 72,
+   "Targets": 106,
+   "Comp %": 67.92,
+   "TDs": 5,
+   "Target %": 15.77
+ },
+ {
+   "Rank": 13,
+   "Name": "Allen, Javorius",
+   "Team": "BAL",
+   "Pos.": "RB",
+   "Completions": 4,
+   "Targets": 6,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.89
+ },
+ {
+   "Rank": 7,
+   "Name": "West, Terrance",
+   "Team": "BAL",
+   "Pos.": "RB",
+   "Completions": 35,
+   "Targets": 48,
+   "Comp %": 72.92,
+   "TDs": 1,
+   "Target %": 7.14
+ },
+ {
+   "Rank": 14,
+   "Name": "Taliaferro, Lorenzo",
+   "Team": "BAL",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 3,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.45
+ },
+ {
+   "Rank": 10,
+   "Name": "Moore, Chris",
+   "Team": "BAL",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 17,
+   "Comp %": 47.06,
+   "TDs": 0,
+   "Target %": 2.53
+ },
+ {
+   "Rank": 4,
+   "Name": "Perriman, Breshad",
+   "Team": "BAL",
+   "Pos.": "WR",
+   "Completions": 34,
+   "Targets": 67,
+   "Comp %": 50.75,
+   "TDs": 5,
+   "Target %": 9.97
+ }
+]

@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 12,
+   "Name": "King, Tavarres",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.65
+ },
+ {
+   "Rank": 6,
+   "Name": "Rainey, Bobby",
+   "Team": "NYG",
+   "Pos.": "RB",
+   "Completions": 20,
+   "Targets": 26,
+   "Comp %": 76.92,
+   "TDs": 0,
+   "Target %": 4.24
+ },
+ {
+   "Rank": 2,
+   "Name": "Shepard, Sterling",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 69,
+   "Targets": 107,
+   "Comp %": 64.49,
+   "TDs": 8,
+   "Target %": 17.46
+ },
+ {
+   "Rank": 13,
+   "Name": "Darkwa, Orleans",
+   "Team": "NYG",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.65
+ },
+ {
+   "Rank": 4,
+   "Name": "Tye, Will",
+   "Team": "NYG",
+   "Pos.": "TE",
+   "Completions": 49,
+   "Targets": 67,
+   "Comp %": 73.13,
+   "TDs": 1,
+   "Target %": 10.93
+ },
+ {
+   "Rank": 7,
+   "Name": "Perkins, Paul",
+   "Team": "NYG",
+   "Pos.": "RB",
+   "Completions": 16,
+   "Targets": 25,
+   "Comp %": 64,
+   "TDs": 0,
+   "Target %": 4.08
+ },
+ {
+   "Rank": 11,
+   "Name": "Lewis, Roger",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 7,
+   "Targets": 19,
+   "Comp %": 36.84,
+   "TDs": 2,
+   "Target %": 3.1
+ },
+ {
+   "Rank": 5,
+   "Name": "Jennings, Rashad",
+   "Team": "NYG",
+   "Pos.": "RB",
+   "Completions": 35,
+   "Targets": 43,
+   "Comp %": 81.4,
+   "TDs": 1,
+   "Target %": 7.01
+ },
+ {
+   "Rank": 9,
+   "Name": "Donnell, Larry",
+   "Team": "NYG",
+   "Pos.": "TE",
+   "Completions": 15,
+   "Targets": 21,
+   "Comp %": 71.43,
+   "TDs": 1,
+   "Target %": 3.43
+ },
+ {
+   "Rank": 14,
+   "Name": "Harris, Dwayne",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.33
+ },
+ {
+   "Rank": 1,
+   "Name": "Beckham, Odell",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 104,
+   "Targets": 180,
+   "Comp %": 57.78,
+   "TDs": 10,
+   "Target %": 29.36
+ },
+ {
+   "Rank": 10,
+   "Name": "Vereen, Shane",
+   "Team": "NYG",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 21,
+   "Comp %": 61.9,
+   "TDs": 1,
+   "Target %": 3.43
+ },
+ {
+   "Rank": 8,
+   "Name": "Adams, Jerell",
+   "Team": "NYG",
+   "Pos.": "TE",
+   "Completions": 16,
+   "Targets": 21,
+   "Comp %": 76.19,
+   "TDs": 1,
+   "Target %": 3.43
+ },
+ {
+   "Rank": 3,
+   "Name": "Cruz, Victor",
+   "Team": "NYG",
+   "Pos.": "WR",
+   "Completions": 39,
+   "Targets": 73,
+   "Comp %": 53.42,
+   "TDs": 1,
+   "Target %": 11.91
+ }
+]

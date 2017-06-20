@@ -1,0 +1,189 @@
+[
+ {
+   "Rank": 2,
+   "Name": "Woods, Robert",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 53,
+   "Targets": 82,
+   "Comp %": 64.63,
+   "TDs": 1,
+   "Target %": 17.12
+ },
+ {
+   "Rank": 14,
+   "Name": "Harvin, Percy",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.84
+ },
+ {
+   "Rank": 15,
+   "Name": "Christian, Gerald",
+   "Team": "BUF",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.42
+ },
+ {
+   "Rank": 7,
+   "Name": "Hunter, Justin",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 10,
+   "Targets": 24,
+   "Comp %": 41.67,
+   "TDs": 4,
+   "Target %": 5.01
+ },
+ {
+   "Rank": 11,
+   "Name": "Tate, Brandon",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 12,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 2.51
+ },
+ {
+   "Rank": 10,
+   "Name": "Bush, Reggie",
+   "Team": "BUF",
+   "Pos.": "RB",
+   "Completions": 9,
+   "Targets": 12,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 2.51
+ },
+ {
+   "Rank": 5,
+   "Name": "Watkins, Sammy",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 27,
+   "Targets": 51,
+   "Comp %": 52.94,
+   "TDs": 2,
+   "Target %": 10.65
+ },
+ {
+   "Rank": 8,
+   "Name": "OLeary, Nick",
+   "Team": "BUF",
+   "Pos.": "TE",
+   "Completions": 9,
+   "Targets": 14,
+   "Comp %": 64.29,
+   "TDs": 0,
+   "Target %": 2.92
+ },
+ {
+   "Rank": 3,
+   "Name": "Goodwin, Marquise",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 31,
+   "Targets": 68,
+   "Comp %": 45.59,
+   "TDs": 3,
+   "Target %": 14.2
+ },
+ {
+   "Rank": 13,
+   "Name": "Salas, Greg",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 6,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 1.25
+ },
+ {
+   "Rank": 16,
+   "Name": "Williams, Jonathan",
+   "Team": "BUF",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.42
+ },
+ {
+   "Rank": 1,
+   "Name": "Clay, Charles",
+   "Team": "BUF",
+   "Pos.": "TE",
+   "Completions": 60,
+   "Targets": 93,
+   "Comp %": 64.52,
+   "TDs": 4,
+   "Target %": 19.42
+ },
+ {
+   "Rank": 6,
+   "Name": "Powell, Walt",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 15,
+   "Targets": 27,
+   "Comp %": 55.56,
+   "TDs": 0,
+   "Target %": 5.64
+ },
+ {
+   "Rank": 12,
+   "Name": "Felton, Jerome",
+   "Team": "BUF",
+   "Pos.": "FB",
+   "Completions": 6,
+   "Targets": 9,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 1.88
+ },
+ {
+   "Rank": 17,
+   "Name": "Lewis, Dezmin",
+   "Team": "BUF",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.21
+ },
+ {
+   "Rank": 9,
+   "Name": "Gillislee, Mike",
+   "Team": "BUF",
+   "Pos.": "RB",
+   "Completions": 10,
+   "Targets": 12,
+   "Comp %": 83.33,
+   "TDs": 1,
+   "Target %": 2.51
+ },
+ {
+   "Rank": 4,
+   "Name": "McCoy, LeSean",
+   "Team": "BUF",
+   "Pos.": "RB",
+   "Completions": 52,
+   "Targets": 60,
+   "Comp %": 86.67,
+   "TDs": 1,
+   "Target %": 12.53
+ }
+]

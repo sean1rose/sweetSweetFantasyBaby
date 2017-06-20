@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 2,
+   "Name": "Green, A.J.",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 68,
+   "Targets": 108,
+   "Comp %": 62.96,
+   "TDs": 4,
+   "Target %": 19.15
+ },
+ {
+   "Rank": 5,
+   "Name": "Eifert, Tyler",
+   "Team": "CIN",
+   "Pos.": "TE",
+   "Completions": 30,
+   "Targets": 47,
+   "Comp %": 63.83,
+   "TDs": 5,
+   "Target %": 8.33
+ },
+ {
+   "Rank": 9,
+   "Name": "Burkhead, Rex",
+   "Team": "CIN",
+   "Pos.": "RB",
+   "Completions": 17,
+   "Targets": 21,
+   "Comp %": 80.95,
+   "TDs": 0,
+   "Target %": 3.72
+ },
+ {
+   "Rank": 11,
+   "Name": "Kroft, Tyler",
+   "Team": "CIN",
+   "Pos.": "TE",
+   "Completions": 10,
+   "Targets": 11,
+   "Comp %": 90.91,
+   "TDs": 0,
+   "Target %": 1.95
+ },
+ {
+   "Rank": 6,
+   "Name": "Uzomah, C.J.",
+   "Team": "CIN",
+   "Pos.": "TE",
+   "Completions": 25,
+   "Targets": 38,
+   "Comp %": 65.79,
+   "TDs": 1,
+   "Target %": 6.74
+ },
+ {
+   "Rank": 12,
+   "Name": "Erickson, Alex",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 6,
+   "Targets": 8,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 1.42
+ },
+ {
+   "Rank": 4,
+   "Name": "Bernard, Giovani",
+   "Team": "CIN",
+   "Pos.": "RB",
+   "Completions": 45,
+   "Targets": 57,
+   "Comp %": 78.95,
+   "TDs": 1,
+   "Target %": 10.11
+ },
+ {
+   "Rank": 15,
+   "Name": "Peerman, Cedric",
+   "Team": "CIN",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 14,
+   "Name": "Fisher, Jake",
+   "Team": "CIN",
+   "Pos.": "OT",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 1,
+   "Name": "LaFell, Brandon",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 64,
+   "Targets": 113,
+   "Comp %": 56.64,
+   "TDs": 6,
+   "Target %": 20.04
+ },
+ {
+   "Rank": 13,
+   "Name": "Hewitt, Ryan",
+   "Team": "CIN",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.53
+ },
+ {
+   "Rank": 8,
+   "Name": "Core, Cody",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 17,
+   "Targets": 27,
+   "Comp %": 62.96,
+   "TDs": 0,
+   "Target %": 4.79
+ },
+ {
+   "Rank": 3,
+   "Name": "Boyd, Tyler",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 55,
+   "Targets": 80,
+   "Comp %": 68.75,
+   "TDs": 1,
+   "Target %": 14.18
+ },
+ {
+   "Rank": 10,
+   "Name": "Wright, James",
+   "Team": "CIN",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 21,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 3.72
+ },
+ {
+   "Rank": 7,
+   "Name": "Hill, Jeremy",
+   "Team": "CIN",
+   "Pos.": "RB",
+   "Completions": 22,
+   "Targets": 28,
+   "Comp %": 78.57,
+   "TDs": 0,
+   "Target %": 4.96
+ }
+]

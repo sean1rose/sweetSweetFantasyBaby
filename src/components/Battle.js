@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
 import getRb2016 from '../util/getRb2016';
-import StackedBars from './charts/StackedBars';
 import Spiderweb from './charts/Spiderweb';
 
 console.log('getrbOnes - ', getRb2016.getRbOnes());

@@ -1,0 +1,178 @@
+[
+ {
+   "Rank": 11,
+   "Name": "Latimer, Cody",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 15,
+   "Comp %": 53.33,
+   "TDs": 0,
+   "Target %": 2.63
+ },
+ {
+   "Rank": 7,
+   "Name": "Anderson, C.J.",
+   "Team": "DEN",
+   "Pos.": "RB",
+   "Completions": 17,
+   "Targets": 25,
+   "Comp %": 68,
+   "TDs": 2,
+   "Target %": 4.39
+ },
+ {
+   "Rank": 9,
+   "Name": "Derby, A.J.",
+   "Team": "DEN",
+   "Pos.": "TE",
+   "Completions": 16,
+   "Targets": 20,
+   "Comp %": 80,
+   "TDs": 0,
+   "Target %": 3.51
+ },
+ {
+   "Rank": 13,
+   "Name": "Janovich, Andy",
+   "Team": "DEN",
+   "Pos.": "FB",
+   "Completions": 5,
+   "Targets": 7,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 1.23
+ },
+ {
+   "Rank": 15,
+   "Name": "Thompson, Juwan",
+   "Team": "DEN",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.35
+ },
+ {
+   "Rank": 1,
+   "Name": "Thomas, Demaryius",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 93,
+   "Targets": 159,
+   "Comp %": 58.49,
+   "TDs": 5,
+   "Target %": 27.89
+ },
+ {
+   "Rank": 2,
+   "Name": "Sanders, Emmanuel",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 80,
+   "Targets": 141,
+   "Comp %": 56.74,
+   "TDs": 5,
+   "Target %": 24.74
+ },
+ {
+   "Rank": 10,
+   "Name": "Heuerman, Jeff",
+   "Team": "DEN",
+   "Pos.": "TE",
+   "Completions": 9,
+   "Targets": 17,
+   "Comp %": 52.94,
+   "TDs": 0,
+   "Target %": 2.98
+ },
+ {
+   "Rank": 4,
+   "Name": "Green, Virgil",
+   "Team": "DEN",
+   "Pos.": "TE",
+   "Completions": 22,
+   "Targets": 37,
+   "Comp %": 59.46,
+   "TDs": 1,
+   "Target %": 6.49
+ },
+ {
+   "Rank": 6,
+   "Name": "Taylor, Jordan",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 15,
+   "Targets": 26,
+   "Comp %": 57.69,
+   "TDs": 2,
+   "Target %": 4.56
+ },
+ {
+   "Rank": 12,
+   "Name": "Forsett, Justin",
+   "Team": "DEN",
+   "Pos.": "RB",
+   "Completions": 7,
+   "Targets": 11,
+   "Comp %": 63.64,
+   "TDs": 0,
+   "Target %": 1.93
+ },
+ {
+   "Rank": 8,
+   "Name": "Fowler, Bennie",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 24,
+   "Comp %": 45.83,
+   "TDs": 2,
+   "Target %": 4.21
+ },
+ {
+   "Rank": 3,
+   "Name": "Booker, Devontae",
+   "Team": "DEN",
+   "Pos.": "RB",
+   "Completions": 31,
+   "Targets": 46,
+   "Comp %": 67.39,
+   "TDs": 1,
+   "Target %": 8.07
+ },
+ {
+   "Rank": 14,
+   "Name": "Bibbs, Kapri",
+   "Team": "DEN",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 1,
+   "Target %": 0.7
+ },
+ {
+   "Rank": 5,
+   "Name": "Norwood, Jordan",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 22,
+   "Targets": 34,
+   "Comp %": 64.71,
+   "TDs": 1,
+   "Target %": 5.96
+ },
+ {
+   "Rank": 16,
+   "Name": "Raymond, Kalif",
+   "Team": "DEN",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 2,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.35
+ }
+]

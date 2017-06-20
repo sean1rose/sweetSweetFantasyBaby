@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 3,
+   "Name": "Cobb, Randall",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 62,
+   "Targets": 89,
+   "Comp %": 69.66,
+   "TDs": 5,
+   "Target %": 14.04
+ },
+ {
+   "Rank": 5,
+   "Name": "Cook, Jared",
+   "Team": "GB",
+   "Pos.": "TE",
+   "Completions": 30,
+   "Targets": 53,
+   "Comp %": 56.6,
+   "TDs": 1,
+   "Target %": 8.36
+ },
+ {
+   "Rank": 11,
+   "Name": "Davis, Trevor",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 8,
+   "Comp %": 37.5,
+   "TDs": 1,
+   "Target %": 1.26
+ },
+ {
+   "Rank": 6,
+   "Name": "Rodgers, Richard",
+   "Team": "GB",
+   "Pos.": "TE",
+   "Completions": 31,
+   "Targets": 48,
+   "Comp %": 64.58,
+   "TDs": 2,
+   "Target %": 7.57
+ },
+ {
+   "Rank": 9,
+   "Name": "Janis, Jeff",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 19,
+   "Comp %": 57.89,
+   "TDs": 1,
+   "Target %": 3
+ },
+ {
+   "Rank": 13,
+   "Name": "Michael, Christine",
+   "Team": "GB",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.47
+ },
+ {
+   "Rank": 2,
+   "Name": "Adams, Davante",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 77,
+   "Targets": 127,
+   "Comp %": 60.63,
+   "TDs": 12,
+   "Target %": 20.03
+ },
+ {
+   "Rank": 12,
+   "Name": "Lacy, Eddie",
+   "Team": "GB",
+   "Pos.": "RB",
+   "Completions": 4,
+   "Targets": 7,
+   "Comp %": 57.14,
+   "TDs": 0,
+   "Target %": 1.1
+ },
+ {
+   "Rank": 4,
+   "Name": "Montgomery, Ty",
+   "Team": "GB",
+   "Pos.": "RB",
+   "Completions": 46,
+   "Targets": 58,
+   "Comp %": 79.31,
+   "TDs": 1,
+   "Target %": 9.15
+ },
+ {
+   "Rank": 8,
+   "Name": "Allison, Geronimo",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 12,
+   "Targets": 22,
+   "Comp %": 54.55,
+   "TDs": 2,
+   "Target %": 3.47
+ },
+ {
+   "Rank": 15,
+   "Name": "Jackson, Don",
+   "Team": "GB",
+   "Pos.": "RB",
+   "Completions": 0,
+   "Targets": 2,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.32
+ },
+ {
+   "Rank": 10,
+   "Name": "Ripkowski, Aaron",
+   "Team": "GB",
+   "Pos.": "FB",
+   "Completions": 10,
+   "Targets": 11,
+   "Comp %": 90.91,
+   "TDs": 1,
+   "Target %": 1.74
+ },
+ {
+   "Rank": 14,
+   "Name": "Abbrederis, Jared",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.32
+ },
+ {
+   "Rank": 1,
+   "Name": "Nelson, Jordy",
+   "Team": "GB",
+   "Pos.": "WR",
+   "Completions": 100,
+   "Targets": 160,
+   "Comp %": 62.5,
+   "TDs": 14,
+   "Target %": 25.24
+ },
+ {
+   "Rank": 7,
+   "Name": "Starks, James",
+   "Team": "GB",
+   "Pos.": "RB",
+   "Completions": 19,
+   "Targets": 25,
+   "Comp %": 76,
+   "TDs": 2,
+   "Target %": 3.94
+ }
+]

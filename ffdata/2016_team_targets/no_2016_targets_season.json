@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 10,
+   "Name": "Kuhn, John",
+   "Team": "NO",
+   "Pos.": "FB",
+   "Completions": 16,
+   "Targets": 20,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 2.96
+ },
+ {
+   "Rank": 5,
+   "Name": "Ingram, Mark",
+   "Team": "NO",
+   "Pos.": "RB",
+   "Completions": 46,
+   "Targets": 58,
+   "Comp %": 79.31,
+   "TDs": 4,
+   "Target %": 8.59
+ },
+ {
+   "Rank": 9,
+   "Name": "Hill, Josh",
+   "Team": "NO",
+   "Pos.": "TE",
+   "Completions": 14,
+   "Targets": 21,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 3.11
+ },
+ {
+   "Rank": 12,
+   "Name": "Phillips, John",
+   "Team": "NO",
+   "Pos.": "TE",
+   "Completions": 5,
+   "Targets": 6,
+   "Comp %": 83.33,
+   "TDs": 0,
+   "Target %": 0.89
+ },
+ {
+   "Rank": 14,
+   "Name": "Murphy, Marcus",
+   "Team": "NO",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.15
+ },
+ {
+   "Rank": 6,
+   "Name": "Cadet, Travaris",
+   "Team": "NO",
+   "Pos.": "RB",
+   "Completions": 43,
+   "Targets": 58,
+   "Comp %": 74.14,
+   "TDs": 4,
+   "Target %": 8.59
+ },
+ {
+   "Rank": 4,
+   "Name": "Fleener, Coby",
+   "Team": "NO",
+   "Pos.": "TE",
+   "Completions": 50,
+   "Targets": 84,
+   "Comp %": 59.52,
+   "TDs": 4,
+   "Target %": 12.44
+ },
+ {
+   "Rank": 3,
+   "Name": "Snead, Willie",
+   "Team": "NO",
+   "Pos.": "WR",
+   "Completions": 75,
+   "Targets": 105,
+   "Comp %": 71.43,
+   "TDs": 4,
+   "Target %": 15.56
+ },
+ {
+   "Rank": 2,
+   "Name": "Cooks, Brandin",
+   "Team": "NO",
+   "Pos.": "WR",
+   "Completions": 80,
+   "Targets": 119,
+   "Comp %": 67.23,
+   "TDs": 9,
+   "Target %": 17.63
+ },
+ {
+   "Rank": 13,
+   "Name": "Lasco, Daniel",
+   "Team": "NO",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.59
+ },
+ {
+   "Rank": 11,
+   "Name": "Lewis, Tommylee",
+   "Team": "NO",
+   "Pos.": "WR",
+   "Completions": 7,
+   "Targets": 11,
+   "Comp %": 63.64,
+   "TDs": 0,
+   "Target %": 1.63
+ },
+ {
+   "Rank": 1,
+   "Name": "Thomas, Michael",
+   "Team": "NO",
+   "Pos.": "WR",
+   "Completions": 94,
+   "Targets": 125,
+   "Comp %": 75.2,
+   "TDs": 9,
+   "Target %": 18.52
+ },
+ {
+   "Rank": 8,
+   "Name": "Hightower, Tim",
+   "Team": "NO",
+   "Pos.": "RB",
+   "Completions": 22,
+   "Targets": 26,
+   "Comp %": 84.62,
+   "TDs": 1,
+   "Target %": 3.85
+ },
+ {
+   "Rank": 7,
+   "Name": "Coleman, Brandon",
+   "Team": "NO",
+   "Pos.": "WR",
+   "Completions": 26,
+   "Targets": 37,
+   "Comp %": 70.27,
+   "TDs": 3,
+   "Target %": 5.48
+ }
+]

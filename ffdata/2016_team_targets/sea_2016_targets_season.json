@@ -1,0 +1,211 @@
+[
+ {
+   "Rank": 9,
+   "Name": "Collins, Alex",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 11,
+   "Targets": 11,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 2.06
+ },
+ {
+   "Rank": 8,
+   "Name": "Rawls, Thomas",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 17,
+   "Comp %": 76.47,
+   "TDs": 0,
+   "Target %": 3.19
+ },
+ {
+   "Rank": 10,
+   "Name": "McEvoy, Tanner",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 9,
+   "Targets": 10,
+   "Comp %": 90,
+   "TDs": 2,
+   "Target %": 1.88
+ },
+ {
+   "Rank": 4,
+   "Name": "Lockett, Tyler",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 46,
+   "Targets": 74,
+   "Comp %": 62.16,
+   "TDs": 2,
+   "Target %": 13.88
+ },
+ {
+   "Rank": 19,
+   "Name": "Williams, Kasen",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 18,
+   "Name": "Tukuafu, Will",
+   "Team": "SEA",
+   "Pos.": "FB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 13,
+   "Name": "Williams, Brandon",
+   "Team": "SEA",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.56
+ },
+ {
+   "Rank": 17,
+   "Name": "Pope, Troymaine",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 11,
+   "Name": "Reece, Marcel",
+   "Team": "SEA",
+   "Pos.": "FB",
+   "Completions": 5,
+   "Targets": 6,
+   "Comp %": 83.33,
+   "TDs": 0,
+   "Target %": 1.13
+ },
+ {
+   "Rank": 16,
+   "Name": "Wilson, Russell",
+   "Team": "SEA",
+   "Pos.": "QB",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.38
+ },
+ {
+   "Rank": 6,
+   "Name": "Willson, Luke",
+   "Team": "SEA",
+   "Pos.": "TE",
+   "Completions": 15,
+   "Targets": 21,
+   "Comp %": 71.43,
+   "TDs": 2,
+   "Target %": 3.94
+ },
+ {
+   "Rank": 1,
+   "Name": "Baldwin, Doug",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 96,
+   "Targets": 133,
+   "Comp %": 72.18,
+   "TDs": 7,
+   "Target %": 24.95
+ },
+ {
+   "Rank": 3,
+   "Name": "Kearse, Jermaine",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 90,
+   "Comp %": 48.89,
+   "TDs": 1,
+   "Target %": 16.89
+ },
+ {
+   "Rank": 14,
+   "Name": "Farmer, George",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.56
+ },
+ {
+   "Rank": 15,
+   "Name": "McKissic, J.D.",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.38
+ },
+ {
+   "Rank": 2,
+   "Name": "Graham, Jimmy",
+   "Team": "SEA",
+   "Pos.": "TE",
+   "Completions": 66,
+   "Targets": 97,
+   "Comp %": 68.04,
+   "TDs": 6,
+   "Target %": 18.2
+ },
+ {
+   "Rank": 12,
+   "Name": "Vannett, Nick",
+   "Team": "SEA",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 4,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 0.75
+ },
+ {
+   "Rank": 7,
+   "Name": "Prosise, C.J.",
+   "Team": "SEA",
+   "Pos.": "RB",
+   "Completions": 18,
+   "Targets": 20,
+   "Comp %": 90,
+   "TDs": 0,
+   "Target %": 3.75
+ },
+ {
+   "Rank": 5,
+   "Name": "Richardson, Paul",
+   "Team": "SEA",
+   "Pos.": "WR",
+   "Completions": 21,
+   "Targets": 37,
+   "Comp %": 56.76,
+   "TDs": 1,
+   "Target %": 6.94
+ }
+]

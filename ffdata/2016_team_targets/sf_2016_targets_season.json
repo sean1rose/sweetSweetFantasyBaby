@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 12,
+   "Name": "Bell, Blake",
+   "Team": "SF",
+   "Pos.": "TE",
+   "Completions": 4,
+   "Targets": 9,
+   "Comp %": 44.44,
+   "TDs": 0,
+   "Target %": 1.82
+ },
+ {
+   "Rank": 5,
+   "Name": "McDonald, Vance",
+   "Team": "SF",
+   "Pos.": "TE",
+   "Completions": 24,
+   "Targets": 44,
+   "Comp %": 54.55,
+   "TDs": 4,
+   "Target %": 8.91
+ },
+ {
+   "Rank": 4,
+   "Name": "Celek, Garrett",
+   "Team": "SF",
+   "Pos.": "TE",
+   "Completions": 29,
+   "Targets": 49,
+   "Comp %": 59.18,
+   "TDs": 3,
+   "Target %": 9.92
+ },
+ {
+   "Rank": 9,
+   "Name": "Harper, Chris",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 13,
+   "Targets": 22,
+   "Comp %": 59.09,
+   "TDs": 0,
+   "Target %": 4.45
+ },
+ {
+   "Rank": 8,
+   "Name": "Streater, Rod",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 19,
+   "Targets": 29,
+   "Comp %": 65.52,
+   "TDs": 2,
+   "Target %": 5.87
+ },
+ {
+   "Rank": 14,
+   "Name": "Hamm, JeRon",
+   "Team": "SF",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.81
+ },
+ {
+   "Rank": 6,
+   "Name": "Draughn, Shaun",
+   "Team": "SF",
+   "Pos.": "RB",
+   "Completions": 30,
+   "Targets": 40,
+   "Comp %": 75,
+   "TDs": 2,
+   "Target %": 8.1
+ },
+ {
+   "Rank": 15,
+   "Name": "Gabbert, Blaine",
+   "Team": "SF",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.2
+ },
+ {
+   "Rank": 11,
+   "Name": "Harris, DuJuan",
+   "Team": "SF",
+   "Pos.": "RB",
+   "Completions": 8,
+   "Targets": 10,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 2.02
+ },
+ {
+   "Rank": 2,
+   "Name": "Patton, Quinton",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 38,
+   "Targets": 64,
+   "Comp %": 59.38,
+   "TDs": 0,
+   "Target %": 12.96
+ },
+ {
+   "Rank": 13,
+   "Name": "Davis, Mike",
+   "Team": "SF",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 1.01
+ },
+ {
+   "Rank": 1,
+   "Name": "Kerley, Jeremy",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 64,
+   "Targets": 116,
+   "Comp %": 55.17,
+   "TDs": 3,
+   "Target %": 23.48
+ },
+ {
+   "Rank": 10,
+   "Name": "Burbridge, Aaron",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 7,
+   "Targets": 16,
+   "Comp %": 43.75,
+   "TDs": 0,
+   "Target %": 3.24
+ },
+ {
+   "Rank": 3,
+   "Name": "Smith, Torrey",
+   "Team": "SF",
+   "Pos.": "WR",
+   "Completions": 21,
+   "Targets": 52,
+   "Comp %": 40.38,
+   "TDs": 3,
+   "Target %": 10.53
+ },
+ {
+   "Rank": 7,
+   "Name": "Hyde, Carlos",
+   "Team": "SF",
+   "Pos.": "RB",
+   "Completions": 26,
+   "Targets": 33,
+   "Comp %": 78.79,
+   "TDs": 3,
+   "Target %": 6.68
+ }
+]

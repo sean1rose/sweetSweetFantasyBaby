@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 4,
+   "Name": "Shepard, Russell",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 24,
+   "Targets": 41,
+   "Comp %": 58.54,
+   "TDs": 2,
+   "Target %": 7.09
+ },
+ {
+   "Rank": 9,
+   "Name": "Myers, Brandon",
+   "Team": "TB",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 17,
+   "Comp %": 47.06,
+   "TDs": 1,
+   "Target %": 2.94
+ },
+ {
+   "Rank": 14,
+   "Name": "Barber, Peyton",
+   "Team": "TB",
+   "Pos.": "RB",
+   "Completions": 5,
+   "Targets": 7,
+   "Comp %": 71.43,
+   "TDs": 0,
+   "Target %": 1.21
+ },
+ {
+   "Rank": 13,
+   "Name": "Stocker, Luke",
+   "Team": "TB",
+   "Pos.": "TE",
+   "Completions": 5,
+   "Targets": 8,
+   "Comp %": 62.5,
+   "TDs": 0,
+   "Target %": 1.38
+ },
+ {
+   "Rank": 2,
+   "Name": "Humphries, Adam",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 60,
+   "Targets": 89,
+   "Comp %": 67.42,
+   "TDs": 2,
+   "Target %": 15.4
+ },
+ {
+   "Rank": 10,
+   "Name": "Martin, Doug",
+   "Team": "TB",
+   "Pos.": "RB",
+   "Completions": 14,
+   "Targets": 16,
+   "Comp %": 87.5,
+   "TDs": 0,
+   "Target %": 2.77
+ },
+ {
+   "Rank": 11,
+   "Name": "Martino, Freddie",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 8,
+   "Targets": 11,
+   "Comp %": 72.73,
+   "TDs": 1,
+   "Target %": 1.9
+ },
+ {
+   "Rank": 15,
+   "Name": "Huff, Josh",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 6,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 1.04
+ },
+ {
+   "Rank": 3,
+   "Name": "Brate, Cameron",
+   "Team": "TB",
+   "Pos.": "TE",
+   "Completions": 59,
+   "Targets": 86,
+   "Comp %": 68.6,
+   "TDs": 10,
+   "Target %": 14.88
+ },
+ {
+   "Rank": 5,
+   "Name": "Jackson, Vincent",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 17,
+   "Targets": 34,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 5.88
+ },
+ {
+   "Rank": 1,
+   "Name": "Evans, Mike",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 100,
+   "Targets": 176,
+   "Comp %": 56.82,
+   "TDs": 12,
+   "Target %": 30.45
+ },
+ {
+   "Rank": 8,
+   "Name": "Rodgers, Jacquizz",
+   "Team": "TB",
+   "Pos.": "RB",
+   "Completions": 14,
+   "Targets": 17,
+   "Comp %": 82.35,
+   "TDs": 0,
+   "Target %": 2.94
+ },
+ {
+   "Rank": 6,
+   "Name": "Sims, Charles",
+   "Team": "TB",
+   "Pos.": "RB",
+   "Completions": 25,
+   "Targets": 32,
+   "Comp %": 78.13,
+   "TDs": 1,
+   "Target %": 5.54
+ },
+ {
+   "Rank": 7,
+   "Name": "Shorts, Cecil",
+   "Team": "TB",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 28,
+   "Comp %": 39.29,
+   "TDs": 0,
+   "Target %": 4.84
+ },
+ {
+   "Rank": 12,
+   "Name": "Cross, Alan",
+   "Team": "TB",
+   "Pos.": "RB",
+   "Completions": 6,
+   "Targets": 10,
+   "Comp %": 60,
+   "TDs": 1,
+   "Target %": 1.73
+ }
+]

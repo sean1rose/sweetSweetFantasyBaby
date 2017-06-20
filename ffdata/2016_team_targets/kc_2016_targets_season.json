@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 9,
+   "Name": "Thomas, DeAnthony",
+   "Team": "KC",
+   "Pos.": "WR",
+   "Completions": 7,
+   "Targets": 9,
+   "Comp %": 77.78,
+   "TDs": 0,
+   "Target %": 1.66
+ },
+ {
+   "Rank": 5,
+   "Name": "Wilson, Albert",
+   "Team": "KC",
+   "Pos.": "WR",
+   "Completions": 31,
+   "Targets": 51,
+   "Comp %": 60.78,
+   "TDs": 2,
+   "Target %": 9.39
+ },
+ {
+   "Rank": 3,
+   "Name": "Maclin, Jeremy",
+   "Team": "KC",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 74,
+   "Comp %": 59.46,
+   "TDs": 2,
+   "Target %": 13.63
+ },
+ {
+   "Rank": 8,
+   "Name": "Harris, Demetrius",
+   "Team": "KC",
+   "Pos.": "TE",
+   "Completions": 17,
+   "Targets": 31,
+   "Comp %": 54.84,
+   "TDs": 1,
+   "Target %": 5.71
+ },
+ {
+   "Rank": 4,
+   "Name": "Conley, Chris",
+   "Team": "KC",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 73,
+   "Comp %": 60.27,
+   "TDs": 0,
+   "Target %": 13.44
+ },
+ {
+   "Rank": 2,
+   "Name": "Hill, Tyreek",
+   "Team": "KC",
+   "Pos.": "WR",
+   "Completions": 62,
+   "Targets": 84,
+   "Comp %": 73.81,
+   "TDs": 6,
+   "Target %": 15.47
+ },
+ {
+   "Rank": 14,
+   "Name": "Smith, Alex",
+   "Team": "KC",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.37
+ },
+ {
+   "Rank": 10,
+   "Name": "Sherman, Anthony",
+   "Team": "KC",
+   "Pos.": "FB",
+   "Completions": 4,
+   "Targets": 6,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 1.1
+ },
+ {
+   "Rank": 12,
+   "Name": "OShaughnessy, James",
+   "Team": "KC",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.74
+ },
+ {
+   "Rank": 1,
+   "Name": "Kelce, Travis",
+   "Team": "KC",
+   "Pos.": "TE",
+   "Completions": 85,
+   "Targets": 121,
+   "Comp %": 70.25,
+   "TDs": 4,
+   "Target %": 22.28
+ },
+ {
+   "Rank": 6,
+   "Name": "Ware, Spencer",
+   "Team": "KC",
+   "Pos.": "RB",
+   "Completions": 34,
+   "Targets": 43,
+   "Comp %": 79.07,
+   "TDs": 2,
+   "Target %": 7.92
+ },
+ {
+   "Rank": 11,
+   "Name": "Travis, Ross",
+   "Team": "KC",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 6,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 1.1
+ },
+ {
+   "Rank": 7,
+   "Name": "West, Charcandrick",
+   "Team": "KC",
+   "Pos.": "RB",
+   "Completions": 29,
+   "Targets": 36,
+   "Comp %": 80.56,
+   "TDs": 2,
+   "Target %": 6.63
+ },
+ {
+   "Rank": 13,
+   "Name": "Charles, Jamaal",
+   "Team": "KC",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.55
+ }
+]

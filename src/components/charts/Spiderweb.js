@@ -150,7 +150,7 @@ class Spiderweb extends Component {
             playerOne.PLAYER === rydFirstObj.PLAYER ? 1 : playerOne.PLAYER === rydSecondObj.PLAYER ? rydSecondProportion : rydThirdProportion,
             playerOne.PLAYER === cydFirstObj.PLAYER ? 1 : playerOne.PLAYER === cydSecondObj.PLAYER ? cydSecondProportion : cydThirdProportion,
             playerOne.PLAYER === totaltdFirstObj.PLAYER ? 1 : playerOne.PLAYER === totaltdSecondObj.PLAYER ? totaltdSecondProportion : totaltdThirdProportion
-            ],
+          ],
           // for data ^ for each category, need to figure out if player one is 1st, 2nd or third
             // if 1st -> 1
             // if 2nd or 3d -> give the value (proportion);

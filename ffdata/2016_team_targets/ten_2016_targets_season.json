@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 14,
+   "Name": "Mariota, Marcus",
+   "Team": "TEN",
+   "Pos.": "QB",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 1,
+   "Name": "Matthews, Rishard",
+   "Team": "TEN",
+   "Pos.": "WR",
+   "Completions": 67,
+   "Targets": 109,
+   "Comp %": 61.47,
+   "TDs": 10,
+   "Target %": 21.25
+ },
+ {
+   "Rank": 2,
+   "Name": "Walker, Delanie",
+   "Team": "TEN",
+   "Pos.": "TE",
+   "Completions": 68,
+   "Targets": 104,
+   "Comp %": 65.38,
+   "TDs": 7,
+   "Target %": 20.27
+ },
+ {
+   "Rank": 10,
+   "Name": "Supernaw, Phillip",
+   "Team": "TEN",
+   "Pos.": "TE",
+   "Completions": 4,
+   "Targets": 6,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 1.17
+ },
+ {
+   "Rank": 5,
+   "Name": "Wright, Kendall",
+   "Team": "TEN",
+   "Pos.": "WR",
+   "Completions": 29,
+   "Targets": 42,
+   "Comp %": 69.05,
+   "TDs": 3,
+   "Target %": 8.19
+ },
+ {
+   "Rank": 4,
+   "Name": "Murray, DeMarco",
+   "Team": "TEN",
+   "Pos.": "RB",
+   "Completions": 53,
+   "Targets": 67,
+   "Comp %": 79.1,
+   "TDs": 3,
+   "Target %": 13.06
+ },
+ {
+   "Rank": 12,
+   "Name": "Fowler, Jalston",
+   "Team": "TEN",
+   "Pos.": "FB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.39
+ },
+ {
+   "Rank": 3,
+   "Name": "Sharpe, Tajae",
+   "Team": "TEN",
+   "Pos.": "WR",
+   "Completions": 42,
+   "Targets": 92,
+   "Comp %": 45.65,
+   "TDs": 2,
+   "Target %": 17.93
+ },
+ {
+   "Rank": 13,
+   "Name": "Lewan, Taylor",
+   "Team": "TEN",
+   "Pos.": "T",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 7,
+   "Name": "Douglas, Harry",
+   "Team": "TEN",
+   "Pos.": "WR",
+   "Completions": 16,
+   "Targets": 24,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 4.68
+ },
+ {
+   "Rank": 9,
+   "Name": "Henry, Derrick",
+   "Team": "TEN",
+   "Pos.": "RB",
+   "Completions": 13,
+   "Targets": 15,
+   "Comp %": 86.67,
+   "TDs": 0,
+   "Target %": 2.92
+ },
+ {
+   "Rank": 8,
+   "Name": "Fasano, Anthony",
+   "Team": "TEN",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 17,
+   "Comp %": 47.06,
+   "TDs": 2,
+   "Target %": 3.31
+ },
+ {
+   "Rank": 11,
+   "Name": "Amaro, Jace",
+   "Team": "TEN",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 4,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 0.78
+ },
+ {
+   "Rank": 6,
+   "Name": "Johnson, Andre",
+   "Team": "TEN",
+   "Pos.": "WR",
+   "Completions": 11,
+   "Targets": 29,
+   "Comp %": 37.93,
+   "TDs": 3,
+   "Target %": 5.65
+ }
+]

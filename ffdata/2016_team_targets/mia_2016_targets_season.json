@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 1,
+   "Name": "Landry, Jarvis",
+   "Team": "MIA",
+   "Pos.": "WR",
+   "Completions": 99,
+   "Targets": 134,
+   "Comp %": 73.88,
+   "TDs": 4,
+   "Target %": 28.39
+ },
+ {
+   "Rank": 10,
+   "Name": "Drake, Kenyan",
+   "Team": "MIA",
+   "Pos.": "RB",
+   "Completions": 9,
+   "Targets": 10,
+   "Comp %": 90,
+   "TDs": 0,
+   "Target %": 2.12
+ },
+ {
+   "Rank": 2,
+   "Name": "Parker, DeVante",
+   "Team": "MIA",
+   "Pos.": "WR",
+   "Completions": 57,
+   "Targets": 87,
+   "Comp %": 65.52,
+   "TDs": 5,
+   "Target %": 18.43
+ },
+ {
+   "Rank": 6,
+   "Name": "Williams, Damien",
+   "Team": "MIA",
+   "Pos.": "RB",
+   "Completions": 24,
+   "Targets": 32,
+   "Comp %": 75,
+   "TDs": 3,
+   "Target %": 6.78
+ },
+ {
+   "Rank": 11,
+   "Name": "Foster, Arian",
+   "Team": "MIA",
+   "Pos.": "RB",
+   "Completions": 6,
+   "Targets": 10,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 2.12
+ },
+ {
+   "Rank": 9,
+   "Name": "Cameron, Jordan",
+   "Team": "MIA",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 11,
+   "Comp %": 72.73,
+   "TDs": 1,
+   "Target %": 2.33
+ },
+ {
+   "Rank": 4,
+   "Name": "Ajayi, Jay",
+   "Team": "MIA",
+   "Pos.": "RB",
+   "Completions": 29,
+   "Targets": 38,
+   "Comp %": 76.32,
+   "TDs": 1,
+   "Target %": 8.05
+ },
+ {
+   "Rank": 3,
+   "Name": "Stills, Kenny",
+   "Team": "MIA",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 79,
+   "Comp %": 55.7,
+   "TDs": 9,
+   "Target %": 16.74
+ },
+ {
+   "Rank": 14,
+   "Name": "Grant, Jakeem",
+   "Team": "MIA",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.21
+ },
+ {
+   "Rank": 13,
+   "Name": "Pead, Isaiah",
+   "Team": "MIA",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.21
+ },
+ {
+   "Rank": 5,
+   "Name": "Sims, Dion",
+   "Team": "MIA",
+   "Pos.": "TE",
+   "Completions": 25,
+   "Targets": 34,
+   "Comp %": 73.53,
+   "TDs": 4,
+   "Target %": 7.2
+ },
+ {
+   "Rank": 8,
+   "Name": "Jones, Dominique",
+   "Team": "MIA",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 12,
+   "Comp %": 66.67,
+   "TDs": 2,
+   "Target %": 2.54
+ },
+ {
+   "Rank": 7,
+   "Name": "Gray, MarQueis",
+   "Team": "MIA",
+   "Pos.": "TE",
+   "Completions": 14,
+   "Targets": 18,
+   "Comp %": 77.78,
+   "TDs": 0,
+   "Target %": 3.81
+ },
+ {
+   "Rank": 12,
+   "Name": "Carroo, Leonte",
+   "Team": "MIA",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 1,
+   "Target %": 1.06
+ }
+]

@@ -1,4 +1,4 @@
-import runningbacks from '../../ffdata/huddle2016rb(non-keyed).json';
+import runningbacks from '../../ffdata/2016_individual_season_totals/huddle2016rb(non-keyed).json';
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 

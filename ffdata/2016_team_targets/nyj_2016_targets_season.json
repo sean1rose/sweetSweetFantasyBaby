@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 15,
+   "Name": "Davis, Kellen",
+   "Team": "NYJ",
+   "Pos.": "TE",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 11,
+   "Name": "Spiller, C.J.",
+   "Team": "NYJ",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 4,
+   "Comp %": 25,
+   "TDs": 0,
+   "Target %": 0.73
+ },
+ {
+   "Rank": 1,
+   "Name": "Marshall, Brandon",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 62,
+   "Targets": 132,
+   "Comp %": 46.97,
+   "TDs": 4,
+   "Target %": 24.04
+ },
+ {
+   "Rank": 2,
+   "Name": "Enunwa, Quincy",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 57,
+   "Targets": 106,
+   "Comp %": 53.77,
+   "TDs": 4,
+   "Target %": 19.31
+ },
+ {
+   "Rank": 10,
+   "Name": "Bostick, Brandon",
+   "Team": "NYJ",
+   "Pos.": "TE",
+   "Completions": 8,
+   "Targets": 11,
+   "Comp %": 72.73,
+   "TDs": 0,
+   "Target %": 2
+ },
+ {
+   "Rank": 3,
+   "Name": "Powell, Bilal",
+   "Team": "NYJ",
+   "Pos.": "RB",
+   "Completions": 60,
+   "Targets": 76,
+   "Comp %": 78.95,
+   "TDs": 1,
+   "Target %": 13.84
+ },
+ {
+   "Rank": 13,
+   "Name": "Wilds, Brandon",
+   "Team": "NYJ",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 2,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.36
+ },
+ {
+   "Rank": 14,
+   "Name": "Bowman, Braedon",
+   "Team": "NYJ",
+   "Pos.": "TE",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 5,
+   "Name": "Forte, Matt",
+   "Team": "NYJ",
+   "Pos.": "RB",
+   "Completions": 31,
+   "Targets": 43,
+   "Comp %": 72.09,
+   "TDs": 1,
+   "Target %": 7.83
+ },
+ {
+   "Rank": 6,
+   "Name": "Peake, Charone",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 20,
+   "Targets": 34,
+   "Comp %": 58.82,
+   "TDs": 0,
+   "Target %": 6.19
+ },
+ {
+   "Rank": 7,
+   "Name": "Marshall, Jalin",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 24,
+   "Comp %": 58.33,
+   "TDs": 3,
+   "Target %": 4.37
+ },
+ {
+   "Rank": 9,
+   "Name": "Seferian-Jenkins, Austin",
+   "Team": "NYJ",
+   "Pos.": "TE",
+   "Completions": 10,
+   "Targets": 16,
+   "Comp %": 62.5,
+   "TDs": 0,
+   "Target %": 2.91
+ },
+ {
+   "Rank": 4,
+   "Name": "Anderson, Robby",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 44,
+   "Targets": 75,
+   "Comp %": 58.67,
+   "TDs": 3,
+   "Target %": 13.66
+ },
+ {
+   "Rank": 12,
+   "Name": "Smith, Devin",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.55
+ },
+ {
+   "Rank": 8,
+   "Name": "Decker, Eric",
+   "Team": "NYJ",
+   "Pos.": "WR",
+   "Completions": 10,
+   "Targets": 21,
+   "Comp %": 47.62,
+   "TDs": 2,
+   "Target %": 3.83
+ }
+]

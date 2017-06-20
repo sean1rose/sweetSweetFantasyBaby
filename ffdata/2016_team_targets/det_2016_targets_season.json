@@ -1,0 +1,167 @@
+[
+ {
+   "Rank": 8,
+   "Name": "Washington, Dwayne",
+   "Team": "DET",
+   "Pos.": "RB",
+   "Completions": 10,
+   "Targets": 15,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 2.49
+ },
+ {
+   "Rank": 4,
+   "Name": "Ebron, Eric",
+   "Team": "DET",
+   "Pos.": "TE",
+   "Completions": 63,
+   "Targets": 87,
+   "Comp %": 72.41,
+   "TDs": 2,
+   "Target %": 14.43
+ },
+ {
+   "Rank": 12,
+   "Name": "Wick, Cole",
+   "Team": "DET",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 0,
+   "Target %": 0.5
+ },
+ {
+   "Rank": 9,
+   "Name": "Jones, T.J.",
+   "Team": "DET",
+   "Pos.": "WR",
+   "Completions": 5,
+   "Targets": 13,
+   "Comp %": 38.46,
+   "TDs": 0,
+   "Target %": 2.16
+ },
+ {
+   "Rank": 10,
+   "Name": "Abdullah, Ameer",
+   "Team": "DET",
+   "Pos.": "RB",
+   "Completions": 5,
+   "Targets": 5,
+   "Comp %": 100,
+   "TDs": 1,
+   "Target %": 0.83
+ },
+ {
+   "Rank": 2,
+   "Name": "Jones, Marvin",
+   "Team": "DET",
+   "Pos.": "WR",
+   "Completions": 55,
+   "Targets": 116,
+   "Comp %": 47.41,
+   "TDs": 4,
+   "Target %": 19.24
+ },
+ {
+   "Rank": 1,
+   "Name": "Tate, Golden",
+   "Team": "DET",
+   "Pos.": "WR",
+   "Completions": 92,
+   "Targets": 141,
+   "Comp %": 65.25,
+   "TDs": 5,
+   "Target %": 23.38
+ },
+ {
+   "Rank": 7,
+   "Name": "Zenner, Zach",
+   "Team": "DET",
+   "Pos.": "FB",
+   "Completions": 18,
+   "Targets": 23,
+   "Comp %": 78.26,
+   "TDs": 0,
+   "Target %": 3.81
+ },
+ {
+   "Rank": 15,
+   "Name": "Lee, Khari",
+   "Team": "DET",
+   "Pos.": "TE",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 3,
+   "Name": "Boldin, Anquan",
+   "Team": "DET",
+   "Pos.": "WR",
+   "Completions": 70,
+   "Targets": 99,
+   "Comp %": 70.71,
+   "TDs": 9,
+   "Target %": 16.42
+ },
+ {
+   "Rank": 14,
+   "Name": "Mulligan, Matthew",
+   "Team": "DET",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 6,
+   "Name": "Roberts, Andre",
+   "Team": "DET",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 26,
+   "Comp %": 53.85,
+   "TDs": 1,
+   "Target %": 4.31
+ },
+ {
+   "Rank": 13,
+   "Name": "Bell, Joique",
+   "Team": "DET",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 11,
+   "Name": "Harbor, Clay",
+   "Team": "DET",
+   "Pos.": "TE",
+   "Completions": 3,
+   "Targets": 3,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.5
+ },
+ {
+   "Rank": 5,
+   "Name": "Riddick, Theo",
+   "Team": "DET",
+   "Pos.": "RB",
+   "Completions": 55,
+   "Targets": 69,
+   "Comp %": 79.71,
+   "TDs": 5,
+   "Target %": 11.44
+ }
+]

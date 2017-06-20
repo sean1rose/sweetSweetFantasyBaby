@@ -1,0 +1,178 @@
+[
+ {
+   "Rank": 15,
+   "Name": "Garoppolo, Jimmy",
+   "Team": "NE",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 9,
+   "Name": "Blount, LeGarrette",
+   "Team": "NE",
+   "Pos.": "RB",
+   "Completions": 7,
+   "Targets": 8,
+   "Comp %": 87.5,
+   "TDs": 0,
+   "Target %": 1.37
+ },
+ {
+   "Rank": 12,
+   "Name": "Bolden, Brandon",
+   "Team": "NE",
+   "Pos.": "RB",
+   "Completions": 2,
+   "Targets": 4,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.69
+ },
+ {
+   "Rank": 10,
+   "Name": "Floyd, Michael",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 7,
+   "Comp %": 57.14,
+   "TDs": 1,
+   "Target %": 1.2
+ },
+ {
+   "Rank": 16,
+   "Name": "Slater, Matthew",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 0,
+   "Targets": 1,
+   "Comp %": 0,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 14,
+   "Name": "Foster, D.J.",
+   "Team": "NE",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 2,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 0.34
+ },
+ {
+   "Rank": 6,
+   "Name": "Gronkowski, Rob",
+   "Team": "NE",
+   "Pos.": "TE",
+   "Completions": 25,
+   "Targets": 41,
+   "Comp %": 60.98,
+   "TDs": 3,
+   "Target %": 7.04
+ },
+ {
+   "Rank": 3,
+   "Name": "Bennett, Martellus",
+   "Team": "NE",
+   "Pos.": "TE",
+   "Completions": 56,
+   "Targets": 79,
+   "Comp %": 70.89,
+   "TDs": 7,
+   "Target %": 13.57
+ },
+ {
+   "Rank": 4,
+   "Name": "Hogan, Chris",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 39,
+   "Targets": 64,
+   "Comp %": 60.94,
+   "TDs": 4,
+   "Target %": 11
+ },
+ {
+   "Rank": 2,
+   "Name": "White, James",
+   "Team": "NE",
+   "Pos.": "RB",
+   "Completions": 65,
+   "Targets": 94,
+   "Comp %": 69.15,
+   "TDs": 5,
+   "Target %": 16.15
+ },
+ {
+   "Rank": 8,
+   "Name": "Lewis, Dion",
+   "Team": "NE",
+   "Pos.": "RB",
+   "Completions": 17,
+   "Targets": 24,
+   "Comp %": 70.83,
+   "TDs": 0,
+   "Target %": 4.12
+ },
+ {
+   "Rank": 13,
+   "Name": "Lengel, Matt",
+   "Team": "NE",
+   "Pos.": "TE",
+   "Completions": 2,
+   "Targets": 3,
+   "Comp %": 66.67,
+   "TDs": 1,
+   "Target %": 0.52
+ },
+ {
+   "Rank": 5,
+   "Name": "Mitchell, Malcolm",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 33,
+   "Targets": 53,
+   "Comp %": 62.26,
+   "TDs": 4,
+   "Target %": 9.11
+ },
+ {
+   "Rank": 11,
+   "Name": "Develin, James",
+   "Team": "NE",
+   "Pos.": "FB",
+   "Completions": 3,
+   "Targets": 6,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 1.03
+ },
+ {
+   "Rank": 7,
+   "Name": "Amendola, Danny",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 23,
+   "Targets": 30,
+   "Comp %": 76.67,
+   "TDs": 4,
+   "Target %": 5.15
+ },
+ {
+   "Rank": 1,
+   "Name": "Edelman, Julian",
+   "Team": "NE",
+   "Pos.": "WR",
+   "Completions": 102,
+   "Targets": 165,
+   "Comp %": 61.82,
+   "TDs": 3,
+   "Target %": 28.35
+ }
+]

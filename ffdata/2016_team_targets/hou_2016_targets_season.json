@@ -1,0 +1,178 @@
+[
+ {
+   "Rank": 1,
+   "Name": "Hopkins, DeAndre",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 79,
+   "Targets": 160,
+   "Comp %": 49.38,
+   "TDs": 4,
+   "Target %": 26.85
+ },
+ {
+   "Rank": 13,
+   "Name": "Ervin, Tyler",
+   "Team": "HOU",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 5,
+   "Comp %": 60,
+   "TDs": 0,
+   "Target %": 0.84
+ },
+ {
+   "Rank": 5,
+   "Name": "Miller, Lamar",
+   "Team": "HOU",
+   "Pos.": "RB",
+   "Completions": 32,
+   "Targets": 40,
+   "Comp %": 80,
+   "TDs": 1,
+   "Target %": 6.71
+ },
+ {
+   "Rank": 4,
+   "Name": "Griffin, Ryan",
+   "Team": "HOU",
+   "Pos.": "TE",
+   "Completions": 53,
+   "Targets": 77,
+   "Comp %": 68.83,
+   "TDs": 2,
+   "Target %": 12.92
+ },
+ {
+   "Rank": 12,
+   "Name": "Williams, Wendall",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 7,
+   "Comp %": 57.14,
+   "TDs": 0,
+   "Target %": 1.17
+ },
+ {
+   "Rank": 7,
+   "Name": "Strong, Jaelen",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 24,
+   "Comp %": 58.33,
+   "TDs": 0,
+   "Target %": 4.03
+ },
+ {
+   "Rank": 6,
+   "Name": "Miller, Braxton",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 16,
+   "Targets": 28,
+   "Comp %": 57.14,
+   "TDs": 1,
+   "Target %": 4.7
+ },
+ {
+   "Rank": 14,
+   "Name": "Hunt, Akeem",
+   "Team": "HOU",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 4,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 0.67
+ },
+ {
+   "Rank": 9,
+   "Name": "Anderson, Stephen",
+   "Team": "HOU",
+   "Pos.": "TE",
+   "Completions": 11,
+   "Targets": 18,
+   "Comp %": 61.11,
+   "TDs": 1,
+   "Target %": 3.02
+ },
+ {
+   "Rank": 8,
+   "Name": "Grimes, Jonathan",
+   "Team": "HOU",
+   "Pos.": "RB",
+   "Completions": 14,
+   "Targets": 19,
+   "Comp %": 73.68,
+   "TDs": 0,
+   "Target %": 3.19
+ },
+ {
+   "Rank": 15,
+   "Name": "Osweiler, Brock",
+   "Team": "HOU",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 3,
+   "Name": "Fiedorowicz, C.J.",
+   "Team": "HOU",
+   "Pos.": "TE",
+   "Completions": 55,
+   "Targets": 89,
+   "Comp %": 61.8,
+   "TDs": 4,
+   "Target %": 14.93
+ },
+ {
+   "Rank": 16,
+   "Name": "Prosch, Jay",
+   "Team": "HOU",
+   "Pos.": "FB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.17
+ },
+ {
+   "Rank": 2,
+   "Name": "Fuller, Will",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 47,
+   "Targets": 93,
+   "Comp %": 50.54,
+   "TDs": 2,
+   "Target %": 15.6
+ },
+ {
+   "Rank": 11,
+   "Name": "Mumphery, Keith",
+   "Team": "HOU",
+   "Pos.": "WR",
+   "Completions": 10,
+   "Targets": 13,
+   "Comp %": 76.92,
+   "TDs": 0,
+   "Target %": 2.18
+ },
+ {
+   "Rank": 10,
+   "Name": "Blue, Alfred",
+   "Team": "HOU",
+   "Pos.": "RB",
+   "Completions": 12,
+   "Targets": 17,
+   "Comp %": 70.59,
+   "TDs": 0,
+   "Target %": 2.85
+ }
+]

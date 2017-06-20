@@ -1,0 +1,134 @@
+[
+ {
+   "Rank": 8,
+   "Name": "Cooper, Pharoh",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 14,
+   "Targets": 18,
+   "Comp %": 77.78,
+   "TDs": 0,
+   "Target %": 3.35
+ },
+ {
+   "Rank": 1,
+   "Name": "Britt, Kenny",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 69,
+   "Targets": 114,
+   "Comp %": 60.53,
+   "TDs": 5,
+   "Target %": 21.19
+ },
+ {
+   "Rank": 3,
+   "Name": "Kendricks, Lance",
+   "Team": "LA",
+   "Pos.": "TE",
+   "Completions": 54,
+   "Targets": 90,
+   "Comp %": 60,
+   "TDs": 2,
+   "Target %": 16.73
+ },
+ {
+   "Rank": 11,
+   "Name": "Brown, Malcolm",
+   "Team": "LA",
+   "Pos.": "RB",
+   "Completions": 3,
+   "Targets": 3,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.56
+ },
+ {
+   "Rank": 7,
+   "Name": "Cunningham, Benny",
+   "Team": "LA",
+   "Pos.": "RB",
+   "Completions": 16,
+   "Targets": 21,
+   "Comp %": 76.19,
+   "TDs": 0,
+   "Target %": 3.9
+ },
+ {
+   "Rank": 5,
+   "Name": "Gurley, Todd",
+   "Team": "LA",
+   "Pos.": "RB",
+   "Completions": 45,
+   "Targets": 60,
+   "Comp %": 75,
+   "TDs": 0,
+   "Target %": 11.15
+ },
+ {
+   "Rank": 4,
+   "Name": "Quick, Brian",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 42,
+   "Targets": 79,
+   "Comp %": 53.16,
+   "TDs": 3,
+   "Target %": 14.68
+ },
+ {
+   "Rank": 6,
+   "Name": "Higbee, Tyler",
+   "Team": "LA",
+   "Pos.": "TE",
+   "Completions": 11,
+   "Targets": 28,
+   "Comp %": 39.29,
+   "TDs": 1,
+   "Target %": 5.2
+ },
+ {
+   "Rank": 12,
+   "Name": "Reynolds, Chase",
+   "Team": "LA",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.19
+ },
+ {
+   "Rank": 10,
+   "Name": "Marquez, Bradley",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 4,
+   "Targets": 8,
+   "Comp %": 50,
+   "TDs": 0,
+   "Target %": 1.49
+ },
+ {
+   "Rank": 2,
+   "Name": "Austin, Tavon",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 59,
+   "Targets": 107,
+   "Comp %": 55.14,
+   "TDs": 3,
+   "Target %": 19.89
+ },
+ {
+   "Rank": 9,
+   "Name": "Thomas, Mike",
+   "Team": "LA",
+   "Pos.": "WR",
+   "Completions": 3,
+   "Targets": 9,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 1.67
+ }
+]

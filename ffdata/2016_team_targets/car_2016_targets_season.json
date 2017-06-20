@@ -1,0 +1,156 @@
+[
+ {
+   "Rank": 14,
+   "Name": "Manhertz, Chris",
+   "Team": "CAR",
+   "Pos.": "TE",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 7,
+   "Name": "Stewart, Jonathan",
+   "Team": "CAR",
+   "Pos.": "RB",
+   "Completions": 10,
+   "Targets": 25,
+   "Comp %": 40,
+   "TDs": 0,
+   "Target %": 4.42
+ },
+ {
+   "Rank": 1,
+   "Name": "Olsen, Greg",
+   "Team": "CAR",
+   "Pos.": "TE",
+   "Completions": 81,
+   "Targets": 133,
+   "Comp %": 60.9,
+   "TDs": 3,
+   "Target %": 23.54
+ },
+ {
+   "Rank": 10,
+   "Name": "Bersin, Brenton",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 2,
+   "Targets": 7,
+   "Comp %": 28.57,
+   "TDs": 0,
+   "Target %": 1.24
+ },
+ {
+   "Rank": 9,
+   "Name": "Tolbert, Mike",
+   "Team": "CAR",
+   "Pos.": "FB",
+   "Completions": 11,
+   "Targets": 15,
+   "Comp %": 73.33,
+   "TDs": 1,
+   "Target %": 2.65
+ },
+ {
+   "Rank": 13,
+   "Name": "Artis-Payne, Cameron",
+   "Team": "CAR",
+   "Pos.": "RB",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 4,
+   "Name": "Funchess, Devin",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 23,
+   "Targets": 63,
+   "Comp %": 36.51,
+   "TDs": 4,
+   "Target %": 11.15
+ },
+ {
+   "Rank": 12,
+   "Name": "Byrd, Damiere",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 1,
+   "Targets": 1,
+   "Comp %": 100,
+   "TDs": 0,
+   "Target %": 0.18
+ },
+ {
+   "Rank": 11,
+   "Name": "Webb, Joe",
+   "Team": "CAR",
+   "Pos.": "QB",
+   "Completions": 1,
+   "Targets": 3,
+   "Comp %": 33.33,
+   "TDs": 0,
+   "Target %": 0.53
+ },
+ {
+   "Rank": 8,
+   "Name": "Dickson, Ed",
+   "Team": "CAR",
+   "Pos.": "TE",
+   "Completions": 11,
+   "Targets": 19,
+   "Comp %": 57.89,
+   "TDs": 1,
+   "Target %": 3.36
+ },
+ {
+   "Rank": 6,
+   "Name": "Whittaker, Fozzy",
+   "Team": "CAR",
+   "Pos.": "RB",
+   "Completions": 25,
+   "Targets": 33,
+   "Comp %": 75.76,
+   "TDs": 1,
+   "Target %": 5.84
+ },
+ {
+   "Rank": 2,
+   "Name": "Benjamin, Kelvin",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 63,
+   "Targets": 118,
+   "Comp %": 53.39,
+   "TDs": 7,
+   "Target %": 20.88
+ },
+ {
+   "Rank": 5,
+   "Name": "Brown, Corey",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 27,
+   "Targets": 52,
+   "Comp %": 51.92,
+   "TDs": 1,
+   "Target %": 9.2
+ },
+ {
+   "Rank": 3,
+   "Name": "Ginn, Ted",
+   "Team": "CAR",
+   "Pos.": "WR",
+   "Completions": 55,
+   "Targets": 94,
+   "Comp %": 58.51,
+   "TDs": 5,
+   "Target %": 16.64
+ }
+]
