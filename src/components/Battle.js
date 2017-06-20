@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
 import getRb2016 from '../util/getRb2016';
+import getTeamTargetDistribution from '../util/getTeamTargetDist';
+import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
 import Spiderweb from './charts/Spiderweb';
 
 console.log('getrbOnes - ', getRb2016.getRbOnes());
@@ -10,6 +12,8 @@ console.log('getrbThrees - ', getRb2016.getRbThrees());
 console.log('getRB1AVG - ', getRb2016.getRbOneAvg());
 console.log('getRBTwoAVG - ', getRb2016.getRbTwoAvg());
 console.log('getRBThreeAVG - ', getRb2016.getRbThreeAvg());
+console.log('---> targets! - ', getTeamTargetDistribution.getTeamTotalTargets(arzPlayers));
+console.log('rb targets - ', getTeamTargetDistribution.getTeamRbTargets(arzPlayers), ' @ a %age of - ', getTeamTargetDistribution.rbTargetPercentage(arzPlayers));
 
 // RECAP: https://www.youtube.com/watch?v=z_OpiP_b6HY @ 20:30 
 class Battle extends Component {
