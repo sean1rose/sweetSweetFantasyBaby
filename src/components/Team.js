@@ -44,6 +44,17 @@ const Team = (props) => {
   var teamAbr = props.match.params.abr;
   var teamPlayers = `${teamAbr}Players`;
   var team = allTeamUtilFunctions[teamPlayers];
+  console.log('issa team - ', team);
+  var teamName;
+  // var teamName = TeamTargetDistribution.getTeam(teamAbr).name;
+  console.log('team11111 - ', TeamTargetDistribution.getTeam(teamAbr));
+  TeamTargetDistribution.getAllTeams().map((team) => {
+    if (team.abr === teamAbr){
+      teamName = team.name
+      console.log('ISSA MATCH - ', team, team.name);
+    }
+  })
+
   const teamPlayersTargetsArray = TeamTargetDistribution.getAllTeamsPlayersTargets(team);
   const teamTotalTargets = TeamTargetDistribution.getTeamTotalTargets(team);
   console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, teamTotalTargets);
@@ -52,9 +63,9 @@ const Team = (props) => {
   }
   return (
     <div>
-      {/*<h1>{player.name}(#{player.number})</h1>
-      <h2>Position: {player.position}</h2>*/}
-      {/*<Link to='/teams'>Back</Link>*/}
+      <h1>{teamName}</h1>
+      {/*<h2>Position: {player.position}</h2>
+      <Link to='/teams'>Back</Link>*/}
     </div>
   )
 };

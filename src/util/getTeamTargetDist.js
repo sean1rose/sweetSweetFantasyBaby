@@ -108,6 +108,15 @@ const TeamTargetDistribution = {
       {name: "Washington Redskins", abr: "was"} 
     ]
   },
+  getTeam: (abr) => {
+    console.log('in get team - ', abr);
+    TeamTargetDistribution.getAllTeams().forEach((team) => {
+      if (abr === team.abr){
+        console.log('match - ', team);
+        return team;
+      }
+    })
+  }
 
 };
 
