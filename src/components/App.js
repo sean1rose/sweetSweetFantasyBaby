@@ -6,6 +6,7 @@ import Nav from './Nav';
 import Home from './Home';
 import Roster from './Roster';
 import Schedule from './Schedule';
+import Teams from './Teams';
 import Battle from './Battle';
 import Results from './Results';
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path='/' component={Home} />
           <Route path='/roster' component={Roster} />
           <Route path='/schedule' component={Schedule} />
+          <Route path='/teams' component={Teams} />
           <Route exact path='/battle' component={Battle} />
           <Route path='/battle/results' component={Results} />
           <Route render={() => {

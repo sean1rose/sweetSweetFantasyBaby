@@ -8,6 +8,7 @@ const Nav = () => (
     <li><NavLink exact activeClassName='active' to='/battle'>Battle</NavLink></li>
     <li><NavLink activeClassName='active' to='/roster'>Roster</NavLink></li>
     <li><NavLink activeClassName='active' to='/schedule'>Schedule</NavLink></li>
+    <li><NavLink activeClassName='active' to='/teams'>Teams</NavLink></li>
   </ul>
 );
 
