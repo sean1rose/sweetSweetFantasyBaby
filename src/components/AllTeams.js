@@ -10,7 +10,6 @@ const AllTeams = () => (
       {
         TeamTargetDistribution.getAllTeams().map(team => (
           <li key={team.name}>
-            {/*<span>{team.name}</span>*/}
             <Link to={`/teams/${team.abr}`}>{team.name}</Link>
           </li>
         ))
