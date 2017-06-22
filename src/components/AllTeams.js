@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import TeamTargetDistribution from '../util/getTeamTargetDist';
+import TeamTargetUtil from '../util/teamTargetUtil';
 
-console.log('--> ALL TEAMS - ', TeamTargetDistribution.getAllTeams());
+console.log('--> ALL TEAMS - ', TeamTargetUtil.getAllTeams());
 // ALL TEAMS === FULLROSTER
 const AllTeams = () => (
   <div>
     <ul>
       {
-        TeamTargetDistribution.getAllTeams().map(team => (
+        TeamTargetUtil.getAllTeams().map(team => (
           <li key={team.name}>
             <Link to={`/teams/${team.abr}`}>{team.name}</Link>
           </li>

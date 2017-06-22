@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import TeamTargetDistribution from '../util/getTeamTargetDist';
+import TeamTargetUtil from '../util/teamTargetUtil';
+import Donutchart from './charts/Donutchart';
+
 import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
 import atlPlayers from '../../ffdata/2016_team_targets/atl_2016_targets_season.json';
 import balPlayers from '../../ffdata/2016_team_targets/bal_2016_targets_season.json';
@@ -43,29 +45,29 @@ const Team = (props) => {
   console.log('team props - ', props);
   var teamAbr = props.match.params.abr;
   var teamPlayers = `${teamAbr}Players`;
+  // team
   var team = allTeamUtilFunctions[teamPlayers];
   console.log('issa team - ', team);
   var teamName;
-  // var teamName = TeamTargetDistribution.getTeam(teamAbr).name;
-  console.log('team11111 - ', TeamTargetDistribution.getTeam(teamAbr));
-  TeamTargetDistribution.getAllTeams().map((team) => {
+  // var teamName = TeamTargetUtil.getTeam(teamAbr).name;
+  console.log('team11111 - ', TeamTargetUtil.getTeam(teamAbr));
+  TeamTargetUtil.getAllTeams().map((team) => {
     if (team.abr === teamAbr){
       teamName = team.name
       console.log('ISSA MATCH - ', team, team.name);
     }
   })
 
-  const teamPlayersTargetsArray = TeamTargetDistribution.getAllTeamsPlayersTargets(team);
-  const teamTotalTargets = TeamTargetDistribution.getTeamTotalTargets(team);
-  console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, teamTotalTargets);
+  const teamPlayersTargetsArray = TeamTargetUtil.getAllTeamsPlayersTargets(team);
+  const teamTotalTargets = TeamTargetUtil.getTeamTotalTargets(team);
+  console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, team);
   if (!team) {
     return <div>Sorry no team was found</div>
   }
   return (
     <div>
       <h1>{teamName}</h1>
-      {/*<h2>Position: {player.position}</h2>
-      <Link to='/teams'>Back</Link>*/}
+      <Donutchart teamName={teamName} team={teamPlayersTargetsArray} util={TeamTargetUtil} />
     </div>
   )
 };
