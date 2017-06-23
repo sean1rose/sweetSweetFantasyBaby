@@ -91,7 +91,7 @@ class Donutchart extends Component {
           type: 'pie',
         },
         title: {
-          text: `${props.teamName} Positional/Player Target Distribution`
+          text: `Positional/Player Target Distribution`
         },
         yAxis: {
           title: {
@@ -128,7 +128,10 @@ class Donutchart extends Component {
           innerSize: '60%',
           dataLabels: {
             formatter: function () {
-              return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' : null;
+              var playerTotalTargets = Math.round(totalTargets * this.y * .01);
+              console.log('player act targets - ', this.point.name);
+              // return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' + '<br>' + '(targets: ' + playerTotalTargets + ')' : null;
+              return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' + '<br>' +  '[' + playerTotalTargets + ' targets]' : null;
             }
           },
           id: 'positions'
