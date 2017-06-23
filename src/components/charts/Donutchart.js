@@ -11,8 +11,6 @@ HighchartsExporting(ReactHighcharts.Highcharts);
 class Donutchart extends Component {
   constructor(props){
     super(props);
-    console.log('IN DONUT CHART COMPONENT, props is - ', props);
-    console.log('---> total targets - ', props.util.getTeamTotalTargets(props.team));
     var totalTargets = props.util.getTeamTotalTargets(props.team);
     var categories = ['Runningbacks', 'Wide Receivers', 'Tight Ends', 'Other'];
     var data = [
@@ -60,11 +58,12 @@ class Donutchart extends Component {
       }
     ];
 
-    var dataForPositions = [];
-    var dataForPlayers = [];
     var convertToPercent = function(fraction){
       return Math.round(fraction * 10000) / 100;
     };
+    // data point calculations...
+    var dataForPositions = [];
+    var dataForPlayers = [];
     for(var i = 0; i < data.length; i++){      
       dataForPositions.push({
         name: categories[i],
@@ -85,6 +84,7 @@ class Donutchart extends Component {
         });
       }
     }
+
     this.state = {
       config: {
         chart: {
@@ -116,7 +116,10 @@ class Donutchart extends Component {
               return '<br>' + this.point.name + ':</b> ' + this.y + '%';
             },
             color: 'white',
-            distance: -15
+            distance: 0,
+            // x: 10,
+            // y: 5
+            zIndex: 7
           }
         },{
           name: '% of total targets',

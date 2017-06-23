@@ -15,6 +15,7 @@ const TeamTargetUtil = {
   getAllTeamsPlayersTargets: (team) => {
     // pass in team as argument -> team is an array of player-objects, sorted by RBs first, 2nd == WRs, 3rd == TEs, 4th == all others
     var result = [];
+    console.log('team - ', team);
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] === "RB" || team[i]["Pos."] === "FB"){
         result.push(team[i]);

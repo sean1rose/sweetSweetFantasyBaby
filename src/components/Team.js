@@ -9,6 +9,7 @@ import balPlayers from '../../ffdata/2016_team_targets/bal_2016_targets_season.j
 import bufPlayers from '../../ffdata/2016_team_targets/buf_2016_targets_season.json';
 import carPlayers from '../../ffdata/2016_team_targets/car_2016_targets_season.json';
 import chiPlayers from '../../ffdata/2016_team_targets/chi_2016_targets_season.json';
+import cinPlayers from '../../ffdata/2016_team_targets/cin_2016_targets_season.json';
 import clePlayers from '../../ffdata/2016_team_targets/cle_2016_targets_season.json';
 import dalPlayers from '../../ffdata/2016_team_targets/dal_2016_targets_season.json';
 import denPlayers from '../../ffdata/2016_team_targets/den_2016_targets_season.json';
@@ -36,7 +37,7 @@ import tenPlayers from '../../ffdata/2016_team_targets/ten_2016_targets_season.j
 import wasPlayers from '../../ffdata/2016_team_targets/was_2016_targets_season.json';
 
 const allTeamUtilFunctions = {
-  arzPlayers, atlPlayers, balPlayers, bufPlayers, carPlayers, chiPlayers, clePlayers, dalPlayers, denPlayers, detPlayers, gbPlayers, houPlayers,
+  arzPlayers, atlPlayers, balPlayers, bufPlayers, carPlayers, chiPlayers, cinPlayers, clePlayers, dalPlayers, denPlayers, detPlayers, gbPlayers, houPlayers,
   indPlayers, jaxPlayers, kcPlayers, larPlayers, miaPlayers, minPlayers, nePlayers, noPlayers, nygPlayers, nyjPlayers, oakPlayers, phiPlayers,
   pitPlayers, sdPlayers, seaPlayers, sfPlayers, tbPlayers, tenPlayers, wasPlayers
 }
