@@ -3,6 +3,7 @@ import ReactHighcharts from 'react-highcharts';
 import HighchartsMore from 'highcharts-more';
 import HighchartsExporting from 'highcharts-exporting';
 import Highcharts from 'highcharts';
+var colors = Highcharts.getOptions().colors;
 HighchartsMore(ReactHighcharts.Highcharts);
 HighchartsExporting(ReactHighcharts.Highcharts);
 
@@ -11,40 +12,78 @@ class Donutchart extends Component {
   constructor(props){
     super(props);
     console.log('IN DONUT CHART COMPONENT, props is - ', props);
-    var positionData = [
+    console.log('---> total targets - ', props.util.getTeamTotalTargets(props.team));
+    var totalTargets = props.util.getTeamTotalTargets(props.team);
+    var categories = ['Runningbacks', 'Wide Receivers', 'Tight Ends', 'Other'];
+    var data = [
       {
-        name: "Runningbacks",
         y: props.util.rbTargetPercentage(props.team),
-        color: "#7cb5ec"
+        color: colors[0],
+        drilldown: {
+          name: 'Runningbacks',
+          categories: props.util.getRbProperty(props.team, "Name"),
+          data: props.util.getRbProperty(props.team, "Target %"),
+          color: colors[0]
+        }
       },
       {
-        name: "Wide Receivers",
         y: props.util.wrTargetPercentage(props.team),
-        color: "#434348"
+        color: colors[1],
+        drilldown: {
+          name: 'Wide Receivers',
+          categories: props.util.getWrProperty(props.team, "Name"),
+          data: props.util.getWrProperty(props.team, "Target %"),
+          color: colors[1]
+        }
       },
       {
-        name: "Tight Ends",
+        // te data
         y: props.util.teTargetPercentage(props.team),
-        color: "#90ed7d"
+        color: colors[2],
+        drilldown: {
+          name: 'Tight Ends',
+          categories: props.util.getTeProperty(props.team, "Name"),
+          data: props.util.getTeProperty(props.team, "Target %"),
+          color: colors[2]
+        }
       },
       {
-        name: "Other",
+        // other pos data
         y: props.util.otherTargetPercentage(props.team),
-        color: "#f7a35c"
+        color: colors[3],
+        drilldown: {
+          name: 'Other',
+          categories: props.util.getOtherProperty(props.team, "Name"),
+          data: props.util.getOtherProperty(props.team, "Target %"),
+          color: colors[3]
+        }
       }
     ];
-    console.log('positondata - ', positionData);
-    var playerData = [];
-    for (var i = 0; i < props.team.length; i++){
-      var current = props.team[i];
-      var firstName = current.Name.split(', ')[1];
-      var lastName = current.Name.split(', ')[0];
-      var tmpObj = {
-        name: firstName + ' ' + lastName,
-        y: current["Target %"],
-        color: Highcharts.getOptions().colors[i]
+
+    var dataForPositions = [];
+    var dataForPlayers = [];
+    var convertToPercent = function(fraction){
+      return Math.round(fraction * 10000) / 100;
+    };
+    for(var i = 0; i < data.length; i++){      
+      dataForPositions.push({
+        name: categories[i],
+        // y: data[i].y,
+        y: convertToPercent(data[i].y),
+        color: data[i].color
+      });
+      var drillDataLen = data[i].drilldown.data.length;
+      for (var j = 0; j < drillDataLen; j++){
+        var brightness = 0.25 - (j / drillDataLen) / 3;
+        var firstName = data[i].drilldown.categories[j].split(', ')[1];
+        var lastName = data[i].drilldown.categories[j].split(', ')[0];
+        dataForPlayers.push({
+          // name: data[i].drilldown.categories[j],
+          name: firstName + ' ' + lastName,
+          y: data[i].drilldown.data[j],
+          color: Highcharts.Color(data[i].color).brighten(brightness).get()
+        });
       }
-      playerData.push(tmpObj);
     }
     this.state = {
       config: {
@@ -70,28 +109,22 @@ class Donutchart extends Component {
         },
         series: [{
           name: '% of total targets',
-          data: positionData,
-          size: '65%',
+          data: dataForPositions,
+          size: '60%',
           dataLabels: {
             formatter: function () {
-              var convertToPercent = function(fraction){
-                return Math.round(fraction * 10000) / 100;
-              };
-              // return this.y > 5 ? this.point.name : null;
-              console.log('1 this.point name - ', this.point.name);
-              return '<br>' + this.point.name + ':</b> ' + convertToPercent(this.y) + '%';
+              return '<br>' + this.point.name + ':</b> ' + this.y + '%';
             },
             color: 'white',
-            distance: -10
+            distance: -15
           }
         },{
           name: '% of total targets',
-          data: playerData,
+          data: dataForPlayers,
           size: '80%',
-          innerSize: '65%',
+          innerSize: '60%',
           dataLabels: {
             formatter: function () {
-              console.log('2 this.point name - ', this.point.name);
               return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' : null;
             }
           },

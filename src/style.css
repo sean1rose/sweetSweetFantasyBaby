@@ -88,3 +88,7 @@ ul {
   font-size: 30px;
   font-weight: 200;
 }
+
+.headerContainer {
+  text-align: center;
+}

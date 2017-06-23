@@ -17,25 +17,21 @@ const TeamTargetUtil = {
     var result = [];
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] === "RB" || team[i]["Pos."] === "FB"){
-        console.log('*1 after adding rbs - ', team[i]);
         result.push(team[i]);
       }
     }
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] === "WR"){
-        console.log('*2 after adding wr - ', team[i]);
         result.push(team[i]);
       }
     }
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] === "TE"){
-        console.log('*3 after adding tes - ', team[i]);
         result.push(team[i]);
       }
     }
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] !== "RB" && team[i]["Pos."] !== "FB" && team[i]["Pos."] !== "WR" && team[i]["Pos."] !== "TE"){
-        console.log('*4 other - ', team[i]);
         result.push(team[i]);
       }
     }
@@ -92,6 +88,17 @@ const TeamTargetUtil = {
     // loop thru players array, for every "Pos." === "RB" or "FB" --> add to rbObj
     return TeamTargetUtil.getPlayersAtPosition(team, "RB", "FB");
   },
+  getRbProperty: (team, property) => {
+    // return array of rbs
+    // console.log('getrbprop team - ', team);
+    var result = [];
+    team.forEach((player) => {
+      if (player["Pos."] === "RB" || player["Pos."] === "FB"){
+        result.push(player[property]);
+      }
+    });
+    return result;
+  },
   getTeamWrTargets: (team) => {
     return TeamTargetUtil.getTeamPositionTargets(team, "WR");
   },
@@ -103,6 +110,16 @@ const TeamTargetUtil = {
   getTeamWrs: (team) => {
     return TeamTargetUtil.getPlayersAtPosition(team, "WR");
   },
+  getWrProperty: (team, property) => {
+    // return array of rbs
+    var result = [];
+    team.forEach((player) => {
+      if (player["Pos."] === "WR"){
+        result.push(player[property]);
+      }
+    });
+    return result;
+  },
   getTeamTeTargets: (team) => {
     return TeamTargetUtil.getTeamPositionTargets(team, "TE");
   },
@@ -111,13 +128,22 @@ const TeamTargetUtil = {
     console.log('----> te - ', targetPercentage);
     return (TeamTargetUtil.getTeamTeTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
   },
+  getTeProperty: (team, property) => {
+    var result = [];
+    team.forEach((player) => {
+      if (player["Pos."] === "TE"){
+        result.push(player[property]);
+      }
+    });
+    return result;
+  },
   getTeamTes: (team) => {
     return TeamTargetUtil.getPlayersAtPosition(team, "TE");
   },
   getTeamOtherTargets: (team) => {
     var otherTargets = 0;
     team.forEach((player) => {
-      if (player["Pos."] !== "RB" || player["Pos."] !== "FB" || player["Pos."] !== "WR" || player["Pos."] !== "TE"){
+      if (player["Pos."] !== "RB" && player["Pos."] !== "FB" && player["Pos."] !== "WR" && player["Pos."] !== "TE"){
         otherTargets += player.Targets;
       }
     });
@@ -129,6 +155,15 @@ const TeamTargetUtil = {
       return (( TeamTargetUtil.getTeamOtherTargets(team) / TeamTargetUtil.getTeamTotalTargets(team) ) * .01);
     else
       return 0;
+  },
+  getOtherProperty: (team, property) => {
+    var result = [];
+    team.forEach((player) => {
+      if (player["Pos."] !== "RB" && player["Pos."] !== "FB" && player["Pos."] !== "WR" && player["Pos."] !== "TE"){
+        result.push(player[property]);
+      }
+    });
+    return result;
   },
   getAllTeams: () => {
     return [

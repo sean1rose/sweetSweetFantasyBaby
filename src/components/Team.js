@@ -66,7 +66,9 @@ const Team = (props) => {
   }
   return (
     <div>
-      <h1>{teamName}</h1>
+      <div className="headerContainer">
+        <h1>{teamName}</h1>
+      </div>
       <Donutchart teamName={teamName} team={teamPlayersTargetsArray} util={TeamTargetUtil} />
     </div>
   )
