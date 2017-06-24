@@ -1,7 +1,3 @@
-// import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
-import Fuse from 'fuse.js';
-// http://fusejs.io/
-
 /* 
 NEED:
   - team's TOTAL targets

@@ -202,7 +202,7 @@ class Spiderweb extends Component {
     console.log('this. props - ', this.props);
     return (
       <div>
-        <ReactHighcharts config={this.state.config} ref="chart" />
+        <ReactHighcharts config={this.state.config}  />
       </div>
     )
   }

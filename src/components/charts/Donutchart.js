@@ -4,9 +4,6 @@ import HighchartsMore from 'highcharts-more';
 import HighchartsExporting from 'highcharts-exporting';
 import Highcharts from 'highcharts';
 var colors = Highcharts.getOptions().colors;
-HighchartsMore(ReactHighcharts.Highcharts);
-HighchartsExporting(ReactHighcharts.Highcharts);
-
 
 class Donutchart extends Component {
   constructor(props){
@@ -158,7 +155,7 @@ class Donutchart extends Component {
   render() {
     return (
       <div>
-        <ReactHighcharts config={this.state.config} ref="chart" />
+        <ReactHighcharts config={this.state.config} />
       </div>
     )
   }
