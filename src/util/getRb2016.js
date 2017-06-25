@@ -4,7 +4,7 @@ import Fuse from 'fuse.js';
 
 const getRb2016 = {
   all: () => { 
-    return runningbacks
+    return runningbacks;
   },
   get: (id) => {
     var options = {keys: ['PLAYER'], threshold: 0.3};

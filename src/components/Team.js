@@ -43,6 +43,7 @@ const allTeamUtilFunctions = {
 }
 
 const Team = (props) => {
+  console.log('---> team props - ', props);
   var teamAbr = props.match.params.abr;
   var teamPlayers = `${teamAbr}Players`;
   // team
