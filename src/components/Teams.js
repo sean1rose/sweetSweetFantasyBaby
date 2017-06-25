@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import AllTeams from './AllTeams';
 import Team from './Team';
 // import Player from './Player';
-console.log('TEAMS! file - ', Team);
+// console.log('TEAMS! file - ', Team);
 
 const Teams = () => (
   <div>

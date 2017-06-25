@@ -11,7 +11,6 @@ const TeamTargetUtil = {
   getAllTeamsPlayersTargets: (team) => {
     // pass in team as argument -> team is an array of player-objects, sorted by RBs first, 2nd == WRs, 3rd == TEs, 4th == all others
     var result = [];
-    console.log('team - ', team);
     for (var i = 0; i < team.length; i++){
       if (team[i]["Pos."] === "RB" || team[i]["Pos."] === "FB"){
         result.push(team[i]);
@@ -32,7 +31,7 @@ const TeamTargetUtil = {
         result.push(team[i]);
       }
     }
-    console.log('*FINAL RESULT - ', result);
+    // console.log('*FINAL RESULT - ', result);
     return result;
   },
   numberOfPlayersOnTeam: () => {
@@ -41,7 +40,6 @@ const TeamTargetUtil = {
   getTeamPositionTargets: (team, position) => {
     // main HELPER util function...
       // iterate thru array of player objects...
-      console.log('----> team - ', team);
     var positionTargets = 0;
     if (position === "ALL"){
       team.forEach((player) => {
@@ -78,7 +76,7 @@ const TeamTargetUtil = {
       return Math.round(fraction * 10000) / 100;
     };
     var targetPercentage = TeamTargetUtil.getTeamRbTargets(team) / TeamTargetUtil.getTeamTotalTargets(team);
-    console.log('----> rb - ', convertToPercent(targetPercentage));
+    // console.log('----> rb - ', convertToPercent(targetPercentage));
     return (TeamTargetUtil.getTeamRbTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
   },
   getTeamRbs: (team) => {
@@ -101,7 +99,7 @@ const TeamTargetUtil = {
   },
   wrTargetPercentage: (team) => {
     var targetPercentage = TeamTargetUtil.getTeamWrTargets(team) / TeamTargetUtil.getTeamTotalTargets(team);
-    console.log('----> wr - ', targetPercentage);
+    // console.log('----> wr - ', targetPercentage);
     return (TeamTargetUtil.getTeamWrTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
   },
   getTeamWrs: (team) => {
@@ -122,7 +120,7 @@ const TeamTargetUtil = {
   },
   teTargetPercentage: (team) => {
     var targetPercentage = TeamTargetUtil.getTeamTeTargets(team) / TeamTargetUtil.getTeamTotalTargets(team);
-    console.log('----> te - ', targetPercentage);
+    // console.log('----> te - ', targetPercentage);
     return (TeamTargetUtil.getTeamTeTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
   },
   getTeProperty: (team, property) => {
@@ -147,7 +145,7 @@ const TeamTargetUtil = {
     return otherTargets;
   },
   otherTargetPercentage: (team) => {
-    console.log('-----> other - ', TeamTargetUtil.getTeamOtherTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
+    // console.log('-----> other - ', TeamTargetUtil.getTeamOtherTargets(team) / TeamTargetUtil.getTeamTotalTargets(team));
     if (TeamTargetUtil.getTeamOtherTargets(team))
       return (( TeamTargetUtil.getTeamOtherTargets(team) / TeamTargetUtil.getTeamTotalTargets(team) ) * .01);
     else
@@ -199,10 +197,8 @@ const TeamTargetUtil = {
     ]
   },
   getTeam: (abr) => {
-    console.log('in get team - ', abr);
     TeamTargetUtil.getAllTeams().forEach((team) => {
       if (abr === team.abr){
-        console.log('match - ', team);
         return team;
       }
     })

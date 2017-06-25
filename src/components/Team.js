@@ -43,25 +43,22 @@ const allTeamUtilFunctions = {
 }
 
 const Team = (props) => {
-  console.log('team props - ', props);
   var teamAbr = props.match.params.abr;
   var teamPlayers = `${teamAbr}Players`;
   // team
   var team = allTeamUtilFunctions[teamPlayers];
-  console.log('issa team - ', team);
+  // console.log('issa team - ', team);
   var teamName;
   // var teamName = TeamTargetUtil.getTeam(teamAbr).name;
-  console.log('team11111 - ', TeamTargetUtil.getTeam(teamAbr));
   TeamTargetUtil.getAllTeams().map((team) => {
     if (team.abr === teamAbr){
       teamName = team.name
-      console.log('ISSA MATCH - ', team, team.name);
     }
   })
 
   const teamPlayersTargetsArray = TeamTargetUtil.getAllTeamsPlayersTargets(team);
   const teamTotalTargets = TeamTargetUtil.getTeamTotalTargets(team);
-  console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, team);
+  // console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, team);
   if (!team) {
     return <div>Sorry no team was found</div>
   }

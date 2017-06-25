@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
-import HighchartsMore from 'highcharts-more';
-import HighchartsExporting from 'highcharts-exporting';
 import Highcharts from 'highcharts';
 var colors = Highcharts.getOptions().colors;
 
@@ -126,7 +124,6 @@ class Donutchart extends Component {
           dataLabels: {
             formatter: function () {
               var playerTotalTargets = Math.round(totalTargets * this.y * .01);
-              console.log('player act targets - ', this.point.name);
               // return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' + '<br>' + '(targets: ' + playerTotalTargets + ')' : null;
               return this.y > 1 ? '<br>' + this.point.name + ':</b> ' + this.y + '%' + '<br>' +  '[' + playerTotalTargets + ' targets]' : null;
             }
