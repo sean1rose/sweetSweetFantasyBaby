@@ -7,6 +7,7 @@ const Runningback = (props) => {
   var name = props.match.params.name.split('_').join(' ');
   var player = RbRedzoneUtil.getSingleRb(name);
   console.log('player - ', player);
+  console.log('sorted - ', RbRedzoneUtil.allSorted());
 
   if (!player) {
     return <div>Sorry no runningback was found</div>

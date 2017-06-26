@@ -1,4 +1,5 @@
-import runningbacks from '../../ffdata/2016_rb_stats/2016_rb_stats.json';
+// import runningbacks from '../../ffdata/2016_rb_stats/2016_rb_stats.json';
+import runningbacks from '../../ffdata/2016_rb_stats/2016_runningback_stats.json';
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 
@@ -6,6 +7,11 @@ const rbRedzoneUtil = {
   all: () => { 
     console.log('runningbacks in util - ', runningbacks);
     return runningbacks;
+  },
+  allSorted: () => {
+    return runningbacks.sort((a,b) => {
+      return b["Rush_Rz_In_20"] - a["Rush_Rz_In_20"];
+    });
   },
   rbObj: () => {
     var result = {};
