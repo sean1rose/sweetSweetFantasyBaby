@@ -52,13 +52,23 @@ const rbRedzone2016Stats = {
     //   return (sum / 12);
     // }
   },
+  getRbMedianForCategory: (category, rank) => {
+    console.log('rank - ', rank);
+    var rbMedianIdx = rank === 1 ? 5 : rank === 2 ? 17 : 29;
+    console.log('idx - ', rbMedianIdx)
+    // rb1 median, rb2 median, rb3 median
+    var tmpRbMedian = seasonRbs[rbMedianIdx];
+    var rbMedian = rbRedzone2016Stats.getSingleRb(tmpRbMedian.Name);
+    rbMedian.teamData = teamSeason2016.getSingleTeam(rbMedian.Team);
+    console.log(`rb${rank} median is - `, rbMedian);
+    return rbMedian;
+  },
   getTopRbInCategory: (category) => {
     var sorted = redzoneRunningbacks.sort((a,b) => {
       return b[category] - a[category];
     });
     // add team to object...
-    var teamData = teamSeason2016.getSingleTeam(sorted[0].Team);
-    sorted[0].teamData = teamData;
+    sorted[0].teamData = teamSeason2016.getSingleTeam(sorted[0].Team);
     return sorted[0];
   },
   get: (id) => {
