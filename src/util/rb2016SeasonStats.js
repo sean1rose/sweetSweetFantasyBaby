@@ -3,7 +3,7 @@ import runningbacks from '../../ffdata/2016_rb_stats/2016_runningback_stats.json
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 
-const rbRedzoneUtil = {
+const rb2016SeasonStats = {
   all: () => { 
     console.log('runningbacks in util - ', runningbacks);
     return runningbacks;
@@ -15,14 +15,14 @@ const rbRedzoneUtil = {
   },
   rbObj: () => {
     var result = {};
-    rbRedzoneUtil.all().map((item) => {
+    rb2016SeasonStats.all().map((item) => {
       result[item.Name] = item;
       // result.push(item);
     });
     return result;
   },
   getSingleRb: (name) => {
-    return rbRedzoneUtil.rbObj()[name];
+    return rb2016SeasonStats.rbObj()[name];
   },
   get: (id) => {
     var options = {keys: ['PLAYER'], threshold: 0.3};
@@ -35,4 +35,4 @@ const rbRedzoneUtil = {
   }
 };
 
-export default rbRedzoneUtil;
+export default rb2016SeasonStats;

@@ -1,15 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import RbRedzoneUtil from '../util/rbRedzoneUtil';
+import rb2016SeasonStats from '../util/rb2016SeasonStats';
+import rbRedzone2016Stats from '../util/rbRedzone2016';
 
-console.log('--> ALL RBS in component - ', RbRedzoneUtil.all());
+// console.log('--> ALL RBS in component - ', rb2016SeasonStats.all());
+console.log('$$$$ - ', rbRedzone2016Stats.all());
 const AllRunningbacks = () => (
   <div>
     <ul>
       {
-        RbRedzoneUtil.all().map(runningback => (
-          <li key={runningback.Name}>
-            <Link to={`/runningbacks/${runningback.Name.split(' ').join('_')}`}>{runningback.Name}</Link>
+        rbRedzone2016Stats.allSortedBy("Rush_Rz_In_20_Car").map(runningback => (
+          <li key={runningback.Player}>
+            <Link to={`/runningbacks/${runningback.Player.split(' ').join('_')}`}>{runningback.Player}</Link>
           </li>
         ))
       }

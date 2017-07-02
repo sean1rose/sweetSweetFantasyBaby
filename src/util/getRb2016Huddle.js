@@ -2,7 +2,7 @@ import runningbacks from '../../ffdata/2016_individual_season_totals/huddle2016r
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 
-const getRb2016 = {
+const getRb2016Huddle = {
   all: () => { 
     return runningbacks;
   },
@@ -22,7 +22,7 @@ const getRb2016 = {
       player.FPTSPERGAME = player.FPTS.G;
     player.TOUCHES = player.CMP + player.CARRIES;
     player.TOUCHESPERGAME = player.TOUCHES / player.GP;
-    player.TDPERTOUCH = getRb2016.convertToPercent(player.TOTALTD / player.TOUCHES);
+    player.TDPERTOUCH = getRb2016Huddle.convertToPercent(player.TOTALTD / player.TOUCHES);
     delete player.FPTS;
     return player;
   },
@@ -30,7 +30,7 @@ const getRb2016 = {
     // return RB1 avgs (1-12)
     var result = [];
     for (var i = runningbacks.length - 1; i >= runningbacks.length - 12; i--){
-      var current = getRb2016.calcAdditionalStats(runningbacks[i]);
+      var current = getRb2016Huddle.calcAdditionalStats(runningbacks[i]);
       result.push(current);
     }
     return result;
@@ -40,7 +40,7 @@ const getRb2016 = {
     // return RB2 avgs (13-24)
     var result = [];
     for (var i = runningbacks.length - 13; i >= runningbacks.length - 24; i--){
-      var current = getRb2016.calcAdditionalStats(runningbacks[i]);
+      var current = getRb2016Huddle.calcAdditionalStats(runningbacks[i]);
       result.push(current);
     }
     return result;
@@ -49,13 +49,13 @@ const getRb2016 = {
     // return RB3 avgs (25 - 36)
     var result = [];
     for (var i = runningbacks.length - 25; i >= runningbacks.length - 36; i--){
-      var current = getRb2016.calcAdditionalStats(runningbacks[i]);
+      var current = getRb2016Huddle.calcAdditionalStats(runningbacks[i]);
       result.push(current);
     }
     return result;
   },
   calcAvg: (listOfRb, number) => {
-    var rbAvg = getRb2016.blankslate();    
+    var rbAvg = getRb2016Huddle.blankslate();    
     // loop thru each rb
     var start = 1;
     var iteratorLength = 12;
@@ -84,7 +84,7 @@ const getRb2016 = {
     // 2s -> for (var i = runningbacks.length - 13; i >= runningbacks.length - 24; i--){
     // 3s -> for (var i = runningbacks.length - 25; i >= runningbacks.length - 36; i--){
     for (var i = listOfRb.length - start; i >= listOfRb.length - iteratorLength; i--){
-      var current = getRb2016.calcAdditionalStats(listOfRb[i]);
+      var current = getRb2016Huddle.calcAdditionalStats(listOfRb[i]);
         // loop thru each of current's stat categories
       for (var key in current){
         // w/ each category -> add each category to rbOneAb stat total
@@ -98,19 +98,19 @@ const getRb2016 = {
     }
     rbAvg.PLAYER = 'RB' + number + ' Average';;
     rbAvg.TEAM = "";
-    rbAvg.TDPERTOUCH = getRb2016.convertToPercent(rbAvg.TOTALTD / rbAvg.TOUCHES);
+    rbAvg.TDPERTOUCH = getRb2016Huddle.convertToPercent(rbAvg.TOTALTD / rbAvg.TOUCHES);
     // console.log('avg - ', rbAvg);
     return rbAvg;
     
   },
   getRbOneAvg: () => {
-    return getRb2016.calcAvg(runningbacks, 1);
+    return getRb2016Huddle.calcAvg(runningbacks, 1);
   },
   getRbTwoAvg: () => {
-    return getRb2016.calcAvg(runningbacks, 2);
+    return getRb2016Huddle.calcAvg(runningbacks, 2);
   },
   getRbThreeAvg: () => {
-    return getRb2016.calcAvg(runningbacks, 3);
+    return getRb2016Huddle.calcAvg(runningbacks, 3);
   },
   blankslate: () => {
     // used to calculate avgs
@@ -143,4 +143,4 @@ const getRb2016 = {
   }
 };
 
-export default getRb2016;
+export default getRb2016Huddle;

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import PlayerInput from './PlayerInput';
 import {Link} from 'react-router-dom';
-import getRb2016 from '../util/getRb2016';
+import getRb2016Huddle from '../util/getRb2016Huddle';
 import TeamTargetUtil from '../util/teamTargetUtil';
 import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
 import Spiderweb from './charts/Spiderweb';
 
-// console.log('getrbOnes - ', getRb2016.getRbOnes());
-// console.log('getrbTwos - ', getRb2016.getRbTwos());
-// console.log('getrbThrees - ', getRb2016.getRbThrees());
-// console.log('getRB1AVG - ', getRb2016.getRbOneAvg());
-// console.log('getRBTwoAVG - ', getRb2016.getRbTwoAvg());
-// console.log('getRBThreeAVG - ', getRb2016.getRbThreeAvg());
+// console.log('getrbOnes - ', getRb2016Huddle.getRbOnes());
+// console.log('getrbTwos - ', getRb2016Huddle.getRbTwos());
+// console.log('getrbThrees - ', getRb2016Huddle.getRbThrees());
+// console.log('getRB1AVG - ', getRb2016Huddle.getRbOneAvg());
+// console.log('getRBTwoAVG - ', getRb2016Huddle.getRbTwoAvg());
+// console.log('getRBThreeAVG - ', getRb2016Huddle.getRbThreeAvg());
 // console.log('---> targets! - ', TeamTargetUtil.getTeamTotalTargets(arzPlayers));
 // console.log('rb targets - ', TeamTargetUtil.getTeamRbTargets(arzPlayers), ' @ a %age of - ', TeamTargetUtil.rbTargetPercentage(arzPlayers));
 
@@ -25,9 +25,9 @@ class Battle extends Component {
       playerTwoName: '',
       playerOneData: {},
       playerTwoData: {},
-      rbOneAvg: getRb2016.getRbOneAvg(),
-      rbTwoAvg: getRb2016.getRbTwoAvg(),
-      rbThreeAvg: getRb2016.getRbThreeAvg(),
+      rbOneAvg: getRb2016Huddle.getRbOneAvg(),
+      rbTwoAvg: getRb2016Huddle.getRbTwoAvg(),
+      rbThreeAvg: getRb2016Huddle.getRbThreeAvg(),
       displayChart: false,
       config: {}
     }
@@ -39,7 +39,7 @@ class Battle extends Component {
 
   handleSubmit(id, playername) {
     // have player name -> want a clean search tho...
-    var searchedPlayer = getRb2016.get(playername);
+    var searchedPlayer = getRb2016Huddle.get(playername);
     console.log('searched player - ', searchedPlayer);
     var newState = {};
     newState[id + 'Name'] = playername;
