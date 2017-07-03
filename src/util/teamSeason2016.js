@@ -4,7 +4,7 @@ import Fuse from 'fuse.js';
 
 const teamSeason2016 = {
   all: () => { 
-    console.log('teams stats in an array - ', teams);
+    // console.log('teams stats in an array - ', teams);
     // returns an array
     return teams;
   },

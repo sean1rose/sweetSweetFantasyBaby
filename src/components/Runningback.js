@@ -21,11 +21,6 @@ const Runningback = (props) => {
     <div>
       <div >
         <h1>{name}</h1>
-        <span>Carries from w/in the 5 yard line: </span><span><b>{player.Rush_Rz_In_5_Car}</b></span>
-        <br/>
-        <span>Carries from w/in the 10 yard line: </span><span><b>{player.Rush_Rz_In_10_Car}</b></span>
-        <br/>
-        <span>Redzone Carries (w/in 20 yard line) : </span><span><b>{player.Rush_Rz_In_20_Car}</b></span>
       </div>
       <Barchart player={player} team={team} marker={5} redzoneUtil={rbRedzone2016Stats} teamUtil={teamSeason2016}/>
       <Barchart player={player} team={team} marker={10} redzoneUtil={rbRedzone2016Stats} teamUtil={teamSeason2016} />
