@@ -19,7 +19,7 @@ const Runningback = (props) => {
   }
   return (
     <div>
-      <div >
+      <div className="headerContainer">
         <h1>{name}</h1>
       </div>
       <Barchart player={player} team={team} marker={5} redzoneUtil={rbRedzone2016Stats} teamUtil={teamSeason2016}/>

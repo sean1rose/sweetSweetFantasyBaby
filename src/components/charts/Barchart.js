@@ -13,9 +13,6 @@ class Barchart extends Component {
     var rb1AvgForCar = props.redzoneUtil.getRbAvgForCategory(`Rush_Rz_In_${props.marker}_Car`, 1, props.marker);
     var rb1AvgForTeamCar = props.redzoneUtil.getRbAvgForCategory(`Rush_Rz_In_${props.marker}`, 1, props.marker);
     var rb1AvgForTeamRzOpp = props.redzoneUtil.getRbAvgForCategory(`Rz_Opp_In_${props.marker}`, 1, props.marker);
-    // console.log('rb1AvgForTd - ', rb1AvgForTd);
-    // console.log('> rb1AvgForTeamCar - ', rb1AvgForTeamCar);
-    // console.log('> rb1AvgForTeamRzOpp - ', rb1AvgForTeamRzOpp);
 
     var rb2AvgForTd = props.redzoneUtil.getRbAvgForCategory(`Rush_Rz_In_${props.marker}_Td`, 2, props.marker);
     var rb2AvgForCar = props.redzoneUtil.getRbAvgForCategory(`Rush_Rz_In_${props.marker}_Car`, 2, props.marker);
@@ -27,14 +24,10 @@ class Barchart extends Component {
     var rb3AvgForTeamCar = props.redzoneUtil.getRbAvgForCategory(`Rush_Rz_In_${props.marker}`, 3, props.marker);
     var rb3AvgForTeamRzOpp = props.redzoneUtil.getRbAvgForCategory(`Rz_Opp_In_${props.marker}`, 3, props.marker);
 
-
-
     var rb1Median = props.redzoneUtil.getRbMedianForCategory(`Rush_Rz_In_${props.marker}_Car`, 1);
     var rb2Median = props.redzoneUtil.getRbMedianForCategory(`Rush_Rz_In_${props.marker}_Car`, 2);
     var rb3Median = props.redzoneUtil.getRbMedianForCategory(`Rush_Rz_In_${props.marker}_Car`, 3);
-    // console.log('----> rb1Median!!! - ', rb1Median.Player);
-    // console.log('----> rb 2 median  -', rb2Median.Player);
-    // console.log('----> rb 3 median  -', rb3Median.Player);
+
     this.state = {
       config: {
         chart: {
@@ -65,11 +58,11 @@ class Barchart extends Component {
         },
         series: [
           {
-            name: `Player's TDs inside the 5`,
+            name: `Player's TDs inside the ${props.marker}`,
             data: [props.player[`Rush_Rz_In_${props.marker}_Td`], rb101[`Rush_Rz_In_${props.marker}_Td`], rb1AvgForTd, rb2AvgForTd, rb3AvgForTd]
           }, 
           {
-            name: `Player's Carries inside the 5`,
+            name: `Player's Carries inside the ${props.marker}`,
             data: [props.player[`Rush_Rz_In_${props.marker}_Car`], rb101[`Rush_Rz_In_${props.marker}_Car`], rb1AvgForCar, rb2AvgForCar, rb3AvgForCar]
           }, 
           {

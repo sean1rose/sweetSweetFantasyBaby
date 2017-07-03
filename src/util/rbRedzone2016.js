@@ -32,39 +32,30 @@ const rbRedzone2016Stats = {
   getRbAvgForCategory: (category, rank, marker) => {
     // category="Rush_Rz_In_5"
     // rank=1 or rank=3
-
     var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
     var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
-    console.log('---->', category, counter1, counter2);
+    // console.log('---->', category, counter1, counter2);
     var sum = 0;
     for (var i = counter1; i < counter2; i++){
       var currentSeasonRb = seasonRbs[i];
-      console.log('---> currentSeasonRb - ', currentSeasonRb.Name, currentSeasonRb);
       var currentRedzoneRb = rbRedzone2016Stats.getSingleRb(currentSeasonRb.Name);
-      console.log('currentRedzoneRb - ', currentRedzoneRb);
       currentRedzoneRb.teamData = teamSeason2016.getSingleTeam(currentRedzoneRb.Team);
       if (category === `Rush_Rz_In_${marker}` || category === `Rz_Opp_In_${marker}`){
         // if team category
         sum += currentRedzoneRb.teamData[category];
-        console.log('$ 1 - ', sum);
       } else {
         sum += currentRedzoneRb[category];
-        // console.log('2 - ', sum);
       }
     }
-    // console.log('sum - ', sum);
     return Math.round(sum / 12);
     
   },
   getRbMedianForCategory: (category, rank) => {
-    // console.log('rank - ', rank);
     var rbMedianIdx = rank === 1 ? 5 : rank === 2 ? 17 : 29;
-    // console.log('idx - ', rbMedianIdx)
     // rb1 median, rb2 median, rb3 median
     var tmpRbMedian = seasonRbs[rbMedianIdx];
     var rbMedian = rbRedzone2016Stats.getSingleRb(tmpRbMedian.Name);
     rbMedian.teamData = teamSeason2016.getSingleTeam(rbMedian.Team);
-    console.log(`rb${rank} median is - `, rbMedian);
     return rbMedian;
   },
   getTopRbInCategory: (category) => {
