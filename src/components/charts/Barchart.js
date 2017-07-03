@@ -37,7 +37,7 @@ class Barchart extends Component {
           text: `Red Zone Rushing Carries from Inside the ${props.marker} Yard Line`
         },
         xAxis: {
-          categories: [props.player.Player, `${rb101.Player} (RB 1.01)`, `RB1 Avg`, `RB2 Avg`, `RB3 Avg`]
+          categories: [props.player.Player, `RB1 Avg`, `RB2 Avg`, `RB3 Avg`, `RB 1.01 (${rb101.Player})`]
         },
         yAxis: {
           min: 0,
@@ -59,19 +59,19 @@ class Barchart extends Component {
         series: [
           {
             name: `Player's TDs inside the ${props.marker}`,
-            data: [props.player[`Rush_Rz_In_${props.marker}_Td`], rb101[`Rush_Rz_In_${props.marker}_Td`], rb1AvgForTd, rb2AvgForTd, rb3AvgForTd]
+            data: [props.player[`Rush_Rz_In_${props.marker}_Td`], rb1AvgForTd, rb2AvgForTd, rb3AvgForTd, rb101[`Rush_Rz_In_${props.marker}_Td`]]
           }, 
           {
             name: `Player's Carries inside the ${props.marker}`,
-            data: [props.player[`Rush_Rz_In_${props.marker}_Car`], rb101[`Rush_Rz_In_${props.marker}_Car`], rb1AvgForCar, rb2AvgForCar, rb3AvgForCar]
+            data: [props.player[`Rush_Rz_In_${props.marker}_Car`], rb1AvgForCar, rb2AvgForCar, rb3AvgForCar, rb101[`Rush_Rz_In_${props.marker}_Car`]]
           }, 
           {
             name: `Team's Carries inside the ${props.marker}`,
-            data: [props.team[`Rush_Rz_In_${props.marker}`], rb101.teamData[`Rush_Rz_In_${props.marker}`], rb1AvgForTeamCar, rb2AvgForTeamCar, rb3AvgForTeamCar]
+            data: [props.team[`Rush_Rz_In_${props.marker}`], rb1AvgForTeamCar, rb2AvgForTeamCar, rb3AvgForTeamCar, rb101.teamData[`Rush_Rz_In_${props.marker}`]]
           },
           {
             name: `Team's Total RZ Opp inside the ${props.marker}`,
-            data: [props.team[`Rz_Opp_In_${props.marker}`], rb101.teamData[`Rz_Opp_In_${props.marker}`], rb1AvgForTeamRzOpp, rb2AvgForTeamRzOpp, rb3AvgForTeamRzOpp]
+            data: [props.team[`Rz_Opp_In_${props.marker}`], rb1AvgForTeamRzOpp, rb2AvgForTeamRzOpp, rb3AvgForTeamRzOpp, rb101.teamData[`Rz_Opp_In_${props.marker}`]]
           }
         ]
       }
