@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import TeamTargetUtil from '../util/teamTargetUtil';
+import wrTargetUtil from '../util/wrTargetUtil';
 import Donutchart from './charts/Donutchart';
 
 import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
@@ -55,10 +56,13 @@ const Team = (props) => {
     if (team.abr === teamAbr){
       teamName = team.name
     }
-  })
+  });
+
+  console.log('--->>>> wr on a weekly - ', wrTargetUtil.getWrFromWeek('Brandin Cooks', 1))
 
   const teamPlayersTargetsArray = TeamTargetUtil.getAllTeamsPlayersTargets(team);
   const teamTotalTargets = TeamTargetUtil.getTeamTotalTargets(team);
+  console.log('teamTotalTargets - ', teamTotalTargets);
   // console.log('----> TEAM!!!! - ', teamPlayersTargetsArray, team);
   if (!team) {
     return <div>Sorry no team was found</div>
@@ -67,6 +71,7 @@ const Team = (props) => {
     <div>
       <div className="headerContainer">
         <h1>{teamName}</h1>
+        <h3>Team Total Targets: {teamTotalTargets}</h3>
       </div>
       <Donutchart teamName={teamName} team={teamPlayersTargetsArray} util={TeamTargetUtil} />
     </div>

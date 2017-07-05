@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
-// var colors = Highcharts.getOptions().colors;
+
 
 class Barchart extends Component {
   constructor(props){

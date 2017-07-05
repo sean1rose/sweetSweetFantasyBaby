@@ -10,6 +10,7 @@ const Nav = () => (
     <li><NavLink activeClassName='active' to='/schedule'>Schedule</NavLink></li>
     <li><NavLink activeClassName='active' to='/teams'>Teams</NavLink></li>
     <li><NavLink activeClassName='active' to='/runningbacks'>Runningbacks</NavLink></li>
+    <li><NavLink activeClassName='active' to='/widereceivers'>Widereceivers</NavLink></li>
   </ul>
 );
 

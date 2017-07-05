@@ -10,6 +10,7 @@ import Teams from './Teams';
 import Battle from './Battle';
 import Results from './Results';
 import Runningbacks from './Runningbacks';
+import Widereceivers from './Widereceivers';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/schedule' component={Schedule} />
           <Route path='/teams' component={Teams} />
           <Route path='/runningbacks' component={Runningbacks} />
+          <Route path='/widereceivers' component={Widereceivers} />
           <Route exact path='/battle' component={Battle} />
           <Route path='/battle/results' component={Results} />
           <Route render={() => {
