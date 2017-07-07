@@ -18,7 +18,7 @@ class Combochart extends Component {
           text: `Weekly Numbers`
         },
         xAxis: [{
-          categories: ['Wk1', 'Wk2', 'Wk2', 'Wk3', 'Wk4', 'Wk5', 'Wk6', 'Wk7', 'Wk8', 'Wk9', 'Wk10', 'Wk11', 'Wk12', 'Wk13', 'Wk14', 'Wk15', 'Wk16'],
+          categories: ['Wk1', 'Wk2', 'Wk3', 'Wk4', 'Wk5', 'Wk6', 'Wk7', 'Wk8', 'Wk9', 'Wk10', 'Wk11', 'Wk12', 'Wk13', 'Wk14', 'Wk15', 'Wk16'],
           crosshair: true
         }],
         yAxis: [
@@ -114,10 +114,10 @@ class Combochart extends Component {
               type: 'spline',
               yAxis: 2,
               data: props.wrTargetUtil.calcWeeklyTotal(props.player, "RzTargets"),
-              marker: {
-                  enabled: false
-              },
-              dashStyle: 'shortdot',
+            //   marker: {
+            //       enabled: false
+            //   },
+            //   dashStyle: 'shortdot',
               tooltip: {
                   valueSuffix: ' rz targets'
               },
@@ -141,7 +141,34 @@ class Combochart extends Component {
                 valueSuffix: ' pts'
             },
             zIndex: 0
-          }
+          },
+        //   {
+        //     name: `WR1 Avg's Redzone Targets`,
+        //     type: 'spline',
+        //     dashStyle: 'shortdot',
+        //     yAxis: 2,
+        //     data: props.wrTargetUtil.calcWeeklyAvg("RzTargets"),
+        //     marker: {
+        //         enabled: false
+        //     },
+        //     tooltip: {
+        //         valueSuffix: ' rz targets'
+        //     },
+        //     zIndex: 2
+        //   },
+        //   {
+        //     name: `WR1 Avg's Targets`,
+        //     type: 'spline',
+        //     dashStyle: 'shortdot',
+        //     data: props.wrTargetUtil.calcWeeklyAvg("Targets"),
+        //     marker: {
+        //         enabled: false
+        //     },
+        //     tooltip: {
+        //         valueSuffix: ' targets',
+        //     },
+        //     zIndex: 3
+        //   }
         ]
       }
     }

@@ -63,10 +63,20 @@ const wrTargetUtil = {
     // console.log('wrArray = ', avg);
     return avg;
   },
+  getWrTwelveFromWeek: (weekNumber) => {
+    var wrString = `wr${weekNumber}`;
+    var wrArray = wideReceiverObj[wrString];
+    var result = {};
+    result.Targets = wrArray[11].Targets;
+    result.FantasyPts = wrArray[11].FantasyPts;
+    result.RzTargets = (wrArray[11].Rec_Tar_Rz_In_5 + wrArray[11].Rec_Tar_Rz_In_10 + wrArray[11].Rec_Tar_Rz_In_20);
+    return result;
+  },
   calcWeeklyAvg: (stat) => {
     var result = [];
     for (var i = 1; i <= 16; i++){
       var obj = wrTargetUtil.getWrOneFromWeek(i);
+      // var obj = wrTargetUtil.getWrTwelveFromWeek(i);
       var rounded = Math.round(obj[stat]);
       console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
@@ -87,6 +97,7 @@ const wrTargetUtil = {
   calcWeeklyTotal: (player, stat) => {
     // used to calc weekly target/ftpts/td for combo chart
     // manually calc TotalTd from (recTd + rushTd)
+    console.log('=----> player - ', player);
     var result = [];
     for (var week in player){
       if (stat === "RzTargets"){
