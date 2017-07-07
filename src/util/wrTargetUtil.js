@@ -40,9 +40,45 @@ const wrTargetUtil = {
     var weekReceivers = wrTargetUtil.wideReceiverWeek(week);
     return weekReceivers[name];
   },
+  getWrAllWeeks: (name) => {
+    var result = {};
+    for (var i = 1; i <= 16; i++){
+      result[i] = wrTargetUtil.getWrFromWeek(name, i);
+    }
+    return result;
+  },
   getAllWidereceivers: () => {
     return widereceivers;
     // returns an array of all wrs
+  },
+  calcWeeklyTotal: (player, stat) => {
+    // used to calc weekly target/ftpts/td for combo chart
+    // manually calc TotalTd from (recTd + rushTd)
+    var result = [];
+    for (var week in player){
+      if (stat === "RzTargets"){
+        if (player[week]){
+          var five = player[week]["Rec_Tar_Rz_In_5"];
+          var ten = player[week]["Rec_Tar_Rz_In_10"];
+          var twenty = player[week]["Rec_Tar_Rz_In_20"];
+          var total = five + ten + twenty;
+          console.log(five, ten, twenty, total);
+          // var totalTargets = player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"];
+          // console.log(`rec td = ${player[week]["Rec_Td"]} and rush td = ${rushTd} and total = ${player[week]["Rec_Td"] + rushTd}`)
+          // result.push(player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"]);
+          result.push(total);
+        }
+        else
+          result.push(0);
+      } else {
+        if (player[week])
+          result.push(player[week][stat]);
+        else
+          result.push(0);
+      }
+    }
+    console.log(`result for ${stat} - ', result`, result);
+    return result;
   },
   get: (id) => {
     var options = {keys: ['PLayer_2'], threshold: 0.3};
