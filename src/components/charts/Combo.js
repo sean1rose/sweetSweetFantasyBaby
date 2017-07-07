@@ -7,6 +7,7 @@ class Combochart extends Component {
   constructor(props){
     super(props);
     console.log('props - ', props.player, props.wrTargetUtil);
+    console.log('weekkkkk - ', props.wrTargetUtil.getWrOneFromWeek(1));
 
     this.state = {
       config: {
@@ -22,24 +23,24 @@ class Combochart extends Component {
         }],
         yAxis: [
           { // Primary yAxis | green axis | Temparture | TARGETS
-              labels: {
-                  format: '{value}',
-                  style: {
-                      color: Highcharts.getOptions().colors[2]
-                  }
-              },
-              title: {
-                  text: 'Targets',
-                  style: {
-                      color: Highcharts.getOptions().colors[2]
-                  }
-              },
-              min: 0,
-            //   max: Math.max.apply(Math, props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets")),
-              max: Math.max(...props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets")),
-              opposite: true
-
-          }, { // Secondary yAxis | blue axis | Rainfall | FANTASY PTS
+                labels: {
+                    format: '{value}',
+                    style: {
+                        color: Highcharts.getOptions().colors[2]
+                    }
+                },
+                title: {
+                    text: 'Targets',
+                    style: {
+                        color: Highcharts.getOptions().colors[2]
+                    }
+                },
+                min: 0,
+                tickInterval: 1,
+                max: 20,
+                opposite: true
+          },
+          { // Secondary yAxis | blue axis | Rainfall | FANTASY PTS
               gridLineWidth: 0,
               title: {
                   text: 'Fantasy Pts',
@@ -52,9 +53,13 @@ class Combochart extends Component {
                   style: {
                       color: Highcharts.getOptions().colors[0]
                   }
-              }
+              },
+              min: 0,
+              max: 30,
+              tickInterval: 6
 
-          }, { // Tertiary yAxis | black axis | Sea-Level Pressure | TD
+          }, 
+          { // Tertiary yAxis | black axis | Sea-Level Pressure | TD
               gridLineWidth: 0,
               title: {
                   text: 'Redzone Targets',
@@ -70,7 +75,7 @@ class Combochart extends Component {
               },
               tickInterval: 1,
               min: 0,
-              max: Math.max(...props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets")),
+              max: 20,
               opposite: true
           }
         ],
@@ -101,9 +106,10 @@ class Combochart extends Component {
               data: props.wrTargetUtil.calcWeeklyTotal(props.player, "FantasyPts"),
               tooltip: {
                   valueSuffix: ' pts'
-              }
-
-          }, {
+              },
+              zIndex: 1
+          },
+          {
               name: 'Redzone Targets',
               type: 'spline',
               yAxis: 2,
@@ -114,15 +120,27 @@ class Combochart extends Component {
               dashStyle: 'shortdot',
               tooltip: {
                   valueSuffix: ' rz targets'
-              }
-
-          }, {
+              },
+              zIndex: 2
+          }, 
+          {
               name: 'Targets',
               type: 'spline',
               data: props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets"),
               tooltip: {
                   valueSuffix: ' targets'
-              }
+              },
+              zIndex: 3
+          },
+          {
+            name: `WR1 Avg's Fantasy Pts`,
+            type: 'column',
+            yAxis: 1,
+            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts"),
+            tooltip: {
+                valueSuffix: ' pts'
+            },
+            zIndex: 0
           }
         ]
       }
