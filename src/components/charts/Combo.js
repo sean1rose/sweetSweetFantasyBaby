@@ -153,6 +153,7 @@ class Combochart extends Component {
             dashStyle: 'shortdot',
             yAxis: 2,
             data: props.wrTargetUtil.calcWeeklyAvg("RzTargets", param),
+						color: "#AAAAAA",
             marker: {
                 enabled: false
             },
@@ -166,6 +167,7 @@ class Combochart extends Component {
             type: 'spline',
             dashStyle: 'shortdot',
             data: props.wrTargetUtil.calcWeeklyAvg("Targets", param),
+						color: "#FFDC00",
             marker: {
                 enabled: false
             },
