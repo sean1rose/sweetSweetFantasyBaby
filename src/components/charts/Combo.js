@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
-import { ButtonToolbar, Button, FormGroup, ControlLabel, FormControl, SplitButton, MenuItem } from 'react-bootstrap';
+import { FormControl } from 'react-bootstrap';
 
 
 class Combochart extends Component {
@@ -9,9 +9,12 @@ class Combochart extends Component {
     super(props);
     // console.log('props - ', props.player, props.wrTargetUtil);
     // console.log('weekkkkk - ', props.wrTargetUtil.getWrOneFromWeek(1));
-    console.log('props.comparison - ', props);
+    // console.log('props.comparison - ', props);
+
+
 
     this.configObjectCreate = (param) => {
+			// console.log("IN CONFIG OBJ CREAETE <<<<<<_____--------");
       var configObj = {
         chart: {
           zoomType: 'xy'
@@ -138,7 +141,7 @@ class Combochart extends Component {
             name: `WR1 Avg's Fantasy Pts`,
             type: 'column',
             yAxis: 1,
-            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", !param ? 1 : param),
+            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", param),
             tooltip: {
                 valueSuffix: ' pts'
             },
@@ -177,8 +180,7 @@ class Combochart extends Component {
     }
 
     this.state = {
-    //   comparison: 1,
-      config: this.configObjectCreate(props.comparison)
+      config: this.configObjectCreate(1)
     };
 
 		this.configObjectCreate = this.configObjectCreate.bind(this);
@@ -194,32 +196,22 @@ class Combochart extends Component {
     switch(e.target.value){
       case 'wr1':
         this.setState({
-          comparison: 1
+					config: this.configObjectCreate(1)
         });
         break;
       case 'wr2':
         console.log('about to set state to 2 - ');
         this.setState({
-          comparison: 2
+					config: this.configObjectCreate(2)
         });
         break;
       case 'wr3':
         this.setState({
-          comparison: 3
+					config: this.configObjectCreate(3)
         });
         break;
     }
   }
-
-  componentWillReceiveProps(nextProps) {
-    // console.log('NEXT PROPS IN CHILD - ', this.configObjectCreate, nextProps);
-    this.setState({
-    //   comparison: 1,
-    	config: this.configObjectCreate(nextProps.comparison)
-    });
-
-  }
-
 
   render() {
     return (
@@ -229,7 +221,7 @@ class Combochart extends Component {
             vs.
             <div className="formHolder">
                 <FormControl
-                onChange={this.props.onChange}
+                onChange={this.handleChange}
                 componentClass="select"
 								defaultValue="wr1" 
                 >
