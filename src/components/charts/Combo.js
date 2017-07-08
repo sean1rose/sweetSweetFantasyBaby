@@ -11,9 +11,8 @@ class Combochart extends Component {
     // console.log('weekkkkk - ', props.wrTargetUtil.getWrOneFromWeek(1));
     console.log('props.comparison - ', props);
 
-    this.state = {
-      comparison: 'wr1',
-      config: {
+    this.configObjectCreate = (param) => {
+      var configObj = {
         chart: {
           zoomType: 'xy'
         },
@@ -139,7 +138,7 @@ class Combochart extends Component {
             name: `WR1 Avg's Fantasy Pts`,
             type: 'column',
             yAxis: 1,
-            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts"),
+            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", !param ? 1 : param),
             tooltip: {
                 valueSuffix: ' pts'
             },
@@ -174,8 +173,15 @@ class Combochart extends Component {
         //   }
         ]
       }
+      return configObj;
     }
 
+    this.state = {
+    //   comparison: 1,
+      config: this.configObjectCreate(props.comparison)
+    };
+
+		this.configObjectCreate = this.configObjectCreate.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -186,22 +192,32 @@ class Combochart extends Component {
     */
     console.log('2 - e - ', e.target.value);
     switch(e.target.value){
-      case '1':
+      case 'wr1':
         this.setState({
-          comparison: 'wr1'
+          comparison: 1
         });
         break;
-      case '2':
+      case 'wr2':
+        console.log('about to set state to 2 - ');
         this.setState({
-          comparison: 'wr2'
+          comparison: 2
         });
         break;
-      case '3':
+      case 'wr3':
         this.setState({
-          comparison: 'wr3'
+          comparison: 3
         });
         break;
     }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    // console.log('NEXT PROPS IN CHILD - ', this.configObjectCreate, nextProps);
+    this.setState({
+    //   comparison: 1,
+    	config: this.configObjectCreate(nextProps.comparison)
+    });
+
   }
 
 
@@ -210,15 +226,16 @@ class Combochart extends Component {
       <div>
         <div className="headerContainer">
            <h1>{this.props.name}</h1>
-          vs.
+            vs.
             <div className="formHolder">
                 <FormControl
-                onChange={this.handleChange}
-                componentClass="select" 
+                onChange={this.props.onChange}
+                componentClass="select"
+								defaultValue="wr1" 
                 >
-                <option selected="selected" value="wr1">WR1</option>
+                <option value="wr1">WR1</option>
                 <option value="wr2">WR2</option>
-                <option value="wr3">WR3</option>
+                <option value="wr3">WR1.12</option>
                 </FormControl>
             </div>
         </div>
