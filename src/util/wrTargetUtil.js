@@ -65,28 +65,6 @@ const wrTargetUtil = {
     // console.log('wrArray = ', avg);
     return avg;
   },
-  // getWrOneFromWeek: (weekNumber) => {
-  //   var wrString = `wr${weekNumber}`;
-  //   var wrArray = wideReceiverObj[wrString];
-  //   var result = {
-  //     targets: 0,
-  //     fantasyPts: 0,
-  //     rzTargets: 0
-  //   };
-  //   for (var i = 0; i < 12; i++){
-  //     result.targets += wrArray[i].Targets;
-  //     result.fantasyPts += wrArray[i].FantasyPts;
-  //     result.rzTargets += wrArray[i].Rec_Tar_Rz_In_5;
-  //     result.rzTargets += wrArray[i].Rec_Tar_Rz_In_10;
-  //     result.rzTargets += wrArray[i].Rec_Tar_Rz_In_20;
-  //   }
-  //   var avg = {};
-  //   avg.Targets = (result.targets / 12);
-  //   avg.FantasyPts = (result.fantasyPts / 12);
-  //   avg.RzTargets = (result.rzTargets / 12);
-  //   // console.log('wrArray = ', avg);
-  //   return avg;
-  // },
   getWrTwelveFromWeek: (weekNumber) => {
     var wrString = `wr${weekNumber}`;
     var wrArray = wideReceiverObj[wrString];
@@ -98,6 +76,13 @@ const wrTargetUtil = {
   },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
+    if (rank === 1.12){
+      for (var i = 1; i <= 16; i++){
+        result.push(wrTargetUtil.getWrTwelveFromWeek(i)[stat])
+      }
+      console.log('----> RESULT - ', result);
+      return result;
+    }
     for (var i = 1; i <= 16; i++){
       // var obj = wrTargetUtil.getWrOneFromWeek(i);
       // var obj = wrTargetUtil.getWrTwelveFromWeek(i);
@@ -106,6 +91,7 @@ const wrTargetUtil = {
       // console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
     }
+    console.log('----result - ', result);
     return result;
   },
   getWrAllWeeks: (name) => {

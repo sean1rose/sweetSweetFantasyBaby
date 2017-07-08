@@ -138,7 +138,7 @@ class Combochart extends Component {
               zIndex: 3
           },
           {
-            name: `WR1 Avg's Fantasy Pts`,
+            name: `WR${param} Avg's Fantasy Pts`,
             type: 'column',
             yAxis: 1,
             data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", param),
@@ -147,33 +147,33 @@ class Combochart extends Component {
             },
             zIndex: 0
           },
-        //   {
-        //     name: `WR1 Avg's Redzone Targets`,
-        //     type: 'spline',
-        //     dashStyle: 'shortdot',
-        //     yAxis: 2,
-        //     data: props.wrTargetUtil.calcWeeklyAvg("RzTargets"),
-        //     marker: {
-        //         enabled: false
-        //     },
-        //     tooltip: {
-        //         valueSuffix: ' rz targets'
-        //     },
-        //     zIndex: 2
-        //   },
-        //   {
-        //     name: `WR1 Avg's Targets`,
-        //     type: 'spline',
-        //     dashStyle: 'shortdot',
-        //     data: props.wrTargetUtil.calcWeeklyAvg("Targets"),
-        //     marker: {
-        //         enabled: false
-        //     },
-        //     tooltip: {
-        //         valueSuffix: ' targets',
-        //     },
-        //     zIndex: 3
-        //   }
+          {
+            name: `WR${param} Avg's Redzone Targets`,
+            type: 'spline',
+            dashStyle: 'shortdot',
+            yAxis: 2,
+            data: props.wrTargetUtil.calcWeeklyAvg("RzTargets", param),
+            marker: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: ' rz targets'
+            },
+            zIndex: 2
+          },
+          {
+            name: `WR${param} Avg's Targets`,
+            type: 'spline',
+            dashStyle: 'shortdot',
+            data: props.wrTargetUtil.calcWeeklyAvg("Targets", param),
+            marker: {
+                enabled: false
+            },
+            tooltip: {
+                valueSuffix: ' targets',
+            },
+            zIndex: 3
+          }
         ]
       }
       return configObj;
@@ -199,6 +199,11 @@ class Combochart extends Component {
 					config: this.configObjectCreate(1)
         });
         break;
+			case 'wr1.12':
+				this.setState({
+					config: this.configObjectCreate(1.12)
+				});
+				break;
       case 'wr2':
         console.log('about to set state to 2 - ');
         this.setState({
@@ -225,9 +230,10 @@ class Combochart extends Component {
                 componentClass="select"
 								defaultValue="wr1" 
                 >
-                <option value="wr1">WR1</option>
-                <option value="wr2">WR2</option>
-                <option value="wr3">WR1.12</option>
+                <option value="wr1"> WR1 Average</option>
+								<option value="wr1.12"> WR1.12</option>
+                <option value="wr2"> WR2 Average</option>
+                <option value="wr3"> WR3 Average</option>
                 </FormControl>
             </div>
         </div>
