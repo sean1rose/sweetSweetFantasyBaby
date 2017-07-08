@@ -92,3 +92,11 @@ ul {
 .headerContainer {
   text-align: center;
 }
+
+.form-control {
+  width: 150px;
+}
+
+.formHolder{
+  display: inline-block;
+}
