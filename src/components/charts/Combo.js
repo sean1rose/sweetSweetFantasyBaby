@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
+import { ButtonToolbar, Button, FormGroup, ControlLabel, FormControl, SplitButton, MenuItem } from 'react-bootstrap';
 
 
 class Combochart extends Component {
@@ -11,6 +12,7 @@ class Combochart extends Component {
     console.log('props.comparison - ', props);
 
     this.state = {
+      comparison: 'wr1',
       config: {
         chart: {
           zoomType: 'xy'
@@ -173,11 +175,53 @@ class Combochart extends Component {
         ]
       }
     }
+
+    this.handleChange = this.handleChange.bind(this);
   }
+
+  handleChange(e) {
+    // console.log('handle change ---> ', this.inputEl.value);
+    /*
+        AS A FORMCONTROL ATTRIBUTE ---> inputRef={el => this.inputEl=el }
+    */
+    console.log('2 - e - ', e.target.value);
+    switch(e.target.value){
+      case '1':
+        this.setState({
+          comparison: 'wr1'
+        });
+        break;
+      case '2':
+        this.setState({
+          comparison: 'wr2'
+        });
+        break;
+      case '3':
+        this.setState({
+          comparison: 'wr3'
+        });
+        break;
+    }
+  }
+
 
   render() {
     return (
       <div>
+        <div className="headerContainer">
+           <h1>{this.props.name}</h1>
+          vs.
+            <div className="formHolder">
+                <FormControl
+                onChange={this.handleChange}
+                componentClass="select" 
+                >
+                <option selected="selected" value="wr1">WR1</option>
+                <option value="wr2">WR2</option>
+                <option value="wr3">WR3</option>
+                </FormControl>
+            </div>
+        </div>
         <ReactHighcharts config={this.state.config} />
       </div>
     )
