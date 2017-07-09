@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import TeamTargetUtil from '../util/teamTargetUtil';
-import wrTargetUtil from '../util/wrTargetUtil';
+import wrWeeklyTargetUtil from '../util/wrWeeklyTargetUtil';
 import Donutchart from './charts/Donutchart';
 
 import arzPlayers from '../../ffdata/2016_team_targets/arz_2016_targets_season.json';
@@ -58,7 +58,7 @@ const Team = (props) => {
     }
   });
 
-  console.log('--->>>> wr on a weekly - ', wrTargetUtil.getWrFromWeek('Brandin Cooks', 1))
+  console.log('--->>>> wr on a weekly - ', wrWeeklyTargetUtil.getWrFromWeek('Brandin Cooks', 1))
 
   const teamPlayersTargetsArray = TeamTargetUtil.getAllTeamsPlayersTargets(team);
   const teamTotalTargets = TeamTargetUtil.getTeamTotalTargets(team);

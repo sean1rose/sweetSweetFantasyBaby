@@ -17,16 +17,25 @@ class Combochart extends Component {
       switch(props.position){
         case 'wr':
           console.log('IN PROPS POSITION _ ', props.position);
+          console.log("props.util.calcWeeklyTotal(props.player, 'RzTargets') - ", props.util.calcWeeklyTotal(props.player, 'RzTargets'));
           yAxisConfig.text = ['Fantasy Pts', 'Targets', 'Redzone Targets'];
           yAxisConfig.max = [28, 20, 20];
           yAxisConfig.tickInterval = [7];
           seriesConfig.name = ['Fantasy Pts', 'Targets', 'Redzone Targets', `WR${param} Avg's Fantasy Pts`, `WR${param} Avg's Targets`, `WR${param} Avg's Redzone Targets`];
-          seriesConfig.data = [props.wrTargetUtil.calcWeeklyTotal(props.player, 'FantasyPts'), props.wrTargetUtil.calcWeeklyTotal(props.player, 'Targets'), props.wrTargetUtil.calcWeeklyTotal(props.player, 'RzTargets'), props.wrTargetUtil.calcWeeklyAvg('FantasyPts', param), props.wrTargetUtil.calcWeeklyAvg('Targets', param), props.wrTargetUtil.calcWeeklyAvg('RzTargets', param)];
+          seriesConfig.data = [props.util.calcWeeklyTotal(props.player, 'FantasyPts'), props.util.calcWeeklyTotal(props.player, 'Targets'), props.util.calcWeeklyTotal(props.player, 'RzTargets'), props.util.calcWeeklyAvg('FantasyPts', param), props.util.calcWeeklyAvg('Targets', param), props.util.calcWeeklyAvg('RzTargets', param)];
           seriesConfig.valueSuffix = [' pts', ' targets', ' rz targets', ' pts', ' targets', ' rz targets'];
           this.dropdownConfig = ['WR1 Average', 'WR1.12', 'WR2 Average', 'WR3 Average'];
           break;
         case 'rb':
-          yAxisConfig.text = ['Fantasy Pts', 'Snaps', 'Redzone Carries'];
+          console.log('>>>>>>>>> PARAM - ', param);
+          yAxisConfig.text = ['Fantasy Pts', 'Touches', 'Redzone Carries'];
+          yAxisConfig.max = [35, 35, 35];
+          yAxisConfig.tickInterval = [5];
+          seriesConfig.name = ['Fantasy Pts', 'Touches', 'Redzone Touches', `RB${param} Avg's Fantasy Pts`, `RB${param} Avg's Touches`, `RB${param} Avg's Redzone Touches`];
+          seriesConfig.data = [props.util.calcWeeklyTotal(props.player, 'FantasyPts'), props.util.calcWeeklyTotal(props.player, 'Touches'), props.util.calcWeeklyTotal(props.player, 'RzTouches'), props.util.calcWeeklyAvg('FantasyPts', param), props.util.calcWeeklyAvg('Touches', param), props.util.calcWeeklyAvg('RzTouches', param)];
+          // seriesConfig.data = [props.util.calcWeeklyTotal(props.player, 'FantasyPts'), [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]];
+          seriesConfig.valueSuffix = [' pts', ' touches', ' rz touches', ' pts', ' touches', ' rz touches'];
+          this.dropdownConfig = ['RB1 Average', 'RB1.12', 'RB2 Average', 'RB3 Average'];
           break;
       }
 
@@ -223,11 +232,11 @@ class Combochart extends Component {
 					config: this.configObjectCreate(2)
         });
         break;
-      case '3':
-        this.setState({
-					config: this.configObjectCreate(3)
-        });
-        break;
+      // case '3':
+      //   this.setState({
+			// 		config: this.configObjectCreate(3)
+      //   });
+      //   break;
     }
   }
 

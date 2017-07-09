@@ -2,16 +2,17 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import rb2016SeasonStats from '../util/rb2016SeasonStats';
 import rbRedzone2016Stats from '../util/rbRedzone2016';
+import rbWeeklyTouchesUtil from '../util/rbWeeklyTouchesUtil';
 
 // console.log('--> ALL RBS in component - ', rb2016SeasonStats.all());
-console.log('$$$$ - ', rbRedzone2016Stats.all());
+console.log('$$$$ - ', rbWeeklyTouchesUtil.getAllRunningbacks());
 const AllRunningbacks = () => (
   <div>
     <ul>
       {
-        rbRedzone2016Stats.allSortedBy("Rush_Rz_In_20_Car").map(runningback => (
+        rbWeeklyTouchesUtil.getAllRunningbacks().map(runningback => (
           <li key={runningback.Player}>
-            <Link to={`/runningbacks/${runningback.Player.split(' ').join('_')}`}>{runningback.Player}</Link>
+            <Link to={`/runningbacks/${runningback.Player.split(' ').reverse().join('_')}`}>{runningback.Player.split(' ').reverse().join(' ')}</Link>
           </li>
         ))
       }

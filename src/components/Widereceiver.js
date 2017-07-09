@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import wrTargetUtil from '../util/wrTargetUtil';
+import wrWeeklyTargetUtil from '../util/wrWeeklyTargetUtil';
 import Combochart from './charts/Combo';
 
 class Widereceiver extends Component {
@@ -8,7 +8,7 @@ class Widereceiver extends Component {
     super(props);
     this.state = {
       name: props.match.params.name.split('_').join(' '),
-      player: wrTargetUtil.getWrAllWeeks(props.match.params.name.split('_').join(' '))
+      player: wrWeeklyTargetUtil.getWrAllWeeks(props.match.params.name.split('_').join(' '))
     };
     console.log('in runningback.js - props - ', this.state.name);
     console.log('$final player - ', this.state.player);
@@ -22,7 +22,7 @@ class Widereceiver extends Component {
 
     return (
       <div>
-        <Combochart position="wr" player={this.state.player} wrTargetUtil={wrTargetUtil} name={this.state.name} />
+        <Combochart position="wr" player={this.state.player} wrTargetUtil={wrWeeklyTargetUtil} name={this.state.name} />
       </div>
     )
   }

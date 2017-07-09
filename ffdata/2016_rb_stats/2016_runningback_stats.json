@@ -1,7 +1,7 @@
 [
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Johnson David",
+   "Player": "Johnson David",
    "Name": "David Johnson",
    "Team": "ARZ",
    "Games": 16,
@@ -31,7 +31,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Elliott Ezekiel",
+   "Player": "Elliott Ezekiel",
    "Name": "Ezekiel Elliott",
    "Team": "DAL",
    "Games": 15,
@@ -61,7 +61,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "McCoy LeSean",
+   "Player": "McCoy LeSean",
    "Name": "LeSean McCoy",
    "Team": "BUF",
    "Games": 15,
@@ -91,7 +91,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Murray DeMarco",
+   "Player": "Murray DeMarco",
    "Name": "DeMarco Murray",
    "Team": "TEN",
    "Games": 16,
@@ -121,7 +121,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Bell Le'Veon",
+   "Player": "Bell Le'Veon",
    "Name": "Le'Veon Bell",
    "Team": "PIT",
    "Games": 12,
@@ -151,7 +151,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Freeman Devonta",
+   "Player": "Freeman Devonta",
    "Name": "Devonta Freeman",
    "Team": "ATL",
    "Games": 16,
@@ -181,7 +181,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Blount LeGarrette",
+   "Player": "Blount LeGarrette",
    "Name": "LeGarrette Blount",
    "Team": "PHI",
    "Games": 16,
@@ -211,7 +211,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Gordon Melvin",
+   "Player": "Gordon Melvin",
    "Name": "Melvin Gordon",
    "Team": "LAC",
    "Games": 13,
@@ -241,7 +241,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Howard Jordan",
+   "Player": "Howard Jordan",
    "Name": "Jordan Howard",
    "Team": "CHI",
    "Games": 15,
@@ -271,7 +271,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ingram Mark",
+   "Player": "Ingram Mark",
    "Name": "Mark Ingram",
    "Team": "NO",
    "Games": 16,
@@ -301,7 +301,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ajayi Jay",
+   "Player": "Ajayi Jay",
    "Name": "Jay Ajayi",
    "Team": "MIA",
    "Games": 15,
@@ -331,7 +331,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Gore Frank",
+   "Player": "Gore Frank",
    "Name": "Frank Gore",
    "Team": "IND",
    "Games": 16,
@@ -361,7 +361,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Murray Latavius",
+   "Player": "Murray Latavius",
    "Name": "Latavius Murray",
    "Team": "MIN",
    "Games": 14,
@@ -391,7 +391,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Hyde Carlos",
+   "Player": "Hyde Carlos",
    "Name": "Carlos Hyde",
    "Team": "SF",
    "Games": 13,
@@ -421,7 +421,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Crowell Isaiah",
+   "Player": "Crowell Isaiah",
    "Name": "Isaiah Crowell",
    "Team": "CLE",
    "Games": 16,
@@ -451,7 +451,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ware Spencer",
+   "Player": "Ware Spencer",
    "Name": "Spencer Ware",
    "Team": "KC",
    "Games": 14,
@@ -481,7 +481,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Miller Lamar",
+   "Player": "Miller Lamar",
    "Name": "Lamar Miller",
    "Team": "HOU",
    "Games": 14,
@@ -511,7 +511,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Coleman Tevin",
+   "Player": "Coleman Tevin",
    "Name": "Tevin Coleman",
    "Team": "ATL",
    "Games": 13,
@@ -541,7 +541,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Gurley Todd",
+   "Player": "Gurley Todd",
    "Name": "Todd Gurley",
    "Team": "LA",
    "Games": 16,
@@ -571,7 +571,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Forte Matt",
+   "Player": "Forte Matt",
    "Name": "Matt Forte",
    "Team": "NYJ",
    "Games": 14,
@@ -601,7 +601,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Hill Jeremy",
+   "Player": "Hill Jeremy",
    "Name": "Jeremy Hill",
    "Team": "CIN",
    "Games": 15,
@@ -631,7 +631,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Stewart Jonathan",
+   "Player": "Stewart Jonathan",
    "Name": "Jonathan Stewart",
    "Team": "CAR",
    "Games": 13,
@@ -661,7 +661,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Powell Bilal",
+   "Player": "Powell Bilal",
    "Name": "Bilal Powell",
    "Team": "NYJ",
    "Games": 16,
@@ -691,7 +691,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "West Terrance",
+   "Player": "West Terrance",
    "Name": "Terrance West",
    "Team": "BAL",
    "Games": 16,
@@ -721,7 +721,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Mathews Ryan",
+   "Player": "Mathews Ryan",
    "Name": "Ryan Mathews",
    "Team": "PHI",
    "Games": 13,
@@ -751,7 +751,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Kelley Robert",
+   "Player": "Kelley Robert",
    "Name": "Robert Kelley",
    "Team": "WAS",
    "Games": 15,
@@ -781,7 +781,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Booker Devontae",
+   "Player": "Booker Devontae",
    "Name": "Devontae Booker",
    "Team": "DEN",
    "Games": 16,
@@ -811,7 +811,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Gillislee Mike",
+   "Player": "Gillislee Mike",
    "Name": "Mike Gillislee",
    "Team": "NE",
    "Games": 15,
@@ -841,7 +841,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Sproles Darren",
+   "Player": "Sproles Darren",
    "Name": "Darren Sproles",
    "Team": "PHI",
    "Games": 15,
@@ -871,7 +871,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Riddick Theo",
+   "Player": "Riddick Theo",
    "Name": "Theo Riddick",
    "Team": "DET",
    "Games": 10,
@@ -901,7 +901,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Hightower Tim",
+   "Player": "Hightower Tim",
    "Name": "Tim Hightower",
    "Team": "SF",
    "Games": 16,
@@ -931,7 +931,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "McKinnon Jerick",
+   "Player": "McKinnon Jerick",
    "Name": "Jerick McKinnon",
    "Team": "MIN",
    "Games": 15,
@@ -961,7 +961,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Asiata Matt",
+   "Player": "Asiata Matt",
    "Name": "Matt Asiata",
    "Team": "DET",
    "Games": 16,
@@ -991,7 +991,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "White James",
+   "Player": "White James",
    "Name": "James White",
    "Team": "NE",
    "Games": 16,
@@ -1021,7 +1021,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Thompson Chris",
+   "Player": "Thompson Chris",
    "Name": "Chris Thompson",
    "Team": "WAS",
    "Games": 16,
@@ -1051,7 +1051,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Michael Christine",
+   "Player": "Michael Christine",
    "Name": "Christine Michael",
    "Team": "IND",
    "Games": 9,
@@ -1081,7 +1081,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Montgomery Ty",
+   "Player": "Montgomery Ty",
    "Name": "Ty Montgomery",
    "Team": "GB",
    "Games": 15,
@@ -1111,7 +1111,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Johnson Duke",
+   "Player": "Johnson Duke",
    "Name": "Duke Johnson",
    "Team": "CLE",
    "Games": 16,
@@ -1141,7 +1141,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Henry Derrick",
+   "Player": "Henry Derrick",
    "Name": "Derrick Henry",
    "Team": "TEN",
    "Games": 15,
@@ -1171,7 +1171,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Yeldon T.J.",
+   "Player": "Yeldon T.J.",
    "Name": "T.J. Yeldon",
    "Team": "JAC",
    "Games": 15,
@@ -1201,7 +1201,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Richard Jalen",
+   "Player": "Richard Jalen",
    "Name": "Jalen Richard",
    "Team": "OAK",
    "Games": 16,
@@ -1231,7 +1231,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Anderson C.J.",
+   "Player": "Anderson C.J.",
    "Name": "C.J. Anderson",
    "Team": "DEN",
    "Games": 7,
@@ -1261,7 +1261,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Bernard Giovani",
+   "Player": "Bernard Giovani",
    "Name": "Giovani Bernard",
    "Team": "CIN",
    "Games": 10,
@@ -1291,7 +1291,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Turbin Robert",
+   "Player": "Turbin Robert",
    "Name": "Robert Turbin",
    "Team": "IND",
    "Games": 15,
@@ -1321,7 +1321,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Draughn Shaun",
+   "Player": "Draughn Shaun",
    "Name": "Shaun Draughn",
    "Team": "NYG",
    "Games": 16,
@@ -1351,7 +1351,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ivory Chris",
+   "Player": "Ivory Chris",
    "Name": "Chris Ivory",
    "Team": "JAC",
    "Games": 11,
@@ -1381,7 +1381,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Rodgers Jacquizz",
+   "Player": "Rodgers Jacquizz",
    "Name": "Jacquizz Rodgers",
    "Team": "TB",
    "Games": 10,
@@ -1411,7 +1411,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Zenner Zach",
+   "Player": "Zenner Zach",
    "Name": "Zach Zenner",
    "Team": "DET",
    "Games": 14,
@@ -1441,7 +1441,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Martin Doug",
+   "Player": "Martin Doug",
    "Name": "Doug Martin",
    "Team": "TB",
    "Games": 8,
@@ -1471,7 +1471,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Williams Damien",
+   "Player": "Williams Damien",
    "Name": "Damien Williams",
    "Team": "MIA",
    "Games": 15,
@@ -1501,7 +1501,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Dixon Kenneth",
+   "Player": "Dixon Kenneth",
    "Name": "Kenneth Dixon",
    "Team": "BAL",
    "Games": 12,
@@ -1531,7 +1531,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Jones Matt",
+   "Player": "Jones Matt",
    "Name": "Matt Jones",
    "Team": "WAS",
    "Games": 7,
@@ -1561,7 +1561,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Washington DeAndre",
+   "Player": "Washington DeAndre",
    "Name": "DeAndre Washington",
    "Team": "OAK",
    "Games": 14,
@@ -1591,7 +1591,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "West Charcandrick",
+   "Player": "West Charcandrick",
    "Name": "Charcandrick West",
    "Team": "KC",
    "Games": 15,
@@ -1621,7 +1621,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Rawls Thomas",
+   "Player": "Rawls Thomas",
    "Name": "Thomas Rawls",
    "Team": "SEA",
    "Games": 9,
@@ -1651,7 +1651,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Perkins Paul",
+   "Player": "Perkins Paul",
    "Name": "Paul Perkins",
    "Team": "NYG",
    "Games": 14,
@@ -1681,7 +1681,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Burkhead Rex",
+   "Player": "Burkhead Rex",
    "Name": "Rex Burkhead",
    "Team": "NE",
    "Games": 16,
@@ -1711,7 +1711,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Langford Jeremy",
+   "Player": "Langford Jeremy",
    "Name": "Jeremy Langford",
    "Team": "CHI",
    "Games": 12,
@@ -1741,7 +1741,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Cadet Travaris",
+   "Player": "Cadet Travaris",
    "Name": "Travaris Cadet",
    "Team": "NO",
    "Games": 15,
@@ -1771,7 +1771,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Blue Alfred",
+   "Player": "Blue Alfred",
    "Name": "Alfred Blue",
    "Team": "HOU",
    "Games": 14,
@@ -1801,7 +1801,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Whittaker Fozzy",
+   "Player": "Whittaker Fozzy",
    "Name": "Fozzy Whittaker",
    "Team": "CAR",
    "Games": 16,
@@ -1831,7 +1831,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Sims Charles",
+   "Player": "Sims Charles",
    "Name": "Charles Sims",
    "Team": "TB",
    "Games": 7,
@@ -1861,7 +1861,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Prosise C.J.",
+   "Player": "Prosise C.J.",
    "Name": "C.J. Prosise",
    "Team": "SEA",
    "Games": 6,
@@ -1891,7 +1891,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Smallwood Wendell",
+   "Player": "Smallwood Wendell",
    "Name": "Wendell Smallwood",
    "Team": "PHI",
    "Games": 13,
@@ -1921,7 +1921,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Kuhn John",
+   "Player": "Kuhn John",
    "Name": "John Kuhn",
    "Team": "NO",
    "Games": 16,
@@ -1951,7 +1951,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Lacy Eddie",
+   "Player": "Lacy Eddie",
    "Name": "Eddie Lacy",
    "Team": "SEA",
    "Games": 5,
@@ -1981,7 +1981,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Washington Dwayne",
+   "Player": "Washington Dwayne",
    "Name": "Dwayne Washington",
    "Team": "DET",
    "Games": 12,
@@ -2011,7 +2011,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Lewis Dion",
+   "Player": "Lewis Dion",
    "Name": "Dion Lewis",
    "Team": "NE",
    "Games": 7,
@@ -2041,7 +2041,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Morris Alfred",
+   "Player": "Morris Alfred",
    "Name": "Alfred Morris",
    "Team": "DAL",
    "Games": 14,
@@ -2071,7 +2071,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Drake Kenyan",
+   "Player": "Drake Kenyan",
    "Name": "Kenyan Drake",
    "Team": "MIA",
    "Games": 16,
@@ -2101,7 +2101,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Grant Corey",
+   "Player": "Grant Corey",
    "Name": "Corey Grant",
    "Team": "JAC",
    "Games": 11,
@@ -2131,7 +2131,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Vereen Shane",
+   "Player": "Vereen Shane",
    "Name": "Shane Vereen",
    "Team": "NYG",
    "Games": 5,
@@ -2161,7 +2161,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Barber Peyton",
+   "Player": "Barber Peyton",
    "Name": "Peyton Barber",
    "Team": "TB",
    "Games": 15,
@@ -2191,7 +2191,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Barner Kenjon",
+   "Player": "Barner Kenjon",
    "Name": "Kenjon Barner",
    "Team": "LAC",
    "Games": 13,
@@ -2221,7 +2221,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Williams Kerwynn",
+   "Player": "Williams Kerwynn",
    "Name": "Kerwynn Williams",
    "Team": "ARZ",
    "Games": 10,
@@ -2251,7 +2251,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Artis-Payne Cameron",
+   "Player": "Artis-Payne Cameron",
    "Name": "Cameron Artis-Payne",
    "Team": "CAR",
    "Games": 3,
@@ -2281,7 +2281,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Collins Alex",
+   "Player": "Collins Alex",
    "Name": "Alex Collins",
    "Team": "SEA",
    "Games": 11,
@@ -2311,7 +2311,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Bibbs Kapri",
+   "Player": "Bibbs Kapri",
    "Name": "Kapri Bibbs",
    "Team": "SF",
    "Games": 12,
@@ -2341,7 +2341,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Farrow Kenneth",
+   "Player": "Farrow Kenneth",
    "Name": "Kenneth Farrow",
    "Team": "LAC",
    "Games": 13,
@@ -2371,7 +2371,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Tolbert Mike",
+   "Player": "Tolbert Mike",
    "Name": "Mike Tolbert",
    "Team": "BUF",
    "Games": 16,
@@ -2401,7 +2401,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Darkwa Orleans",
+   "Player": "Darkwa Orleans",
    "Name": "Orleans Darkwa",
    "Team": "NYG",
    "Games": 10,
@@ -2431,7 +2431,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Abdullah Ameer",
+   "Player": "Abdullah Ameer",
    "Name": "Ameer Abdullah",
    "Team": "DET",
    "Games": 2,
@@ -2461,7 +2461,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Dunbar Lance",
+   "Player": "Dunbar Lance",
    "Name": "Lance Dunbar",
    "Team": "LA",
    "Games": 13,
@@ -2491,7 +2491,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Woodhead Danny",
+   "Player": "Woodhead Danny",
    "Name": "Danny Woodhead",
    "Team": "BAL",
    "Games": 2,
@@ -2521,7 +2521,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Cunningham Benny",
+   "Player": "Cunningham Benny",
    "Name": "Benny Cunningham",
    "Team": "CHI",
    "Games": 11,
@@ -2551,7 +2551,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Michael Christine (2)",
+   "Player": "Michael Christine (2)",
    "Name": "Christine Michael (2)",
    "Team": "IND",
    "Games": 6,
@@ -2581,7 +2581,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ellington Andre",
+   "Player": "Ellington Andre",
    "Name": "Andre Ellington",
    "Team": "ARZ",
    "Games": 16,
@@ -2611,7 +2611,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Carey Ka'Deem",
+   "Player": "Carey Ka'Deem",
    "Name": "Ka'Deem Carey",
    "Team": "CHI",
    "Games": 12,
@@ -2641,7 +2641,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ward Terron",
+   "Player": "Ward Terron",
    "Name": "Terron Ward",
    "Team": "ATL",
    "Games": 5,
@@ -2671,7 +2671,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ferguson Josh",
+   "Player": "Ferguson Josh",
    "Name": "Josh Ferguson",
    "Team": "IND",
    "Games": 16,
@@ -2701,7 +2701,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Williams Jonathan",
+   "Player": "Williams Jonathan",
    "Name": "Jonathan Williams",
    "Team": "BUF",
    "Games": 11,
@@ -2731,7 +2731,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Brown Mack",
+   "Player": "Brown Mack",
    "Name": "Mack Brown",
    "Team": "WAS",
    "Games": 9,
@@ -2761,7 +2761,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Hunt Akeem",
+   "Player": "Hunt Akeem",
    "Name": "Akeem Hunt",
    "Team": "HOU",
    "Games": 8,
@@ -2791,7 +2791,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Davis Mike",
+   "Player": "Davis Mike",
    "Name": "Mike Davis",
    "Team": "SEA",
    "Games": 8,
@@ -2821,7 +2821,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Charles Jamaal",
+   "Player": "Charles Jamaal",
    "Name": "Jamaal Charles",
    "Team": "DEN",
    "Games": 3,
@@ -2851,7 +2851,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Spiller C.J.",
+   "Player": "Spiller C.J.",
    "Name": "C.J. Spiller",
    "Team": "KC",
    "Games": 2,
@@ -2881,7 +2881,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "McFadden Darren",
+   "Player": "McFadden Darren",
    "Name": "Darren McFadden",
    "Team": "DAL",
    "Games": 3,
@@ -2911,7 +2911,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Atkinson George",
+   "Player": "Atkinson George",
    "Name": "George Atkinson",
    "Team": "CLE",
    "Games": 16,
@@ -2941,7 +2941,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Watson Terrell",
+   "Player": "Watson Terrell",
    "Name": "Terrell Watson",
    "Team": "PIT",
    "Games": 1,
@@ -2971,7 +2971,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Toussaint Fitzgerald",
+   "Player": "Toussaint Fitzgerald",
    "Name": "Fitzgerald Toussaint",
    "Team": "PIT",
    "Games": 16,
@@ -3001,7 +3001,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Williams Andre",
+   "Player": "Williams Andre",
    "Name": "Andre Williams",
    "Team": "LAC",
    "Games": 1,
@@ -3031,7 +3031,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Thompson Juwan",
+   "Player": "Thompson Juwan",
    "Name": "Juwan Thompson",
    "Team": "DEN",
    "Games": 8,
@@ -3061,7 +3061,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Brown Malcolm",
+   "Player": "Brown Malcolm",
    "Name": "Malcolm Brown",
    "Team": "LA",
    "Games": 16,
@@ -3091,7 +3091,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Peterson Adrian",
+   "Player": "Peterson Adrian",
    "Name": "Adrian Peterson",
    "Team": "NO",
    "Games": 3,
@@ -3121,7 +3121,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Marshall Byron",
+   "Player": "Marshall Byron",
    "Name": "Byron Marshall",
    "Team": "PHI",
    "Games": 3,
@@ -3151,7 +3151,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Todman Jordan",
+   "Player": "Todman Jordan",
    "Name": "Jordan Todman",
    "Team": "NYJ",
    "Games": 16,
@@ -3181,7 +3181,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Allen Javorius",
+   "Player": "Allen Javorius",
    "Name": "Javorius Allen",
    "Team": "BAL",
    "Games": 8,
@@ -3211,7 +3211,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Pope Troymaine",
+   "Player": "Pope Troymaine",
    "Name": "Troymaine Pope",
    "Team": "IND",
    "Games": 3,
@@ -3241,7 +3241,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Wilds Brandon",
+   "Player": "Wilds Brandon",
    "Name": "Brandon Wilds",
    "Team": "NYJ",
    "Games": 4,
@@ -3271,7 +3271,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Davis Knile",
+   "Player": "Davis Knile",
    "Name": "Knile Davis",
    "Team": "PIT",
    "Games": 9,
@@ -3301,7 +3301,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Lasco Daniel",
+   "Player": "Lasco Daniel",
    "Name": "Daniel Lasco",
    "Team": "NO",
    "Games": 7,
@@ -3331,7 +3331,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "James Mike",
+   "Player": "James Mike",
    "Name": "Mike James",
    "Team": "DET",
    "Games": 4,
@@ -3361,7 +3361,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Jones Taiwan",
+   "Player": "Jones Taiwan",
    "Name": "Taiwan Jones",
    "Team": "OAK",
    "Games": 13,
@@ -3391,7 +3391,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Foster D.J.",
+   "Player": "Foster D.J.",
    "Name": "D.J. Foster",
    "Team": "NE",
    "Games": 3,
@@ -3421,7 +3421,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Ervin Tyler",
+   "Player": "Ervin Tyler",
    "Name": "Tyler Ervin",
    "Team": "HOU",
    "Games": 12,
@@ -3451,7 +3451,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Bolden Brandon",
+   "Player": "Bolden Brandon",
    "Name": "Brandon Bolden",
    "Team": "NE",
    "Games": 14,
@@ -3481,7 +3481,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Spiller C.J. (2)",
+   "Player": "Spiller C.J. (2)",
    "Name": "C.J. Spiller (2)",
    "Team": "KC",
    "Games": 4,
@@ -3511,7 +3511,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Peerman Cedric",
+   "Player": "Peerman Cedric",
    "Name": "Cedric Peerman",
    "Team": "CIN",
    "Games": 6,
@@ -3541,7 +3541,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Magee Terrence",
+   "Player": "Magee Terrence",
    "Name": "Terrence Magee",
    "Team": "CLE",
    "Games": 2,
@@ -3571,7 +3571,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Taliaferro Lorenzo",
+   "Player": "Taliaferro Lorenzo",
    "Name": "Lorenzo Taliaferro",
    "Team": "BAL",
    "Games": 3,
@@ -3601,7 +3601,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Davis Knile (2)",
+   "Player": "Davis Knile (2)",
    "Name": "Knile Davis (2)",
    "Team": "PIT",
    "Games": 2,
@@ -3631,7 +3631,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Banyard Joe",
+   "Player": "Banyard Joe",
    "Name": "Joe Banyard",
    "Team": "BUF",
    "Games": 1,
@@ -3661,7 +3661,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Mostert Raheem",
+   "Player": "Mostert Raheem",
    "Name": "Raheem Mostert",
    "Team": "SF",
    "Games": 1,
@@ -3691,7 +3691,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Murphy Marcus",
+   "Player": "Murphy Marcus",
    "Name": "Marcus Murphy",
    "Team": "NO",
    "Games": 3,
@@ -3721,7 +3721,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Pope Troymaine (2)",
+   "Player": "Pope Troymaine (2)",
    "Name": "Troymaine Pope (2)",
    "Team": "IND",
    "Games": 1,
@@ -3751,7 +3751,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Pope Troymaine (3)",
+   "Player": "Pope Troymaine (3)",
    "Name": "Troymaine Pope (3)",
    "Team": "IND",
    "Games": 1,
@@ -3781,7 +3781,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Hansbrough Russell",
+   "Player": "Hansbrough Russell",
    "Name": "Russell Hansbrough",
    "Team": "TB",
    "Games": 2,
@@ -3811,7 +3811,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Jackson Darius",
+   "Player": "Jackson Darius",
    "Name": "Darius Jackson",
    "Team": "CLE",
    "Games": 1,
@@ -3841,7 +3841,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Green Aaron",
+   "Player": "Green Aaron",
    "Name": "Aaron Green",
    "Team": "LA",
    "Games": 2,
@@ -3871,7 +3871,7 @@
  },
  {
    "url": "https://www.rotowire.com/football/redzonestats.htm?pos=RB&season=2016&range=Year&games=1&rush=0&tar=0",
-   "Col Player 1": "Mostert Raheem (2)",
+   "Player": "Mostert Raheem (2)",
    "Name": "Raheem Mostert (2)",
    "Team": "SF",
    "Games": 2,

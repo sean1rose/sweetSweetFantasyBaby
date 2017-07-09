@@ -16,30 +16,17 @@ import wr15 from '../../ffdata/2016_wr_stats/weekly/2016_widereceiver_wk15_stats
 import wr16 from '../../ffdata/2016_wr_stats/weekly/2016_widereceiver_wk16_stats.json';
 import widereceivers from '../../ffdata/2016_wr_stats/2016_widereceiver_stats.json';
 
-var wideReceiverObj = {
+var widereceiverObj = {
   wr1, wr2, wr3, wr4, wr5, wr6, wr7, wr8, wr9, wr10, wr11, wr12, wr13, wr14, wr15, wr16
 }
-
-var targets = 0;
-// var targets1 = 0;
-var ftpts = 0;
-// var ftpts1 = 0;
-for (var i = 0; i < widereceivers.length; i++){
-  targets += widereceivers[i].Targets;
-  ftpts += widereceivers[i].FantasyPts;
-}
-var ftptsPerTarget = (ftpts / targets);
-console.log('expected ft pts per target avg - ', ftptsPerTarget);
-var jordy = (widereceivers[5].FantasyPts / widereceivers[5].Targets);
-console.log('jordy ft pts per target - ', jordy);
 
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 
-const wrTargetUtil = {
+const wrWeeklyTargetUtil = {
   wideReceiverWeek: (weekNumber) => {
     var wrString = `wr${weekNumber}`;
-    var wrArray = wideReceiverObj[wrString];
+    var wrArray = widereceiverObj[wrString];
     var result = {};
     wrArray.map((wr, idx) => {
       // wr[`week_${weekNumber}_rank`] = idx + 1;
@@ -51,12 +38,12 @@ const wrTargetUtil = {
   },
   getWrFromWeek: (name, week) => {
     // need single wr-obj from a week
-    var weekReceivers = wrTargetUtil.wideReceiverWeek(week);
+    var weekReceivers = wrWeeklyTargetUtil.wideReceiverWeek(week);
     return weekReceivers[name];
   },
   getWrRankFromWeek: (weekNumber, rank) => {
     var wrString = `wr${weekNumber}`;
-    var wrArray = wideReceiverObj[wrString];
+    var wrArray = widereceiverObj[wrString];
     var result = {
       targets: 0,
       fantasyPts: 0,
@@ -67,8 +54,8 @@ const wrTargetUtil = {
     for (var i = counter1; i < counter2; i++){
       result.targets += wrArray[i].Targets;
       result.fantasyPts += wrArray[i].FantasyPts;
-      result.rzTargets += wrArray[i].Rec_Tar_Rz_In_5;
-      result.rzTargets += wrArray[i].Rec_Tar_Rz_In_10;
+      // result.rzTargets += wrArray[i].Rec_Tar_Rz_In_5;
+      // result.rzTargets += wrArray[i].Rec_Tar_Rz_In_10;
       result.rzTargets += wrArray[i].Rec_Tar_Rz_In_20;
     }
     var avg = {};
@@ -80,26 +67,26 @@ const wrTargetUtil = {
   },
   getWrTwelveFromWeek: (weekNumber) => {
     var wrString = `wr${weekNumber}`;
-    var wrArray = wideReceiverObj[wrString];
+    var wrArray = widereceiverObj[wrString];
     var result = {};
     result.Targets = wrArray[11].Targets;
     result.FantasyPts = wrArray[11].FantasyPts;
-    result.RzTargets = (wrArray[11].Rec_Tar_Rz_In_5 + wrArray[11].Rec_Tar_Rz_In_10 + wrArray[11].Rec_Tar_Rz_In_20);
+    result.RzTargets = wrArray[11].Rec_Tar_Rz_In_20;
     return result;
   },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
     if (rank === 1.12){
       for (var i = 1; i <= 16; i++){
-        result.push(wrTargetUtil.getWrTwelveFromWeek(i)[stat])
+        result.push(wrWeeklyTargetUtil.getWrTwelveFromWeek(i)[stat])
       }
       console.log('----> RESULT - ', result);
       return result;
     }
     for (var i = 1; i <= 16; i++){
-      // var obj = wrTargetUtil.getWrOneFromWeek(i);
-      // var obj = wrTargetUtil.getWrTwelveFromWeek(i);
-      var obj = wrTargetUtil.getWrRankFromWeek(i, rank);
+      // var obj = wrWeeklyTargetUtil.getWrOneFromWeek(i);
+      // var obj = wrWeeklyTargetUtil.getWrTwelveFromWeek(i);
+      var obj = wrWeeklyTargetUtil.getWrRankFromWeek(i, rank);
       var rounded = Math.round(obj[stat]);
       // console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
@@ -110,7 +97,7 @@ const wrTargetUtil = {
   getWrAllWeeks: (name) => {
     var result = {};
     for (var i = 1; i <= 16; i++){
-      result[i] = wrTargetUtil.getWrFromWeek(name, i);
+      result[i] = wrWeeklyTargetUtil.getWrFromWeek(name, i);
     }
     return result;
   },
@@ -126,15 +113,15 @@ const wrTargetUtil = {
     for (var week in player){
       if (stat === "RzTargets"){
         if (player[week]){
-          var five = player[week]["Rec_Tar_Rz_In_5"];
-          var ten = player[week]["Rec_Tar_Rz_In_10"];
+          // var five = player[week]["Rec_Tar_Rz_In_5"];
+          // var ten = player[week]["Rec_Tar_Rz_In_10"];
           var twenty = player[week]["Rec_Tar_Rz_In_20"];
-          var total = five + ten + twenty;
-          console.log(five, ten, twenty, total);
+          // var total = five + ten + twenty;
+          // console.log(five, ten, twenty, total);
           // var totalTargets = player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"];
           // console.log(`rec td = ${player[week]["Rec_Td"]} and rush td = ${rushTd} and total = ${player[week]["Rec_Td"] + rushTd}`)
           // result.push(player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"]);
-          result.push(total);
+          result.push(twenty);
         }
         else
           result.push(null);
@@ -149,8 +136,8 @@ const wrTargetUtil = {
     return result;
   },
   get: (id) => {
-    var options = {keys: ['PLayer_2'], threshold: 0.3};
-    var fuse = new Fuse(wideReceiverObj, options);
+    var options = {keys: ['Player_2'], threshold: 0.3};
+    var fuse = new Fuse(widereceiverObj, options);
     // returns an array w/ results (hopefully only 1 result)
     return fuse.search(id);
   },
@@ -159,4 +146,4 @@ const wrTargetUtil = {
   }
 };
 
-export default wrTargetUtil;
+export default wrWeeklyTargetUtil;
