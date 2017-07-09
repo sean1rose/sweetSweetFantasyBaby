@@ -6,12 +6,30 @@ import { FormControl } from 'react-bootstrap';
 class Combochart extends Component {
   constructor(props){
     super(props);
-    // console.log('props - ', props.player, props.wrTargetUtil);
-    // console.log('weekkkkk - ', props.wrTargetUtil.getWrOneFromWeek(1));
-    // console.log('props.comparison - ', props);
+    console.log('>props.comparison - ', props);
+    var yAxisConfig = {};
+    var seriesConfig = {};
+    this.dropdownConfig;
+    
 
     this.configObjectCreate = (param) => {
-			// console.log("IN CONFIG OBJ CREAETE <<<<<<_____--------");
+      
+      switch(props.position){
+        case 'wr':
+          console.log('IN PROPS POSITION _ ', props.position);
+          yAxisConfig.text = ['Fantasy Pts', 'Targets', 'Redzone Targets'];
+          yAxisConfig.max = [28, 20, 20];
+          yAxisConfig.tickInterval = [7];
+          seriesConfig.name = ['Fantasy Pts', 'Targets', 'Redzone Targets', `WR${param} Avg's Fantasy Pts`, `WR${param} Avg's Targets`, `WR${param} Avg's Redzone Targets`];
+          seriesConfig.data = [props.wrTargetUtil.calcWeeklyTotal(props.player, 'FantasyPts'), props.wrTargetUtil.calcWeeklyTotal(props.player, 'Targets'), props.wrTargetUtil.calcWeeklyTotal(props.player, 'RzTargets'), props.wrTargetUtil.calcWeeklyAvg('FantasyPts', param), props.wrTargetUtil.calcWeeklyAvg('Targets', param), props.wrTargetUtil.calcWeeklyAvg('RzTargets', param)];
+          seriesConfig.valueSuffix = [' pts', ' targets', ' rz targets', ' pts', ' targets', ' rz targets'];
+          this.dropdownConfig = ['WR1 Average', 'WR1.12', 'WR2 Average', 'WR3 Average'];
+          break;
+        case 'rb':
+          yAxisConfig.text = ['Fantasy Pts', 'Snaps', 'Redzone Carries'];
+          break;
+      }
+
       var configObj = {
         chart: {
           zoomType: 'xy',
@@ -24,27 +42,10 @@ class Combochart extends Component {
           crosshair: true
         }],
         yAxis: [
-          { // Primary yAxis | green axis | Temparture | TARGETS === CARRIES
-            title: {
-              text: 'Targets',
-              style: {
-                  color: Highcharts.getOptions().colors[1]
-              }
-            },
-            labels: {
-              format: '{value}',
-              style: {
-                  color: Highcharts.getOptions().colors[1]
-              }
-            },
-            min: 0,
-            max: 20,
-            opposite: true
-          },
-          { // Secondary yAxis | blue axis | Rainfall | FANTASY PTS === FTPTS
+          { // Primary yAxis | blue axis | Rainfall | FANTASY PTS === FTPTS
             gridLineWidth: 0,
             title: {
-              text: 'Fantasy Pts',
+              text: yAxisConfig.text[0],
               style: {
                   color: Highcharts.getOptions().colors[0]
               }
@@ -56,13 +57,30 @@ class Combochart extends Component {
               }
             },
             min: 0,
-            max: 28,
-            tickInterval: 7
+            max: yAxisConfig.max[0],
+            tickInterval: yAxisConfig.tickInterval[0]
           }, 
+          { // Secondary yAxis | green axis | Temparture | TARGETS === SNAPS
+            title: {
+              text: yAxisConfig.text[1],
+              style: {
+                  color: Highcharts.getOptions().colors[1]
+              }
+            },
+            labels: {
+              format: '{value}',
+              style: {
+                  color: Highcharts.getOptions().colors[1]
+              }
+            },
+            min: 0,
+            max: yAxisConfig.max[1],
+            opposite: true
+          },
           { // Tertiary yAxis | black axis | Sea-Level Pressure | RZ TARGETS === RZ CARRIES
             gridLineWidth: 0,
             title: {
-              text: 'Redzone Targets',
+              text: yAxisConfig.text[2],
               style: {
                 color: Highcharts.getOptions().colors[8]
               }
@@ -74,7 +92,7 @@ class Combochart extends Component {
               }
             },
             min: 0,
-            max: 20,
+            max: yAxisConfig.max[2],
             opposite: true
           }
         ],
@@ -98,53 +116,68 @@ class Combochart extends Component {
         //     backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
         // },
         series: [
-          {
-            name: 'Fantasy Pts',
+          { // [0]
+            name: seriesConfig.name[0],
             type: 'column',
-            yAxis: 1,
-            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "FantasyPts"),
+            data: seriesConfig.data[0],
             tooltip: {
-              valueSuffix: ' pts'
+              valueSuffix: seriesConfig.valueSuffix[0]
             },
             zIndex: 1
           },
-          {
-            name: 'Redzone Targets',
+          { // [1]
+            name: seriesConfig.name[1],
+            yAxis: 1,
             type: 'spline',
-            yAxis: 2,
-            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "RzTargets"),
-            color: Highcharts.getOptions().colors[8],
+            data: seriesConfig.data[1],
             tooltip: {
-              valueSuffix: ' rz targets'
-            },
-            zIndex: 2
-          }, 
-          {
-            name: 'Targets',
-            type: 'spline',
-            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets"),
-            tooltip: {
-              valueSuffix: ' targets'
+              valueSuffix: seriesConfig.valueSuffix[1]
             },
             zIndex: 3
           },
-          {
-            name: `WR${param} Avg's Fantasy Pts`,
+          { // [2]
+            name: seriesConfig.name[2],
+            type: 'spline',
+            yAxis: 2,
+            data: seriesConfig.data[2],
+            color: Highcharts.getOptions().colors[8],
+            tooltip: {
+              valueSuffix: seriesConfig.valueSuffix[2]
+            },
+            zIndex: 2
+          }, 
+          { // [3]
+            name: seriesConfig.name[3],
             type: 'column',
-            yAxis: 1,
-            data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", param),
+            // yAxis: 1,
+            data: seriesConfig.data[3],
             color: param === 1 || param === 1.12 ? Highcharts.getOptions().colors[6] : param === 2 ? Highcharts.getOptions().colors[3] : "#CD853F",
             tooltip: {
-              valueSuffix: ' pts'
+              valueSuffix: seriesConfig.valueSuffix[3]
             },
             zIndex: 0
           },
-          {
-            name: `WR${param} Avg's Redzone Targets`,
+          { // [4]
+            name: seriesConfig.name[4],
+            type: 'spline',
+            yAxis: 1,
+            dashStyle: 'shortdot',
+            data: seriesConfig.data[4],
+            color: Highcharts.getOptions().colors[1],
+            marker: {
+              enabled: false
+            },
+            tooltip: {
+              valueSuffix: seriesConfig.valueSuffix[4]
+            },
+            zIndex: 3
+          },
+          { // [5]
+            name: seriesConfig.name[5],
             type: 'spline',
             dashStyle: 'shortdot',
             yAxis: 2,
-            data: props.wrTargetUtil.calcWeeklyAvg("RzTargets", param),
+            data: seriesConfig.data[5],
 			      // color: "#AAAAAA",
             // color: "#FFC0CB",
             color: Highcharts.getOptions().colors[8],
@@ -152,23 +185,9 @@ class Combochart extends Component {
               enabled: false
             },
             tooltip: {
-              valueSuffix: ' rz targets'
+              valueSuffix: seriesConfig.valueSuffix[5]
             },
             zIndex: 2
-          },
-          {
-            name: `WR${param} Avg's Targets`,
-            type: 'spline',
-            dashStyle: 'shortdot',
-            data: props.wrTargetUtil.calcWeeklyAvg("Targets", param),
-            color: Highcharts.getOptions().colors[1],
-            marker: {
-              enabled: false
-            },
-            tooltip: {
-              valueSuffix: ' targets',
-            },
-            zIndex: 3
           }
         ]
       }
@@ -184,29 +203,27 @@ class Combochart extends Component {
   }
 
   handleChange(e) {
-    // console.log('handle change ---> ', this.inputEl.value);
     /*
         AS A FORMCONTROL ATTRIBUTE ---> inputRef={el => this.inputEl=el }
     */
     console.log('2 - e - ', e.target.value);
     switch(e.target.value){
-      case 'wr1':
+      case '1':
         this.setState({
 					config: this.configObjectCreate(1)
         });
         break;
-			case 'wr1.12':
+			case '1.12':
 				this.setState({
 					config: this.configObjectCreate(1.12)
 				});
 				break;
-      case 'wr2':
-        console.log('about to set state to 2 - ');
+      case '2':
         this.setState({
 					config: this.configObjectCreate(2)
         });
         break;
-      case 'wr3':
+      case '3':
         this.setState({
 					config: this.configObjectCreate(3)
         });
@@ -224,12 +241,12 @@ class Combochart extends Component {
             <FormControl
             onChange={this.handleChange}
             componentClass="select"
-            defaultValue="wr1" 
+            defaultValue="1" 
             >
-            <option value="wr1"> WR1 Average</option>
-            <option value="wr1.12"> WR1.12</option>
-            <option value="wr2"> WR2 Average</option>
-            <option value="wr3"> WR3 Average</option>
+            <option value="1"> {this.dropdownConfig[0]}</option>
+            <option value="1.12"> {this.dropdownConfig[1]}</option>
+            <option value="2"> {this.dropdownConfig[2]}</option>
+            <option value="3"> {this.dropdownConfig[3]}</option>
             </FormControl>
           </div>
         </div>
