@@ -20,6 +20,19 @@ var wideReceiverObj = {
   wr1, wr2, wr3, wr4, wr5, wr6, wr7, wr8, wr9, wr10, wr11, wr12, wr13, wr14, wr15, wr16
 }
 
+var targets = 0;
+// var targets1 = 0;
+var ftpts = 0;
+// var ftpts1 = 0;
+for (var i = 0; i < widereceivers.length; i++){
+  targets += widereceivers[i].Targets;
+  ftpts += widereceivers[i].FantasyPts;
+}
+var ftptsPerTarget = (ftpts / targets);
+console.log('expected ft pts per target avg - ', ftptsPerTarget);
+var jordy = (widereceivers[5].FantasyPts / widereceivers[5].Targets);
+console.log('jordy ft pts per target - ', jordy);
+
 import Fuse from 'fuse.js';
 // http://fusejs.io/
 

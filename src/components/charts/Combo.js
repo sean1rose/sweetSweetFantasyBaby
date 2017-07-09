@@ -3,7 +3,6 @@ import ReactHighcharts from 'react-highcharts';
 import Highcharts from 'highcharts';
 import { FormControl } from 'react-bootstrap';
 
-
 class Combochart extends Component {
   constructor(props){
     super(props);
@@ -11,13 +10,11 @@ class Combochart extends Component {
     // console.log('weekkkkk - ', props.wrTargetUtil.getWrOneFromWeek(1));
     // console.log('props.comparison - ', props);
 
-
-
     this.configObjectCreate = (param) => {
 			// console.log("IN CONFIG OBJ CREAETE <<<<<<_____--------");
       var configObj = {
         chart: {
-          zoomType: 'xy'
+          zoomType: 'xy',
         },
         title: {
           text: `Week by Week Comparison`
@@ -27,61 +24,58 @@ class Combochart extends Component {
           crosshair: true
         }],
         yAxis: [
-          { // Primary yAxis | green axis | Temparture | TARGETS
-                labels: {
-                    format: '{value}',
-                    style: {
-                        color: Highcharts.getOptions().colors[2]
-                    }
-                },
-                title: {
-                    text: 'Targets',
-                    style: {
-                        color: Highcharts.getOptions().colors[2]
-                    }
-                },
-                min: 0,
-                tickInterval: 1,
-                max: 20,
-                opposite: true
+          { // Primary yAxis | green axis | Temparture | TARGETS === CARRIES
+            title: {
+              text: 'Targets',
+              style: {
+                  color: Highcharts.getOptions().colors[1]
+              }
+            },
+            labels: {
+              format: '{value}',
+              style: {
+                  color: Highcharts.getOptions().colors[1]
+              }
+            },
+            min: 0,
+            max: 20,
+            opposite: true
           },
-          { // Secondary yAxis | blue axis | Rainfall | FANTASY PTS
-              gridLineWidth: 0,
-              title: {
-                  text: 'Fantasy Pts',
-                  style: {
-                      color: Highcharts.getOptions().colors[0]
-                  }
-              },
-              labels: {
-                  format: '{value} pts',
-                  style: {
-                      color: Highcharts.getOptions().colors[0]
-                  }
-              },
-              min: 0,
-              max: 30,
-              tickInterval: 6
-
+          { // Secondary yAxis | blue axis | Rainfall | FANTASY PTS === FTPTS
+            gridLineWidth: 0,
+            title: {
+              text: 'Fantasy Pts',
+              style: {
+                  color: Highcharts.getOptions().colors[0]
+              }
+            },
+            labels: {
+              format: '{value} pts',
+              style: {
+                  color: Highcharts.getOptions().colors[0]
+              }
+            },
+            min: 0,
+            max: 28,
+            tickInterval: 7
           }, 
-          { // Tertiary yAxis | black axis | Sea-Level Pressure | TD
-              gridLineWidth: 0,
-              title: {
-                  text: 'Redzone Targets',
-                  style: {
-                      color: Highcharts.getOptions().colors[1]
-                  }
-              },
-              labels: {
-                  format: '{value}',
-                  style: {
-                      color: Highcharts.getOptions().colors[1]
-                  }
-              },
-              tickInterval: 1,
-              min: 0,
-              max: 20,
-              opposite: true
+          { // Tertiary yAxis | black axis | Sea-Level Pressure | RZ TARGETS === RZ CARRIES
+            gridLineWidth: 0,
+            title: {
+              text: 'Redzone Targets',
+              style: {
+                color: Highcharts.getOptions().colors[8]
+              }
+            },
+            labels: {
+              format: '{value}',
+              style: {
+                  color: Highcharts.getOptions().colors[8]
+              }
+            },
+            min: 0,
+            max: 20,
+            opposite: true
           }
         ],
         plotOptions: {
@@ -94,56 +88,54 @@ class Combochart extends Component {
         tooltip: {
             shared: true
         },
-        legend: {
-            layout: 'vertical',
-            align: 'left',
-            x: 80,
-            verticalAlign: 'top',
-            y: 35,
-            floating: true,
-            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
-        },
+        // legend: {
+        //     layout: 'vertical',
+        //     align: 'right',
+        //     x: -125,
+        //     verticalAlign: 'top',
+        //     y: 0,
+        //     floating: true,
+        //     backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+        // },
         series: [
           {
-              name: 'Fantasy Pts',
-              type: 'column',
-              yAxis: 1,
-              data: props.wrTargetUtil.calcWeeklyTotal(props.player, "FantasyPts"),
-              tooltip: {
-                  valueSuffix: ' pts'
-              },
-              zIndex: 1
+            name: 'Fantasy Pts',
+            type: 'column',
+            yAxis: 1,
+            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "FantasyPts"),
+            tooltip: {
+              valueSuffix: ' pts'
+            },
+            zIndex: 1
           },
           {
-              name: 'Redzone Targets',
-              type: 'spline',
-              yAxis: 2,
-              data: props.wrTargetUtil.calcWeeklyTotal(props.player, "RzTargets"),
-            //   marker: {
-            //       enabled: false
-            //   },
-            //   dashStyle: 'shortdot',
-              tooltip: {
-                  valueSuffix: ' rz targets'
-              },
-              zIndex: 2
+            name: 'Redzone Targets',
+            type: 'spline',
+            yAxis: 2,
+            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "RzTargets"),
+            color: Highcharts.getOptions().colors[8],
+            tooltip: {
+              valueSuffix: ' rz targets'
+            },
+            zIndex: 2
           }, 
           {
-              name: 'Targets',
-              type: 'spline',
-              data: props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets"),
-              tooltip: {
-                  valueSuffix: ' targets'
-              },
-              zIndex: 3
+            name: 'Targets',
+            type: 'spline',
+            data: props.wrTargetUtil.calcWeeklyTotal(props.player, "Targets"),
+            tooltip: {
+              valueSuffix: ' targets'
+            },
+            zIndex: 3
           },
           {
             name: `WR${param} Avg's Fantasy Pts`,
             type: 'column',
             yAxis: 1,
             data: props.wrTargetUtil.calcWeeklyAvg("FantasyPts", param),
+            color: param === 1 || param === 1.12 ? Highcharts.getOptions().colors[6] : param === 2 ? Highcharts.getOptions().colors[3] : "#CD853F",
             tooltip: {
-                valueSuffix: ' pts'
+              valueSuffix: ' pts'
             },
             zIndex: 0
           },
@@ -153,12 +145,14 @@ class Combochart extends Component {
             dashStyle: 'shortdot',
             yAxis: 2,
             data: props.wrTargetUtil.calcWeeklyAvg("RzTargets", param),
-						color: "#AAAAAA",
+			      // color: "#AAAAAA",
+            // color: "#FFC0CB",
+            color: Highcharts.getOptions().colors[8],
             marker: {
-                enabled: false
+              enabled: false
             },
             tooltip: {
-                valueSuffix: ' rz targets'
+              valueSuffix: ' rz targets'
             },
             zIndex: 2
           },
@@ -167,12 +161,12 @@ class Combochart extends Component {
             type: 'spline',
             dashStyle: 'shortdot',
             data: props.wrTargetUtil.calcWeeklyAvg("Targets", param),
-						color: "#FFDC00",
+            color: Highcharts.getOptions().colors[1],
             marker: {
-                enabled: false
+              enabled: false
             },
             tooltip: {
-                valueSuffix: ' targets',
+              valueSuffix: ' targets',
             },
             zIndex: 3
           }
@@ -224,20 +218,20 @@ class Combochart extends Component {
     return (
       <div>
         <div className="headerContainer">
-           <h1>{this.props.name}</h1>
-            vs.
-            <div className="formHolder">
-                <FormControl
-                onChange={this.handleChange}
-                componentClass="select"
-								defaultValue="wr1" 
-                >
-                <option value="wr1"> WR1 Average</option>
-								<option value="wr1.12"> WR1.12</option>
-                <option value="wr2"> WR2 Average</option>
-                <option value="wr3"> WR3 Average</option>
-                </FormControl>
-            </div>
+          <h1>{this.props.name}</h1>
+          vs.
+          <div className="formHolder">
+            <FormControl
+            onChange={this.handleChange}
+            componentClass="select"
+            defaultValue="wr1" 
+            >
+            <option value="wr1"> WR1 Average</option>
+            <option value="wr1.12"> WR1.12</option>
+            <option value="wr2"> WR2 Average</option>
+            <option value="wr3"> WR3 Average</option>
+            </FormControl>
+          </div>
         </div>
         <ReactHighcharts config={this.state.config} />
       </div>
