@@ -33,12 +33,14 @@ const rbWeeklyTouchesUtil = {
       rb.Rank = idx + 1;
       result[rb.Player_2] = rb;
     });
+    // console.log('rb week - ', result);
     return result;
     // return obj of rbs for that week
   },
   getRbFromWeek: (name, week) => {
     // need single rb-obj from a week
     var weekRunningbacks = rbWeeklyTouchesUtil.runningbackWeek(week);
+    // console.log('>>> ',  name, weekRunningbacks[name], weekRunningbacks);
     return weekRunningbacks[name];
   },
   getRbRankFromWeek: (weekNumber, rank) => {
@@ -52,26 +54,16 @@ const rbWeeklyTouchesUtil = {
     var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
     var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
     for (var i = counter1; i < counter2; i++){
-      // console.log('>>>>>>>> i - ', i);
-      // console.log('>>>>>>>> rbArray[i] - ', rbArray[i]);
-      // console.log('2 >>>>>>>> 2 rbArray[i].Rush_Att - ', rbArray[i].Rush_Att);
-      // console.log('3 >>>>>>>> 3 rbArray[i].Rec_Tar_Rz_In_20 - ', rbArray[i].Rec_Tar_Rz_In_20);
       result.touches += rbArray[i].Rush_Att;
       result.touches += rbArray[i].Rec;
       result.fantasyPts += rbArray[i].FantasyPts;
-
-      result.rzTouches = !rbArray[i].Rec_Tar_Rz_In_20 ? rbArray[i].Rush_Rz_In_20 : (rbArray[i].Rush_Rz_In_20 + rbArray[i].Rec_Tar_Rz_In_20);
-
-      // result.rzTouches += rbArray[i].Rush_Rz_In_20;
-      // if (rbArray[i].Rec_Tar_Rz_In_20)
-      //   result.rzTouches += rbArray[i].Rec_Tar_Rz_In_20;
-      // console.log('4 >>>>>>>> 4 rbArray[i].rzTouches - ', result.rzTouches);
+      result.rzTouches += !rbArray[i].Rec_Tar_Rz_In_20 ? rbArray[i].Rush_Rz_In_20 : (rbArray[i].Rush_Rz_In_20 + rbArray[i].Rec_Tar_Rz_In_20);
     }
     var avg = {};
     avg.Touches = (result.touches / 12);
     avg.FantasyPts = (result.fantasyPts / 12);
     avg.RzTouches = (result.rzTouches / 12);
-    console.log('>>>>>avg = ', avg);
+    // console.log('>>>>>avg = ', avg);
     return avg;
   },
   getRbTwelveFromWeek: (weekNumber) => {
@@ -81,7 +73,6 @@ const rbWeeklyTouchesUtil = {
     result.Touches = (rbArray[11].Rush_Att + rbArray[11].Rec);
     result.FantasyPts = rbArray[11].FantasyPts;
     result.RzTouches = !rbArray[11].Rec_Tar_Rz_In_20 ? rbArray[11].Rush_Rz_In_20 : (rbArray[11].Rush_Rz_In_20 + rbArray[11].Rec_Tar_Rz_In_20);
-    // result.RzTouches = (rbArray[11].Rush_Rz_In_20 + rbArray[11].Rec_Tar_Rz_In_20);
     return result;
   },
   calcWeeklyAvg: (stat, rank) => {
@@ -94,15 +85,11 @@ const rbWeeklyTouchesUtil = {
       return result;
     }
     for (var i = 1; i <= 16; i++){
-      // var obj = rbWeeklyTouchesUtil.getWrOneFromWeek(i);
-      // var obj = rbWeeklyTouchesUtil.getRbTwelveFromWeek(i);
       var obj = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
       var rounded = Math.round(obj[stat]);
-      console.log(`week ${i}'s avg ${stat} is - ${rounded}`);
+      // console.log(`week ${i}'s avg ${stat} is - ${rounded}`);
       result.push(rounded);
     }
-    // console.log('---- stat - ', stat, ' rank - ', rank);
-    // console.log('----result - ', result);
     return result;
   },
   getRbAllWeeks: (name) => {
@@ -119,7 +106,6 @@ const rbWeeklyTouchesUtil = {
   calcWeeklyTotal: (player, stat) => {
     // used to calc weekly target/ftpts/td for combo chart
     // manually calc TotalTd from (recTd + rushTd)
-    console.log('=----> player - ', player);
     var result = [];
     for (var week in player){
       if (stat === "RzTouches"){
@@ -127,22 +113,12 @@ const rbWeeklyTouchesUtil = {
           // var five = player[week]["Rec_Tar_Rz_In_5"];
           // var ten = player[week]["Rec_Tar_Rz_In_10"];
           var twenty = !player[week]["Rush_Rz_In_20"] ? player[week]["Rec_Tar_Rz_In_20"] : (player[week]["Rec_Tar_Rz_In_20"] + player[week]["Rush_Rz_In_20"]);
-          // var twenty = (player[week]["Rec_Tar_Rz_In_20"] + player[week]["Rush_Rz_In_20"]);
-          // var total = five + ten + twenty;
-          // console.log(five, ten, twenty, total);
-          // var totalTargets = player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"];
-          // console.log(`rec td = ${player[week]["Rec_Td"]} and rush td = ${rushTd} and total = ${player[week]["Rec_Td"] + rushTd}`)
-          // result.push(player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"]);
           result.push(twenty);
         }
         else
           result.push(null);
       } else {
         if (player[week]){
-          console.log('!!!!!! [stat] - ', stat);
-          console.log('!!!!!! player - ',player);
-          console.log('!!!!!! player[week] - ',player[week]);
-          console.log('!!!!!! player[week][stat] - ',player[week][stat]);
           if (stat === "Touches"){
             result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
           } else {
@@ -154,7 +130,7 @@ const rbWeeklyTouchesUtil = {
           result.push(null);
       }
     }
-    console.log(`result for ${stat} - ', result`, result);
+    // console.log(`result for ${stat} - ', result`, result);
     return result;
   },
   get: (id) => {

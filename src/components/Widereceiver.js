@@ -22,7 +22,7 @@ class Widereceiver extends Component {
 
     return (
       <div>
-        <Combochart position="wr" player={this.state.player} wrTargetUtil={wrWeeklyTargetUtil} name={this.state.name} />
+        <Combochart position="wr" player={this.state.player} util={wrWeeklyTargetUtil} name={this.state.name} />
       </div>
     )
   }

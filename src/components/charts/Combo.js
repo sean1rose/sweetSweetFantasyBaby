@@ -7,13 +7,14 @@ class Combochart extends Component {
   constructor(props){
     super(props);
     console.log('>props.comparison - ', props);
+    
     var yAxisConfig = {};
     var seriesConfig = {};
     this.dropdownConfig;
     
 
     this.configObjectCreate = (param) => {
-      
+      // var self = this;
       switch(props.position){
         case 'wr':
           console.log('IN PROPS POSITION _ ', props.position);
@@ -28,8 +29,8 @@ class Combochart extends Component {
           break;
         case 'rb':
           console.log('>>>>>>>>> PARAM - ', param);
-          yAxisConfig.text = ['Fantasy Pts', 'Touches', 'Redzone Carries'];
-          yAxisConfig.max = [35, 35, 35];
+          yAxisConfig.text = ['Fantasy Pts', 'Touches', 'Redzone Touches'];
+          yAxisConfig.max = [35, 30, 30];
           yAxisConfig.tickInterval = [5];
           seriesConfig.name = ['Fantasy Pts', 'Touches', 'Redzone Touches', `RB${param} Avg's Fantasy Pts`, `RB${param} Avg's Touches`, `RB${param} Avg's Redzone Touches`];
           seriesConfig.data = [props.util.calcWeeklyTotal(props.player, 'FantasyPts'), props.util.calcWeeklyTotal(props.player, 'Touches'), props.util.calcWeeklyTotal(props.player, 'RzTouches'), props.util.calcWeeklyAvg('FantasyPts', param), props.util.calcWeeklyAvg('Touches', param), props.util.calcWeeklyAvg('RzTouches', param)];
@@ -232,11 +233,11 @@ class Combochart extends Component {
 					config: this.configObjectCreate(2)
         });
         break;
-      // case '3':
-      //   this.setState({
-			// 		config: this.configObjectCreate(3)
-      //   });
-      //   break;
+      case '3':
+        this.setState({
+					config: this.configObjectCreate(3)
+        });
+        break;
     }
   }
 
