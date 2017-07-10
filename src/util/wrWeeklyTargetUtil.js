@@ -76,10 +76,15 @@ const wrWeeklyTargetUtil = {
   },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
+    var total = 0;
+    var avg;
     if (rank === 1.12){
       for (var i = 1; i <= 16; i++){
         result.push(wrWeeklyTargetUtil.getWrTwelveFromWeek(i)[stat])
+        total += wrWeeklyTargetUtil.getWrTwelveFromWeek(i)[stat];
       }
+      avg = (total / 16);
+      result.push(Math.round(avg));
       console.log('----> RESULT - ', result);
       return result;
     }
@@ -90,8 +95,11 @@ const wrWeeklyTargetUtil = {
       var rounded = Math.round(obj[stat]);
       // console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
+      total += rounded;
     }
     console.log('----result - ', result);
+    avg = (total / 16);
+    result.push(Math.round(avg));
     return result;
   },
   getWrAllWeeks: (name) => {
@@ -108,31 +116,53 @@ const wrWeeklyTargetUtil = {
   calcWeeklyTotal: (player, stat) => {
     // used to calc weekly target/ftpts/td for combo chart
     // manually calc TotalTd from (recTd + rushTd)
-    console.log('=----> player - ', player);
+    // console.log('=----> player - ', player, ' and stat is - ', stat);
     var result = [];
+    var total = 0;
+    var counter = 0;
+    var gamesPlayed = 16;
+    var objLength = Object.keys(player).length;
+    // console.log('obj length !!!! - ', objLength);
     for (var week in player){
+      counter++;
       if (stat === "RzTargets"){
         if (player[week]){
-          // var five = player[week]["Rec_Tar_Rz_In_5"];
-          // var ten = player[week]["Rec_Tar_Rz_In_10"];
           var twenty = player[week]["Rec_Tar_Rz_In_20"];
-          // var total = five + ten + twenty;
-          // console.log(five, ten, twenty, total);
-          // var totalTargets = player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"];
-          // console.log(`rec td = ${player[week]["Rec_Td"]} and rush td = ${rushTd} and total = ${player[week]["Rec_Td"] + rushTd}`)
-          // result.push(player[week]["Rec_Tar_Rz_In_5"] + player[week]["Rec_Tar_Rz_In_10"] + player[week]["Rec_Tar_Rz_In_20"]);
-          result.push(twenty);
+          total += player[week]["Rec_Tar_Rz_In_20"];
+          if (counter === 16){
+            var avg = (total / gamesPlayed);
+            // console.log(`total is ${total} and avg is ${avg}`);
+            result.push(twenty);
+            result.push(Math.round(avg));
+            // console.log('result after adding avg is - ', result);
+          } else {
+            result.push(twenty);
+          }
         }
-        else
+        else{
+          gamesPlayed -= 1;
           result.push(null);
+        }
       } else {
-        if (player[week])
-          result.push(player[week][stat]);
-        else
+        if (player[week]){
+          total += player[week][stat];
+          if (counter === 16){
+            var avg = (total / gamesPlayed);
+            // console.log(`total is ${total} and avg is ${avg}`);
+            result.push(player[week][stat]);
+            result.push(Math.round(avg));
+            // console.log('result after adding avg is - ', result);
+          } else {
+            result.push(player[week][stat]);
+          }
+        }
+        else{
+          gamesPlayed -= 1;
           result.push(null);
+        }
       }
     }
-    console.log(`result for ${stat} - ', result`, result);
+    // console.log(`result for ${stat} - ', result`, result);
     return result;
   },
   get: (id) => {

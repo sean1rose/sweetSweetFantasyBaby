@@ -77,10 +77,15 @@ const rbWeeklyTouchesUtil = {
   },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
+    var total = 0;
+    var avg;
     if (rank === 1.12){
       for (var i = 1; i <= 16; i++){
-        result.push(rbWeeklyTouchesUtil.getRbTwelveFromWeek(i)[stat])
+        result.push(rbWeeklyTouchesUtil.getRbTwelveFromWeek(i)[stat]);
+        total += rbWeeklyTouchesUtil.getRbTwelveFromWeek(i)[stat];
       }
+      avg = (total / 16);
+      result.push(Math.round(avg));
       // console.log('----> RESULT - ', result);
       return result;
     }
@@ -89,7 +94,10 @@ const rbWeeklyTouchesUtil = {
       var rounded = Math.round(obj[stat]);
       // console.log(`week ${i}'s avg ${stat} is - ${rounded}`);
       result.push(rounded);
+      total += rounded;
     }
+    avg = (total / 16);
+    result.push(Math.round(avg));
     return result;
   },
   getRbAllWeeks: (name) => {
@@ -107,27 +115,54 @@ const rbWeeklyTouchesUtil = {
     // used to calc weekly target/ftpts/td for combo chart
     // manually calc TotalTd from (recTd + rushTd)
     var result = [];
+    var total = 0;
+    var counter = 0;
+    var gamesPlayed = 16;
+    var objLength = Object.keys(player).length;
     for (var week in player){
+      counter++;
       if (stat === "RzTouches"){
         if (player[week]){
-          // var five = player[week]["Rec_Tar_Rz_In_5"];
-          // var ten = player[week]["Rec_Tar_Rz_In_10"];
           var twenty = !player[week]["Rush_Rz_In_20"] ? player[week]["Rec_Tar_Rz_In_20"] : (player[week]["Rec_Tar_Rz_In_20"] + player[week]["Rush_Rz_In_20"]);
-          result.push(twenty);
+          total += twenty;
+          if (counter === 16){
+            var avg = (total / gamesPlayed);
+            result.push(twenty);
+            result.push(Math.round(avg));
+          } else {
+            result.push(twenty);
+          }
         }
-        else
+        else{
+          gamesPlayed -= 1;
           result.push(null);
+        }
       } else {
         if (player[week]){
           if (stat === "Touches"){
-            result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
+            total += (player[week]["Rush_Att"] + player[week]["Rec"]);
+            if (counter === 16){
+              var avg = (total / gamesPlayed);
+              result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
+              result.push(Math.round(avg));
+            } else {
+              result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
+            }
           } else {
-            result.push(player[week][stat]);
-
+            total += player[week][stat];
+            if (counter === 16){
+              var avg = (total / gamesPlayed);
+              result.push(player[week][stat]);
+              result.push(Math.round(avg));
+            } else {
+              result.push(player[week][stat]);
+            }
           }
         }
-        else
+        else{
+          gamesPlayed -= 1;
           result.push(null);
+        }
       }
     }
     // console.log(`result for ${stat} - ', result`, result);
