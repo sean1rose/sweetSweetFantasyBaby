@@ -260,6 +260,7 @@ class Combochart extends Component {
   }
 
   render() {
+    const boldOneFinishes = this.state.wrOneFinishes ? `<b>${this.state.wrOneFinishes}</b>` : `<b>${this.state.rbOneFinishes}</b>`
     return (
       <div>
         <div className="headerContainer">

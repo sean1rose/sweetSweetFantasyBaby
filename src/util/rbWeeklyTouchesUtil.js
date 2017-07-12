@@ -90,7 +90,7 @@ const rbWeeklyTouchesUtil = {
     finalObj.total = total;
     finalObj.percent = percent;
     // return total;
-    console.log('finalobj.total - ', finalObj.total);
+    // console.log('finalobj.total - ', finalObj.total);
     return finalObj;
   },
   calcWeeklyAvg: (stat, rank) => {
