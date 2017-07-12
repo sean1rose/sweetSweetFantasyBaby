@@ -204,9 +204,27 @@ class Combochart extends Component {
       return configObj;
     }
 
+    var rbOneFinishesInt = props.position === "rb" ? props.util.calcRbrOneFinishes(props.name) : null;
+    var wrOneFinishesInt = props.position === "wr" ? props.util.calcWrOneFinishes(props.name) : null;
+    console.log('rbOneFinishesInt - ', rbOneFinishesInt);
+
     this.state = {
-      config: this.configObjectCreate(1)
+      config: this.configObjectCreate(1),
+      rbOneFinishes: props.position === "rb" ? rbOneFinishesInt.total : null,
+      wrOneFinishes: props.position === "wr" ? wrOneFinishesInt.total : null,
+      rbOneFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbOneFinishesInt.percent) : null,
+      wrOneFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrOneFinishesInt.percent) : null
     };
+
+    // var wrOneFinishes;
+    // var rbOneFinishes;
+    // if (props.position === "wr"){
+    //   wrOneFinishes = props.util.calcWrOneFinishes(props.name);
+    //   console.log('wrOneFinishes - ', wrOneFinishes);
+    // } else if (props.position === "rb"){
+    //   rbOneFinishes = props.util.calcRbrOneFinishes(props.name);
+    //   console.log('rbOneFinishes - ', rbOneFinishes);
+    // }
 
 		this.configObjectCreate = this.configObjectCreate.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -261,6 +279,10 @@ class Combochart extends Component {
           </div>
         </div>
         <ReactHighcharts config={this.state.config} />
+        <div className="headerContainer">
+          <h4>Consistency:</h4>
+          <div>Number of {this.props.position === "wr" ? "WR1 Finishes: " : "RB1 Finishes: "} {this.state.wrOneFinishes ? this.state.wrOneFinishes : this.state.rbOneFinishes} ({this.state.rbOneFinishesPercent ? this.state.rbOneFinishesPercent : this.state.wrOneFinishesPercent}% of playable games)</div>
+        </div>
       </div>
     )
   }

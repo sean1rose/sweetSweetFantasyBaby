@@ -74,6 +74,23 @@ const wrWeeklyTargetUtil = {
     result.RzTargets = wrArray[11].Rec_Tar_Rz_In_20;
     return result;
   },
+  calcWrOneFinishes: (name) => {
+    var finalObj = {};
+    var total = 0;
+    var percent;
+    for (var i = 1; i <= 16; i++){
+      var wrOne = wrWeeklyTargetUtil.getWrTwelveFromWeek(i);
+      var current = wrWeeklyTargetUtil.getWrFromWeek(name, i);
+      if (current && current.FantasyPts >= wrOne.FantasyPts){
+        total += 1;
+      }
+    }
+    percent = (total / 15);
+    finalObj.total = total;
+    finalObj.percent = percent;
+    return finalObj;
+    // return total;
+  },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
     var total = 0;
@@ -84,7 +101,7 @@ const wrWeeklyTargetUtil = {
         total += wrWeeklyTargetUtil.getWrTwelveFromWeek(i)[stat];
       }
       avg = (total / 16);
-      result.push(Math.round(avg));
+      result.push(wrWeeklyTargetUtil.round(avg, 1));
       console.log('----> RESULT - ', result);
       return result;
     }
@@ -92,14 +109,14 @@ const wrWeeklyTargetUtil = {
       // var obj = wrWeeklyTargetUtil.getWrOneFromWeek(i);
       // var obj = wrWeeklyTargetUtil.getWrTwelveFromWeek(i);
       var obj = wrWeeklyTargetUtil.getWrRankFromWeek(i, rank);
-      var rounded = Math.round(obj[stat]);
+      var rounded = wrWeeklyTargetUtil.round(obj[stat], 1);
       // console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
       total += rounded;
     }
     console.log('----result - ', result);
     avg = (total / 16);
-    result.push(Math.round(avg));
+    result.push(wrWeeklyTargetUtil.round(avg, 1));
     return result;
   },
   getWrAllWeeks: (name) => {
@@ -133,7 +150,7 @@ const wrWeeklyTargetUtil = {
             var avg = (total / gamesPlayed);
             // console.log(`total is ${total} and avg is ${avg}`);
             result.push(twenty);
-            result.push(Math.round(avg));
+            result.push(wrWeeklyTargetUtil.round(avg, 1));
             // console.log('result after adding avg is - ', result);
           } else {
             result.push(twenty);
@@ -150,7 +167,7 @@ const wrWeeklyTargetUtil = {
             var avg = (total / gamesPlayed);
             // console.log(`total is ${total} and avg is ${avg}`);
             result.push(player[week][stat]);
-            result.push(Math.round(avg));
+            result.push(wrWeeklyTargetUtil.round(avg, 1));
             // console.log('result after adding avg is - ', result);
           } else {
             result.push(player[week][stat]);
@@ -173,6 +190,10 @@ const wrWeeklyTargetUtil = {
   },
   convertToPercent: (fraction) => {
     return Math.round(fraction * 10000) / 100;
+  },
+  round: (num, places) => {
+    var multiplier = Math.pow(10, places);
+    return Math.round(num * multiplier) / multiplier;
   }
 };
 

@@ -75,6 +75,24 @@ const rbWeeklyTouchesUtil = {
     result.RzTouches = !rbArray[11].Rec_Tar_Rz_In_20 ? rbArray[11].Rush_Rz_In_20 : (rbArray[11].Rush_Rz_In_20 + rbArray[11].Rec_Tar_Rz_In_20);
     return result;
   },
+  calcRbrOneFinishes: (name) => {
+    var finalObj = {};
+    var total = 0;
+    var percent;
+    for (var i = 1; i <= 16; i++){
+      var rbOne = rbWeeklyTouchesUtil.getRbTwelveFromWeek(i);
+      var current = rbWeeklyTouchesUtil.getRbFromWeek(name, i);
+      if (current && current.FantasyPts >= rbOne.FantasyPts){
+        total += 1;
+      }
+    }
+    percent = (total / 15);
+    finalObj.total = total;
+    finalObj.percent = percent;
+    // return total;
+    console.log('finalobj.total - ', finalObj.total);
+    return finalObj;
+  },
   calcWeeklyAvg: (stat, rank) => {
     var result = [];
     var total = 0;
@@ -85,19 +103,19 @@ const rbWeeklyTouchesUtil = {
         total += rbWeeklyTouchesUtil.getRbTwelveFromWeek(i)[stat];
       }
       avg = (total / 16);
-      result.push(Math.round(avg));
+      result.push(rbWeeklyTouchesUtil.round(avg, 1));
       // console.log('----> RESULT - ', result);
       return result;
     }
     for (var i = 1; i <= 16; i++){
       var obj = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
-      var rounded = Math.round(obj[stat]);
+      var rounded =rbWeeklyTouchesUtil.round(obj[stat], 1);
       // console.log(`week ${i}'s avg ${stat} is - ${rounded}`);
       result.push(rounded);
       total += rounded;
     }
     avg = (total / 16);
-    result.push(Math.round(avg));
+    result.push(rbWeeklyTouchesUtil.round(avg, 1));
     return result;
   },
   getRbAllWeeks: (name) => {
@@ -128,7 +146,7 @@ const rbWeeklyTouchesUtil = {
           if (counter === 16){
             var avg = (total / gamesPlayed);
             result.push(twenty);
-            result.push(Math.round(avg));
+            result.push(rbWeeklyTouchesUtil.round(avg, 1));
           } else {
             result.push(twenty);
           }
@@ -144,7 +162,7 @@ const rbWeeklyTouchesUtil = {
             if (counter === 16){
               var avg = (total / gamesPlayed);
               result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
-              result.push(Math.round(avg));
+              result.push(rbWeeklyTouchesUtil.round(avg, 1));
             } else {
               result.push(player[week]["Rush_Att"] + player[week]["Rec"]);
             }
@@ -153,7 +171,7 @@ const rbWeeklyTouchesUtil = {
             if (counter === 16){
               var avg = (total / gamesPlayed);
               result.push(player[week][stat]);
-              result.push(Math.round(avg));
+              result.push(rbWeeklyTouchesUtil.round(avg, 1));
             } else {
               result.push(player[week][stat]);
             }
@@ -176,6 +194,10 @@ const rbWeeklyTouchesUtil = {
   },
   convertToPercent: (fraction) => {
     return Math.round(fraction * 10000) / 100;
+  },
+  round: (num, places) => {
+    var multiplier = Math.pow(10, places);
+    return Math.round(num * multiplier) / multiplier;
   }
 };
 
