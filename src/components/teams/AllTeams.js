@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import TeamTargetUtil from '../util/teamTargetUtil';
+import TeamTargetUtil from '../../util/teamTargetUtil';
 
 // console.log('--> ALL TEAMS - ', TeamTargetUtil.getAllTeams());
 // ALL TEAMS === FULLROSTER

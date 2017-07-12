@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import wrWeeklyTargetUtil from '../util/wrWeeklyTargetUtil';
-import Combochart from './charts/Combo';
+import wrWeeklyTargetUtil from '../../util/wrWeeklyTargetUtil';
+import Combochart from '../charts/Combo';
 
 class Widereceiver extends Component {
   constructor(props){

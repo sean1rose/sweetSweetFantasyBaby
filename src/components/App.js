@@ -6,11 +6,11 @@ import Nav from './Nav';
 import Home from './Home';
 import Roster from './Roster';
 import Schedule from './Schedule';
-import Teams from './Teams';
+import Teams from './teams/Teams';
 import Battle from './Battle';
 import Results from './Results';
-import Runningbacks from './Runningbacks';
-import Widereceivers from './Widereceivers';
+import Runningbacks from './runningbacks/Runningbacks';
+import Widereceivers from './widereceivers/Widereceivers';
 
 const App = () => {
   return (

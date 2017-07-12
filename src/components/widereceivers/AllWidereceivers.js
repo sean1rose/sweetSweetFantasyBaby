@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import wrWeeklyTargetUtil from '../util/wrWeeklyTargetUtil';
+import wrWeeklyTargetUtil from '../../util/wrWeeklyTargetUtil';
 
 console.log('--->>>> wr on a weekly - ', wrWeeklyTargetUtil.getWrFromWeek('Brandin Cooks', 1))
 const AllWidereceivers = () => (

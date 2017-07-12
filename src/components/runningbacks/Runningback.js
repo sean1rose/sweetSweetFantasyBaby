@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import rbWeeklyTouchesUtil from '../util/rbWeeklyTouchesUtil';
-import Combochart from './charts/Combo';
+import rbWeeklyTouchesUtil from '../../util/rbWeeklyTouchesUtil';
+import Combochart from '../charts/Combo';
 
 class Runningback extends Component {
   constructor(props){
