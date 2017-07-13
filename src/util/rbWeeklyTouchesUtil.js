@@ -46,51 +46,28 @@ const rbWeeklyTouchesUtil = {
   getRbRankFromWeek: (weekNumber, rank) => {
     var rbString = `rb${weekNumber}`;
     var rbArray = runningbackObj[rbString];
-    var result = {
-      touches: 0,
-      fantasyPts: 0,
-      rzTouches: 0
-    };
-    var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
-    var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
-    for (var i = counter1; i < counter2; i++){
-      result.touches += rbArray[i].Rush_Att;
-      result.touches += rbArray[i].Rec;
-      result.fantasyPts += rbArray[i].FantasyPts;
-      result.rzTouches += !rbArray[i].Rec_Tar_Rz_In_20 ? rbArray[i].Rush_Rz_In_20 : (rbArray[i].Rush_Rz_In_20 + rbArray[i].Rec_Tar_Rz_In_20);
-    }
-    var avg = {};
-    avg.Touches = (result.touches / 12);
-    avg.FantasyPts = (result.fantasyPts / 12);
-    avg.RzTouches = (result.rzTouches / 12);
-    // console.log('>>>>>avg = ', avg);
-    return avg;
-  },
-  getRbTwelveFromWeek: (weekNumber) => {
-    var rbString = `rb${weekNumber}`;
-    var rbArray = runningbackObj[rbString];
     var result = {};
-    result.Touches = (rbArray[11].Rush_Att + rbArray[11].Rec);
-    result.FantasyPts = rbArray[11].FantasyPts;
-    result.RzTouches = !rbArray[11].Rec_Tar_Rz_In_20 ? rbArray[11].Rush_Rz_In_20 : (rbArray[11].Rush_Rz_In_20 + rbArray[11].Rec_Tar_Rz_In_20);
+    var finalRank = rank === 1 ? 11 : rank === 2 ? 23 : 35;
+    result.Touches = (rbArray[finalRank].Rush_Att + rbArray[finalRank].Rec);
+    result.FantasyPts = rbArray[finalRank].FantasyPts;
+    result.RzTouches = !rbArray[finalRank].Rec_Tar_Rz_In_20 ? rbArray[finalRank].Rush_Rz_In_20 : (rbArray[finalRank].Rush_Rz_In_20 + rbArray[finalRank].Rec_Tar_Rz_In_20);
     return result;
   },
-  calcRbrOneFinishes: (name) => {
+  calcRbRankFinishes: (name, rank) => {
     var finalObj = {};
     var total = 0;
     var percent;
     for (var i = 1; i <= 16; i++){
-      var rbOne = rbWeeklyTouchesUtil.getRbTwelveFromWeek(i);
+      // var rbTwo = rbWeeklyTouchesUtil.getRbTwelveFromWeek
+      var rbTwo = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
       var current = rbWeeklyTouchesUtil.getRbFromWeek(name, i);
-      if (current && current.FantasyPts >= rbOne.FantasyPts){
+      if (current && current.FantasyPts >= rbTwo.FantasyPts){
         total += 1;
       }
     }
     percent = (total / 15);
     finalObj.total = total;
     finalObj.percent = percent;
-    // return total;
-    // console.log('finalobj.total - ', finalObj.total);
     return finalObj;
   },
   calcWeeklyAvg: (stat, rank) => {

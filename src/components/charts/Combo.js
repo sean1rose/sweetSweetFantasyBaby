@@ -204,15 +204,20 @@ class Combochart extends Component {
       return configObj;
     }
 
-    var rbOneFinishesInt = props.position === "rb" ? props.util.calcRbrOneFinishes(props.name) : null;
+    var rbOneFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 1) : null;
+    var rbTwoFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 2) : null;
+    var rbThreeFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 3) : null;
     var wrOneFinishesInt = props.position === "wr" ? props.util.calcWrOneFinishes(props.name) : null;
-    console.log('rbOneFinishesInt - ', rbOneFinishesInt);
 
     this.state = {
       config: this.configObjectCreate(1),
       rbOneFinishes: props.position === "rb" ? rbOneFinishesInt.total : null,
+      rbTwoFinishes: props.position === "rb" ? rbTwoFinishesInt.total : null,
+      rbThreeFinishes: props.position === "rb" ? rbThreeFinishesInt.total : null,
       wrOneFinishes: props.position === "wr" ? wrOneFinishesInt.total : null,
       rbOneFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbOneFinishesInt.percent) : null,
+      rbTwoFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbTwoFinishesInt.percent) : null,
+      rbThreeFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbThreeFinishesInt.percent) : null,
       wrOneFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrOneFinishesInt.percent) : null
     };
 
@@ -282,7 +287,9 @@ class Combochart extends Component {
         <ReactHighcharts config={this.state.config} />
         <div className="headerContainer">
           <h4>Consistency:</h4>
-          <div>Number of {this.props.position === "wr" ? "WR1 Finishes: " : "RB1 Finishes: "} {this.state.wrOneFinishes ? this.state.wrOneFinishes : this.state.rbOneFinishes} ({this.state.rbOneFinishesPercent ? this.state.rbOneFinishesPercent : this.state.wrOneFinishesPercent}% of playable games)</div>
+          <div><span>Number of {this.props.position === "wr" ? "WR1 Finishes: " : "RB1 Finishes: "}</span><span style={{"fontWeight": "bold"}}> {this.state.wrOneFinishes ? this.state.wrOneFinishes : this.state.rbOneFinishes}</span><span> ({this.state.rbOneFinishesPercent ? this.state.rbOneFinishesPercent : this.state.wrOneFinishesPercent}% of playable games)</span></div>    
+          <div><span>Number of {this.props.position === "wr" ? "WR2 Finishes (24th ranked WR or above): " : "RB2 Finishes (24th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.rbTwoFinishes ? this.state.rbTwoFinishes : null }</span><span> ({this.state.rbTwoFinishesPercent ? this.state.rbTwoFinishesPercent : this.state.wrTwoFinishesPercent}% of playable games)</span></div>
+          <div><span>Number of {this.props.position === "wr" ? "WR3 Finishes (36th ranked WR or above): " : "RB3 Finishes (36th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.rbThreeFinishes ? this.state.rbThreeFinishes : null }</span><span> ({this.state.rbThreeFinishesPercent ? this.state.rbThreeFinishesPercent : this.state.wrThreeFinishesPercent}% of playable games)</span></div>
         </div>
       </div>
     )
