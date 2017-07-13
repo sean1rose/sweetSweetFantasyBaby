@@ -25,25 +25,25 @@ import Fuse from 'fuse.js';
 
 const rbWeeklyTouchesUtil = {
   runningbackWeek: (weekNumber) => {
+    // returns obj of all rbs for that week
     var rbString = `rb${weekNumber}`;
     var rbArray = runningbackObj[rbString];
     var result = {};
     rbArray.map((rb, idx) => {
-      // rb[`week_${weekNumber}_rank`] = idx + 1;
       rb.Rank = idx + 1;
       result[rb.Player_2] = rb;
     });
     // console.log('rb week - ', result);
     return result;
-    // return obj of rbs for that week
   },
   getRbFromWeek: (name, week) => {
-    // need single rb-obj from a week
+    // returns single rb-obj from a week
     var weekRunningbacks = rbWeeklyTouchesUtil.runningbackWeek(week);
     // console.log('>>> ',  name, weekRunningbacks[name], weekRunningbacks);
     return weekRunningbacks[name];
   },
   getRbRankFromWeek: (weekNumber, rank) => {
+    // util to help calculate the TOTAL NUMBER of RB1/2/3 finishes
     var rbString = `rb${weekNumber}`;
     var rbArray = runningbackObj[rbString];
     var result = {};
@@ -54,14 +54,15 @@ const rbWeeklyTouchesUtil = {
     return result;
   },
   calcRbRankFinishes: (name, rank) => {
+    // used to calculate the TOTAL NUMBER of RB1/RB2/RB3 finishes
     var finalObj = {};
     var total = 0;
     var percent;
     for (var i = 1; i <= 16; i++){
       // var rbTwo = rbWeeklyTouchesUtil.getRbTwelveFromWeek
-      var rbTwo = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
+      var rb = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
       var current = rbWeeklyTouchesUtil.getRbFromWeek(name, i);
-      if (current && current.FantasyPts >= rbTwo.FantasyPts){
+      if (current && current.FantasyPts >= rb.FantasyPts){
         total += 1;
       }
     }
@@ -70,7 +71,18 @@ const rbWeeklyTouchesUtil = {
     finalObj.percent = percent;
     return finalObj;
   },
+  getRbTwelveFromWeek: (weekNumber) => {
+    // used to calc RB1.12 stats
+    var rbString = `rb${weekNumber}`;
+    var rbArray = runningbackObj[rbString];
+    var result = {};
+    result.Touches = (rbArray[11].Rush_Att + rbArray[11].Rec);
+    result.FantasyPts = rbArray[11].FantasyPts;
+    result.RzTouches = !rbArray[11].Rec_Tar_Rz_In_20 ? rbArray[11].Rush_Rz_In_20 : (rbArray[11].Rush_Rz_In_20 + rbArray[11].Rec_Tar_Rz_In_20);
+    return result;
+  },
   calcWeeklyAvg: (stat, rank) => {
+    // used to calc avg RB1/RB1.12/RB2/RB3 stats -> calls either get getRbTwelveFromWeek or getRbAvgRankFromWeek
     var result = [];
     var total = 0;
     var avg;
@@ -85,7 +97,8 @@ const rbWeeklyTouchesUtil = {
       return result;
     }
     for (var i = 1; i <= 16; i++){
-      var obj = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
+      var obj = rbWeeklyTouchesUtil.getRbAvgRankFromWeek(i, rank);
+      // var obj = rbWeeklyTouchesUtil.getRbRankFromWeek(i, rank);
       var rounded =rbWeeklyTouchesUtil.round(obj[stat], 1);
       // console.log(`week ${i}'s avg ${stat} is - ${rounded}`);
       result.push(rounded);
@@ -95,20 +108,32 @@ const rbWeeklyTouchesUtil = {
     result.push(rbWeeklyTouchesUtil.round(avg, 1));
     return result;
   },
-  getRbAllWeeks: (name) => {
-    var result = {};
-    for (var i = 1; i <= 16; i++){
-      result[i] = rbWeeklyTouchesUtil.getRbFromWeek(name, i);
+  getRbAvgRankFromWeek: (weekNumber, rank) => {
+    // used to calc avg RB1/RB2/RB3 stats
+    var rbString = `rb${weekNumber}`;
+    var rbArray = runningbackObj[rbString];
+    var result = {
+      touches: 0,
+      fantasyPts: 0,
+      rzTouches: 0
+    };
+    var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
+    var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
+    for (var i = counter1; i < counter2; i++){
+      result.touches += rbArray[i].Rush_Att;
+      result.touches += rbArray[i].Rec;
+      result.fantasyPts += rbArray[i].FantasyPts;
+      result.rzTouches += !rbArray[i].Rec_Tar_Rz_In_20 ? rbArray[i].Rush_Rz_In_20 : (rbArray[i].Rush_Rz_In_20 + rbArray[i].Rec_Tar_Rz_In_20);
     }
-    return result;
-  },
-  getAllRunningbacks: () => {
-    return runningbacks;
-    // returns an array of all wrs
+    var avg = {};
+    avg.Touches = (result.touches / 12);
+    avg.FantasyPts = (result.fantasyPts / 12);
+    avg.RzTouches = (result.rzTouches / 12);
+    // console.log('>>>>>avg = ', avg);
+    return avg;
   },
   calcWeeklyTotal: (player, stat) => {
-    // used to calc weekly target/ftpts/td for combo chart
-    // manually calc TotalTd from (recTd + rushTd)
+    // used to calc selected player's weekly stats for ftpts, touches and rztouches
     var result = [];
     var total = 0;
     var counter = 0;
@@ -163,7 +188,20 @@ const rbWeeklyTouchesUtil = {
     // console.log(`result for ${stat} - ', result`, result);
     return result;
   },
+  getRbAllWeeks: (name) => {
+    // returns obj w/ a player's weekly performance (each week is a property)
+    var result = {};
+    for (var i = 1; i <= 16; i++){
+      result[i] = rbWeeklyTouchesUtil.getRbFromWeek(name, i);
+    }
+    return result;
+  },
+  getAllRunningbacks: () => {
+    // returns an array of all rbs
+    return runningbacks;
+  },
   get: (id) => {
+    // used by search input
     var options = {keys: ['Player_2'], threshold: 0.3};
     var fuse = new Fuse(runningbackObj, options);
     // returns an array w/ results (hopefully only 1 result)

@@ -25,6 +25,7 @@ import Fuse from 'fuse.js';
 
 const wrWeeklyTargetUtil = {
   wideReceiverWeek: (weekNumber) => {
+    // returns obj of all wrs for that week
     var wrString = `wr${weekNumber}`;
     var wrArray = widereceiverObj[wrString];
     var result = {};
@@ -42,30 +43,39 @@ const wrWeeklyTargetUtil = {
     return weekReceivers[name];
   },
   getWrRankFromWeek: (weekNumber, rank) => {
+    // util to help calc the TOTAL NUMBER of WR1/2/3 finishes
     var wrString = `wr${weekNumber}`;
     var wrArray = widereceiverObj[wrString];
     var result = {
-      targets: 0,
-      fantasyPts: 0,
-      rzTargets: 0
+      Targets: 0,
+      FantasyPts: 0,
+      RzTargets: 0
     };
-    var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
-    var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
-    for (var i = counter1; i < counter2; i++){
-      result.targets += wrArray[i].Targets;
-      result.fantasyPts += wrArray[i].FantasyPts;
-      // result.rzTargets += wrArray[i].Rec_Tar_Rz_In_5;
-      // result.rzTargets += wrArray[i].Rec_Tar_Rz_In_10;
-      result.rzTargets += wrArray[i].Rec_Tar_Rz_In_20;
+    var finalRank = rank === 1 ? 11 : rank === 2 ? 23 : 35;
+    result.Targets = (wrArray[finalRank].Targets);
+    result.FantasyPts = wrArray[finalRank].FantasyPts;
+    result.RzTargets = wrArray[finalRank].Rec_Tar_Rz_In_20;
+    return result;
+  },
+  calcWrRankFinishes: (name, rank) => {
+    // used to calc the TOTAL NUMBER OF WR1/2/3 finishes
+    var finalObj = {};
+    var total = 0;
+    var percent;
+    for (var i = 1; i <= 16; i++){
+      var wr = wrWeeklyTargetUtil.getWrRankFromWeek(i, rank);
+      var current = wrWeeklyTargetUtil.getWrFromWeek(name, i);
+      if (current && current.FantasyPts >= wr.FantasyPts){
+        total += 1;
+      }
     }
-    var avg = {};
-    avg.Targets = (result.targets / 12);
-    avg.FantasyPts = (result.fantasyPts / 12);
-    avg.RzTargets = (result.rzTargets / 12);
-    // console.log('wrArray = ', avg);
-    return avg;
+    percent = (total / 15);
+    finalObj.total = total;
+    finalObj.percent = percent;
+    return finalObj;
   },
   getWrTwelveFromWeek: (weekNumber) => {
+    // used to calc WR1.12 stats
     var wrString = `wr${weekNumber}`;
     var wrArray = widereceiverObj[wrString];
     var result = {};
@@ -74,24 +84,8 @@ const wrWeeklyTargetUtil = {
     result.RzTargets = wrArray[11].Rec_Tar_Rz_In_20;
     return result;
   },
-  calcWrOneFinishes: (name) => {
-    var finalObj = {};
-    var total = 0;
-    var percent;
-    for (var i = 1; i <= 16; i++){
-      var wrOne = wrWeeklyTargetUtil.getWrTwelveFromWeek(i);
-      var current = wrWeeklyTargetUtil.getWrFromWeek(name, i);
-      if (current && current.FantasyPts >= wrOne.FantasyPts){
-        total += 1;
-      }
-    }
-    percent = (total / 15);
-    finalObj.total = total;
-    finalObj.percent = percent;
-    return finalObj;
-    // return total;
-  },
   calcWeeklyAvg: (stat, rank) => {
+    // used to calc avg WR1/1.12/2/3 stats -> calls either [getWrTwelveFromWeek] or [getWrAvgRankFromWeek]
     var result = [];
     var total = 0;
     var avg;
@@ -106,9 +100,7 @@ const wrWeeklyTargetUtil = {
       return result;
     }
     for (var i = 1; i <= 16; i++){
-      // var obj = wrWeeklyTargetUtil.getWrOneFromWeek(i);
-      // var obj = wrWeeklyTargetUtil.getWrTwelveFromWeek(i);
-      var obj = wrWeeklyTargetUtil.getWrRankFromWeek(i, rank);
+      var obj = wrWeeklyTargetUtil.getWrAvgRankFromWeek(i, rank);
       var rounded = wrWeeklyTargetUtil.round(obj[stat], 1);
       // console.log(`week ${i}'s avg is - ${rounded}`);
       result.push(rounded);
@@ -119,21 +111,32 @@ const wrWeeklyTargetUtil = {
     result.push(wrWeeklyTargetUtil.round(avg, 1));
     return result;
   },
-  getWrAllWeeks: (name) => {
-    var result = {};
-    for (var i = 1; i <= 16; i++){
-      result[i] = wrWeeklyTargetUtil.getWrFromWeek(name, i);
+  getWrAvgRankFromWeek: (weekNumber, rank) => {
+    // used to calc avg WR1/2/3 stats
+    var wrString = `wr${weekNumber}`;
+    var wrArray = widereceiverObj[wrString];
+    var result = {
+      targets: 0,
+      fantasyPts: 0,
+      rzTargets: 0
+    };
+    var counter1 = rank === 1 ? 0 : rank === 2 ? 12 : 24;
+    var counter2 = rank === 1 ? 12 : rank === 2 ? 24 : 36;
+    for (var i = counter1; i < counter2; i++){
+      result.targets += wrArray[i].Targets;
+      result.fantasyPts += wrArray[i].FantasyPts;
+      result.rzTargets += wrArray[i].Rec_Tar_Rz_In_20;
     }
-    return result;
-  },
-  getAllWidereceivers: () => {
-    return widereceivers;
-    // returns an array of all wrs
+    var avg = {};
+    avg.Targets = (result.targets / 12);
+    avg.FantasyPts = (result.fantasyPts / 12);
+    avg.RzTargets = (result.rzTargets / 12);
+    // console.log('wrArray = ', avg);
+    return avg;
   },
   calcWeeklyTotal: (player, stat) => {
-    // used to calc weekly target/ftpts/td for combo chart
+    // used to calc selected player's weekly stats for ftpts, touches and rztouches for combo chart
     // manually calc TotalTd from (recTd + rushTd)
-    // console.log('=----> player - ', player, ' and stat is - ', stat);
     var result = [];
     var total = 0;
     var counter = 0;
@@ -182,7 +185,20 @@ const wrWeeklyTargetUtil = {
     // console.log(`result for ${stat} - ', result`, result);
     return result;
   },
+  getWrAllWeeks: (name) => {
+    // returns obj w/ a player's weekly performance (each week is a property)
+    var result = {};
+    for (var i = 1; i <= 16; i++){
+      result[i] = wrWeeklyTargetUtil.getWrFromWeek(name, i);
+    }
+    return result;
+  },
+  getAllWidereceivers: () => {
+    // returns an array of all wrs
+    return widereceivers;
+  },
   get: (id) => {
+    // used by search input
     var options = {keys: ['Player_2'], threshold: 0.3};
     var fuse = new Fuse(widereceiverObj, options);
     // returns an array w/ results (hopefully only 1 result)

@@ -207,7 +207,9 @@ class Combochart extends Component {
     var rbOneFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 1) : null;
     var rbTwoFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 2) : null;
     var rbThreeFinishesInt = props.position === "rb" ? props.util.calcRbRankFinishes(props.name, 3) : null;
-    var wrOneFinishesInt = props.position === "wr" ? props.util.calcWrOneFinishes(props.name) : null;
+    var wrOneFinishesInt = props.position === "wr" ? props.util.calcWrRankFinishes(props.name, 1) : null;
+    var wrTwoFinishesInt = props.position === "wr" ? props.util.calcWrRankFinishes(props.name, 2) : null;
+    var wrThreeFinishesInt = props.position === "wr" ? props.util.calcWrRankFinishes(props.name, 3) : null;
 
     this.state = {
       config: this.configObjectCreate(1),
@@ -215,21 +217,15 @@ class Combochart extends Component {
       rbTwoFinishes: props.position === "rb" ? rbTwoFinishesInt.total : null,
       rbThreeFinishes: props.position === "rb" ? rbThreeFinishesInt.total : null,
       wrOneFinishes: props.position === "wr" ? wrOneFinishesInt.total : null,
+      wrTwoFinishes: props.position === "wr" ? wrTwoFinishesInt.total : null,
+      wrThreeFinishes: props.position === "wr" ? wrThreeFinishesInt.total : null,
       rbOneFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbOneFinishesInt.percent) : null,
       rbTwoFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbTwoFinishesInt.percent) : null,
       rbThreeFinishesPercent: props.position === "rb" ? props.util.convertToPercent(rbThreeFinishesInt.percent) : null,
-      wrOneFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrOneFinishesInt.percent) : null
+      wrOneFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrOneFinishesInt.percent) : null,
+      wrTwoFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrTwoFinishesInt.percent) : null,
+      wrThreeFinishesPercent: props.position === "wr" ? props.util.convertToPercent(wrThreeFinishesInt.percent) : null
     };
-
-    // var wrOneFinishes;
-    // var rbOneFinishes;
-    // if (props.position === "wr"){
-    //   wrOneFinishes = props.util.calcWrOneFinishes(props.name);
-    //   console.log('wrOneFinishes - ', wrOneFinishes);
-    // } else if (props.position === "rb"){
-    //   rbOneFinishes = props.util.calcRbrOneFinishes(props.name);
-    //   console.log('rbOneFinishes - ', rbOneFinishes);
-    // }
 
 		this.configObjectCreate = this.configObjectCreate.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -288,8 +284,8 @@ class Combochart extends Component {
         <div className="headerContainer">
           <h4>Consistency:</h4>
           <div><span>Number of {this.props.position === "wr" ? "WR1 Finishes: " : "RB1 Finishes: "}</span><span style={{"fontWeight": "bold"}}> {this.state.wrOneFinishes ? this.state.wrOneFinishes : this.state.rbOneFinishes}</span><span> ({this.state.rbOneFinishesPercent ? this.state.rbOneFinishesPercent : this.state.wrOneFinishesPercent}% of playable games)</span></div>    
-          <div><span>Number of {this.props.position === "wr" ? "WR2 Finishes (24th ranked WR or above): " : "RB2 Finishes (24th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.rbTwoFinishes ? this.state.rbTwoFinishes : null }</span><span> ({this.state.rbTwoFinishesPercent ? this.state.rbTwoFinishesPercent : this.state.wrTwoFinishesPercent}% of playable games)</span></div>
-          <div><span>Number of {this.props.position === "wr" ? "WR3 Finishes (36th ranked WR or above): " : "RB3 Finishes (36th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.rbThreeFinishes ? this.state.rbThreeFinishes : null }</span><span> ({this.state.rbThreeFinishesPercent ? this.state.rbThreeFinishesPercent : this.state.wrThreeFinishesPercent}% of playable games)</span></div>
+          <div><span>Number of {this.props.position === "wr" ? "WR2 Finishes (24th ranked WR or above): " : "RB2 Finishes (24th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.wrTwoFinishes ? this.state.wrTwoFinishes : this.state.rbTwoFinishes }</span><span> ({this.state.rbTwoFinishesPercent ? this.state.rbTwoFinishesPercent : this.state.wrTwoFinishesPercent}% of playable games)</span></div>
+          <div><span>Number of {this.props.position === "wr" ? "WR3 Finishes (36th ranked WR or above): " : "RB3 Finishes (36th ranked RB or above): "}</span><span style={{"fontWeight": "bold"}}> {this.state.wrThreeFinishes ? this.state.wrThreeFinishes : this.state.rbThreeFinishes}</span><span> ({this.state.rbThreeFinishesPercent ? this.state.rbThreeFinishesPercent : this.state.wrThreeFinishesPercent}% of playable games)</span></div>
         </div>
       </div>
     )
